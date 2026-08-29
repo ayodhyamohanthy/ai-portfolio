@@ -1,0 +1,78 @@
+name: Submit an AI-native pattern
+description: Propose a component, interaction or pattern for the public AI-native design library.
+title: "Pattern: "
+labels:
+  - resource-candidate
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping this public library grow. Submissions are reviewed for source, licence, access, responsiveness and accessibility before publishing. Your GitHub account will be credited if the pattern is accepted.
+  - type: input
+    id: name
+    attributes:
+      label: Pattern name
+      placeholder: Human approval checkpoint
+    validations:
+      required: true
+  - type: input
+    id: canonical-url
+    attributes:
+      label: Canonical pattern URL
+      description: Link to the exact component or pattern, not a search result or mirror.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author or maintainer
+      placeholder: Name or organization
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Agent state and progress
+        - Human approval and control
+        - Generative UI
+        - Tool use and results
+        - Conversation and input
+        - Grounding and sources
+        - Evaluation and feedback
+        - Failure and recovery
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: licence
+    attributes:
+      label: Licence or access terms
+      description: Use the exact licence name. Write "Unclear" if you cannot confirm it.
+      placeholder: MIT, Apache-2.0, commercial, unclear...
+    validations:
+      required: true
+  - type: input
+    id: licence-url
+    attributes:
+      label: Licence or terms URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: One short note on the AI-native job this pattern does.
+      placeholder: Makes consequential agent actions reviewable before they run.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission check
+      options:
+        - label: I linked the original source and did not copy paid or restricted code into this issue.
+          required: true
