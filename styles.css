@@ -34,6 +34,11 @@ h1, h2, h3 { margin: 0; font-weight: 500; letter-spacing: -0.02em; line-height: 
 p { margin: 0; }
 code { font-family: var(--mono); font-size: 0.86em; background: var(--surface-2); padding: 1px 5px; border-radius: 5px; }
 
+/* The `hidden` attribute must beat any class-level `display` rule.
+   Without this, elements like .palette-wrap (display:flex) stay on screen when
+   JS sets .hidden = true, because author styles outrank the UA stylesheet. */
+[hidden] { display: none !important; }
+
 /* ---------- shell ---------- */
 .app { display: flex; align-items: flex-start; }
 

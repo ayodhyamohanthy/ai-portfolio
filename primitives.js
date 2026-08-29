@@ -369,6 +369,7 @@
     btn.innerHTML = '<span class="trace-dot"></span>Compared 2 sources for 3s<span class="chev"></span>';
     var body = document.createElement("div");
     body.className = "reason-body";
+    body.id = "chatReasonBody";
     body.hidden = true;
     body.textContent = "Lead-time history · Delivery variance · Contract terms";
     btn.addEventListener("click", function () {
@@ -645,14 +646,23 @@
     });
   }
 
+  var lastFocus = null;
   function openPalette() {
     if (!$("paletteWrap")) return;
+    lastFocus = document.activeElement;
     $("paletteWrap").hidden = false;
     $("paletteInput").value = "";
     renderResults("");
     $("paletteInput").focus();
+    document.documentElement.style.overflow = "hidden";
   }
-  function closePalette() { if ($("paletteWrap")) $("paletteWrap").hidden = true; }
+  function closePalette() {
+    if (!$("paletteWrap") || $("paletteWrap").hidden) return;
+    $("paletteWrap").hidden = true;
+    document.documentElement.style.overflow = "";
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    lastFocus = null;
+  }
 
   ["searchOpen", "searchOpen2", "searchOpen3"].forEach(function (id) {
     if ($(id)) $(id).addEventListener("click", openPalette);
