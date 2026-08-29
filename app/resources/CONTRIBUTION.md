@@ -1,7 +1,5 @@
 # Resource contribution contract
 
-Anyone can propose a pattern through the public GitHub issue form. No project setup or backend is required. The issue author is the contributor of record.
-
 Each candidate must include:
 - source name and canonical URL
 - author/maintainer
@@ -20,7 +18,3 @@ Publication gates:
 5. Preview works at desktop/mobile, keyboard and reduced motion.
 6. Changelog states the actual addition, removal or licence change.
 7. No timestamp-only publish. If nothing materially changed, no deploy.
-
-## Contributor credit
-
-When a candidate is accepted, add the contributor GitHub name and profile URL to the resource record. The credits ledger shows “Submitted by” separately from the original author. Reviewing a source does not transfer authorship.
