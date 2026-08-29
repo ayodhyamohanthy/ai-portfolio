@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-motion="on" data-page-node-id="NmlitAb26n2b9x2rXRdBII">
+<head data-page-node-id="09YXpTItyV24sFXvxnmrlJ">
+<meta charset="utf-8" data-page-node-id="rBDfws1liUdu9JI88LeAGk" />
+<meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="DKfsgUb2VOM8roFufSvH4V" />
+<title>AI-native interface primitives — portfolio motion lab</title>
+<link rel="stylesheet" href="styles.css" data-page-node-id="BbhdChPyJIWUHv6KDyNiqG" />
+</head>
+<body data-page-node-id="4cQX6fAEIHs4MAFLd84fNF">
+<a class="skip" href="#main" data-page-node-id="yIKJP2OKBfxm4JkWTyx95l">Skip to content</a>
+
+<header class="nav" id="nav" data-page-node-id="GH7CNoFZMtlARwBBiuh2ab">
+  <div class="nav-in" data-page-node-id="sto40K7JwPyFRVaLNMDO8Y">
+    <a class="brand" href="#top" data-page-node-id="wZZWjegVTS6zmXPp4EMss1"><span class="brand-dot" data-page-node-id="7D9hLOXBMfcN2XvfOnwRdp"></span><span data-page-node-id="xLMsh5nOkYy3PyR6kHujLO">Motion lab</span></a>
+    <nav class="nav-links" aria-label="Sections" data-page-node-id="hkmeNj8pMBRDAmk1qC5xIV">
+      <a href="#primitives" data-page-node-id="Ww7Nl2UkKjpjHcp9z4bAM0">Primitives</a>
+      <a href="#autonomy" data-page-node-id="3Bad5zDciJIAnb5WknfDBr">Autonomy</a>
+      <a href="#notes" data-page-node-id="6LQofoCSikQijoLPKZeGP1">Notes</a>
+    </nav>
+    <button class="toggle" id="motionToggle" aria-pressed="true" data-page-node-id="0AilM9Y1wSIB8o69MFwqTO">
+      <span class="toggle-dot" data-page-node-id="hwwuASlSGgYL8PZNuxj67a"></span><span id="motionLabel" data-page-node-id="nHGbkcVNixDaIB3d9U4p1g">Motion on</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" data-page-node-id="Fsil4kvgi0gEayPfKrsBpd">
+
+<section class="hero" id="top" data-page-node-id="SfdSZOki4RErpozWNPM4kr">
+  <p class="eyebrow reveal" data-page-node-id="xbJtYFYFoZ2i0yqfKCMRVx">Portfolio · interaction system v1</p>
+  <h1 class="reveal" data-page-node-id="w5k95FY8w3nyrk6C2tdmiH">Interfaces for systems that<br  data-page-node-id="vFWwgMn9K7Xw54x5Adiyas"/><em data-page-node-id="YCh6DOwTMPOMDl7dDPrlNn">might</em> be right.</h1>
+  <p class="lede reveal" data-stream="A product design portfolio shouldn't just describe AI work. It should behave like it. Every primitive on this page runs in your browser — no server, no API call, no bill." data-page-node-id="Vxam5XpZppqo9NcUXOmQ6n"></p>
+  <div class="hero-actions reveal" data-page-node-id="1JkEn1cp5ytd0X7Nb16fAG">
+    <a class="btn btn-primary" href="#primitives" data-page-node-id="xmSXDHZY4Z6TmykR6peo7C">See the primitives</a>
+    <a class="btn" href="#notes" data-page-node-id="meljK8iSjNlX9l9DzfJiAP">How it stays free</a>
+  </div>
+  <div class="hero-meta reveal" data-page-node-id="Ya1DHqDBwGeGAsUP2QTYnG">
+    <span data-page-node-id="hjcKM80SQlnrwIUeLllmc3"><b data-page-node-id="k3lbZHS5nKB0YvwOyQhpZA">9</b> primitives</span>
+    <span data-page-node-id="TYaSZu2FGDu4BOsVlHIkR5"><b data-page-node-id="3OErpzJbzQ2Xzq9TMfHAyg">0</b> dependencies</span>
+    <span data-page-node-id="xcaesNXeKhSrNWKttx5LXV"><b data-page-node-id="iTdciehxkQG9OeRPfnN0S3">$0</b> to host</span>
+  </div>
+</section>
+
+<section class="callout reveal" data-page-node-id="Bu4s1dhYsNQuZhnPbC4qTU">
+  <div class="callout-mark" data-page-node-id="G0mpFPbxYBZbAzkA57Et5T">/</div>
+  <div data-page-node-id="FIAh2DVl1CQY66tLsY3i8E">
+    <h2 data-page-node-id="ZtzppQIj5bbyqkD2QZsNL1">Static hosting is not a static page.</h2>
+    <p data-page-node-id="eBgKpS5boBscXKi3GxAez9">“Static” describes the <em data-page-node-id="ZrBHguQFuGNf7Spt2mh4MI">delivery</em>, not the experience. Files are served from a CDN; all the motion, streaming, and interaction happens on the visitor's device. That is exactly how the component libraries you admire ship their showcases. The difference is they cost money to build on someone else's platform — this costs nothing and you own every line.</p>
+  </div>
+</section>
+
+<section id="primitives" class="section" data-page-node-id="RCDFsBg00saHIQaTpwsFa5">
+  <div class="section-head reveal" data-page-node-id="caiej9FgdKbBOvw17Yla7V">
+    <h2 data-page-node-id="h6JLdaEpKIcoTIxoYqUuAu">The vocabulary</h2>
+    <p data-page-node-id="vP9brAExQE7iJtjox4KewU">Nine primitives an AI-native portfolio needs. Each one is a real component, not a screenshot.</p>
+  </div>
+
+  <div class="grid" data-page-node-id="mFVEqUxL1kSjAjFoYyqR2M">
+
+    <!-- 01 Loading -->
+    <article class="card reveal" data-page-node-id="CCYxCypBVIQYPQYnaxV4kC">
+      <div class="card-head" data-page-node-id="bwD7qvLwIIA8bKIVCpHfiT">
+        <span class="num" data-page-node-id="JSZ4eMuYELDyR4lE6ZVcZu">01</span>
+        <div data-page-node-id="cvZeEq1yfWfYtJi4LMJe8N">
+          <h3 data-page-node-id="wHARYEZEiNm9mUd38YSYyn">Loading state</h3>
+          <p class="card-sub" data-page-node-id="pB6ba9BFYm7JuCIDfJu6Xg">Pixel-grid loader with shimmer and elapsed time</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="41tMJ9fzOZpj3WzJVadvHq">
+        <div class="loader-block" data-page-node-id="tgQ6SdjQCx6G6KdkMtIEAy">
+          <div class="pixel-grid" id="pixelGrid" aria-hidden="true" data-page-node-id="ct3w8vvl5uqygUIZcKHbZs"></div>
+          <div class="loader-text" data-page-node-id="UQyZm6n2rSmQ6vk3syCo46">
+            <span class="loader-verb" id="loaderVerb" data-page-node-id="vKJgkb6FVZf9j88apCWw30">Churning</span>
+            <span class="loader-time" id="loaderTime" data-page-node-id="0hM0pW1yksvKoXCQwHNdS6">0.0s</span>
+          </div>
+        </div>
+      </div>
+      <p class="card-note" data-page-node-id="f1ZSnzmAmg9nAQktF1SjJ8">Waits over 800ms need a visible clock. Elapsed time converts “is it broken?” into “it's working.”</p>
+    </article>
+
+    <!-- 02 Thinking -->
+    <article class="card reveal" data-page-node-id="nGc0R8Sn9OjKGACCkGwFUY">
+      <div class="card-head" data-page-node-id="qok70ibtkArMYIwLrew5i5">
+        <span class="num" data-page-node-id="O6ARYW2Co1nYEoPxZnGTRz">02</span>
+        <div data-page-node-id="CHniXTCAwM3XgzAZBrOHl4">
+          <h3 data-page-node-id="ZSCCBNS4FUrXHb1mtrzAPJ">Thinking trace</h3>
+          <p class="card-sub" data-page-node-id="FoC3cfKJ9eiMDvwP8NiPFE">Expandable steps the model took</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="I9yVnY71DJoW63mB1kQ7ml">
+        <button class="trace-toggle" id="traceToggle" aria-expanded="false" data-page-node-id="xfobjaK0UoT8hKR3r3Eupu">
+          <span class="trace-dot" data-page-node-id="WNi2uEyaybUT4HcHoAsTY5"></span>
+          <span id="traceLabel" data-page-node-id="EOhv9vb5pF61rxMi7TuuIt">Thinking</span>
+          <span class="trace-meta" id="traceMeta" data-page-node-id="X5m1UbsAn4oZiFRYYZcIAG">4 steps · 2.4s</span>
+          <span class="chev" aria-hidden="true" data-page-node-id="zTnxefJlXSkQK3Q4iqCnNw"></span>
+        </button>
+        <ol class="trace-list" id="traceList" hidden data-page-node-id="F5BkMKuHbnSUBH3BSRylLn">
+          <li data-page-node-id="NIkg7jrpzA3oyCshRJWunu"><span class="trace-i" data-page-node-id="Tdhu1VfgUePdWCebHycabI"></span><b data-page-node-id="bZlXT0d2QqU0VFSkCpSU1N">Classify intent</b><em data-page-node-id="59z5aaY2fi3HxnhIOwEjgD">billing.refund · 0.94</em></li>
+          <li data-page-node-id="dW7dN9tLsHCadncXH6HJCr"><span class="trace-i" data-page-node-id="UbFiIQtjDAM1JeKp9CvgPf"></span><b data-page-node-id="2HAlQgCjDeaom4XxlC1ijo">Retrieve context</b><em data-page-node-id="SyBVajtJBvqqYUhMbc8ykE">order #1183, refund policy v4.2, 2 prior tickets</em></li>
+          <li data-page-node-id="zJOSf5FS3UC9rjYs8XBfHn"><b data-page-node-id="pj7gTUQB4NTRrUDbeb4qkW">Check eligibility</b><em data-page-node-id="U75bbt8cyDIxVcsezAa3mn">within 30 days · no prior refund · amount ≤ order total</em></li>
+          <li data-page-node-id="se4LzhddPKOBXrZyISIqWk"><b data-page-node-id="8D5HWoCqEja9UNUB901Rgs">Draft action</b><em data-page-node-id="TAGCyveKDvHtkCDwjl3g16">refund $42.00 · reason: arrived damaged</em></li>
+        </ol>
+      </div>
+      <p class="card-note" data-page-node-id="yhnSTggtlLDXzsffATC3D7">Reasoning should be inspectable but collapsed by default. Trust comes from being able to look.</p>
+    </article>
+
+    <!-- 03 Streaming -->
+    <article class="card reveal" id="card-stream" data-page-node-id="3Hcb5hSDsvJa8JMbF4aRbD">
+      <div class="card-head" data-page-node-id="a435b1lGDSo7WDL5Chh1fQ">
+        <span class="num" data-page-node-id="rKKridVRrPKOvqhiIIGAsf">03</span>
+        <div data-page-node-id="mP6gpIB3TXDFaV7tXs5vt7">
+          <h3 data-page-node-id="PXRCjk5QK8bxmOqF9WqEb6">Streaming text</h3>
+          <p class="card-sub" data-page-node-id="dx4NP5VPdtdwPAQuEXGOdR">Token cadence, inline sources, follow-ups</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="A5ATxn1BaM8AuS9BgfQktO">
+        <div class="stream-ask" data-page-node-id="KrPFg4cc7EEnveQtWtse5Z">Which flavours should we cut for winter?</div>
+        <div class="stream-out" data-page-node-id="RZNcDk7GwWWNg3b9GINv99">
+          <p class="stream-body" id="streamBody" data-page-node-id="54iCAmoQv5GFTBxfmS7wbH"></p>
+          <div class="sources" id="streamSources" hidden data-page-node-id="2N76UTZCUHg1MDaFmHrNAH">
+            <span class="sources-label" data-page-node-id="w47JfYxQjWuUaAImns5tjJ">Sources</span>
+            <button class="src" data-page-node-id="xh2fchwps5cOY4HCtoCAQg">POS export</button>
+            <button class="src" data-page-node-id="diT4fVzK9LN4nDYEQHWyPT">Sales velocity</button>
+            <button class="src" data-page-node-id="aveaCHNrwUNDNWFvufgE1h">Supplier lead times</button>
+          </div>
+          <div class="followups" id="streamFollowups" hidden data-page-node-id="owUJOSLVMfRP8UE9IsS1j2">
+            <button class="fu" data-page-node-id="9ZpDTKjR5QmmACz95lKjDD">What about a limited run?</button>
+            <button class="fu" data-page-node-id="YYOc0oGX9eNESXZgfzq4ZG">Show the margin impact</button>
+          </div>
+        </div>
+        <div class="stream-bar" data-page-node-id="6uXij7xPPyEANCtuHL9VZx">
+          <button class="btn-mini" id="streamStop" data-page-node-id="p8vBw2PhPwQkGMLaqvx44R">Stop</button>
+          <button class="btn-mini ghost" id="streamReplay" data-page-node-id="juY0hxF44t8b6jnxZHnLfa">Replay</button>
+          <span class="stream-status" id="streamStatus" data-page-node-id="Gd1J8UBrP7JXAqR3lDZYPB">streaming…</span>
+        </div>
+      </div>
+      <p class="card-note" data-page-node-id="E4OF8sENVIYv2MO32TFeE9">Cadence carries meaning. Pauses at punctuation read as deliberation; a hard stop that keeps partial output reads as control.</p>
+    </article>
+
+    <!-- 04 Tool chips -->
+    <article class="card reveal" data-page-node-id="R7cUt7YTUdu0a3jD2TgkDJ">
+      <div class="card-head" data-page-node-id="gUpMVRw5YridEDPns700z7">
+        <span class="num" data-page-node-id="JfspCsBnBjAHmhrmcNcbhY">04</span>
+        <div data-page-node-id="en17rQCHuNDPiCKLzcm6vM">
+          <h3 data-page-node-id="zghJYjY9oRhQG7l2jOPuMq">Tool chips</h3>
+          <p class="card-sub" data-page-node-id="pQGjrbjslEWnXWuP18hwo9">What the agent did, compressed</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="xaCFM6ur636ZciLH7cZe0L">
+        <div class="chips" id="chipRow" data-page-node-id="mHiMKix1bk8ong7HlAIkoF">
+          <button class="chip" data-page-node-id="DPo7lmmEVJH5Ut1Y0ZzoeX"><span class="chip-ic chip-ic-search" data-page-node-id="jMXKjc0ZAq4js23ypq3IlL"></span>search_orders</button>
+          <button class="chip" data-page-node-id="Ry09GxwmfW7Ha8nPiial6z"><span class="chip-ic chip-ic-doc" data-page-node-id="CArG9ba1ZbWzHCf3T6h7Ck"></span>read_policy</button>
+          <button class="chip" data-page-node-id="FsicFr1DHXVOyFrMdUAPZG"><span class="chip-ic chip-ic-bolt" data-page-node-id="NDTiRy5F2vUdn5Caytq1wG"></span>issue_refund</button>
+          <button class="chip" data-page-node-id="CxvMSHCbqMgDZMxIdOvgvv"><span class="chip-ic chip-ic-mail" data-page-node-id="IsHPa8eQfA2o67nVvb9Ajf"></span>notify_customer</button>
+        </div>
+        <div class="chips-foot" data-page-node-id="eExu5YHL26aFAKiXVNrcDm"><span id="chipCount" data-page-node-id="p4QqNp38rQfWXpc71aT7GO">0 of 4 tool calls</span><button class="btn-mini ghost" id="chipReplay" data-page-node-id="iaP9X5qdguhPjArcaTgZhk">Run</button></div>
+      </div>
+      <p class="card-note" data-page-node-id="jfnpcBQsobO6O3BYppxInc">Four words of tool name beats a paragraph of explanation when the user is scanning.</p>
+    </article>
+
+    <!-- 05 Approval -->
+    <article class="card reveal" data-page-node-id="eKNII9HtKWpbeHtnNw8igB">
+      <div class="card-head" data-page-node-id="9tsxcLEl1LdEqvXp8MAFlc">
+        <span class="num" data-page-node-id="R8wuH9MPYmJFxQXAL1Ds6J">05</span>
+        <div data-page-node-id="b2nZDzBBBHssmZ0QTEQcfX">
+          <h3 data-page-node-id="ipPE574MQBoHiXfTE37ybF">Approval card</h3>
+          <p class="card-sub" data-page-node-id="qlh4u21KWBZgo8W0U2EKUx">Human-in-the-loop before acting</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="bhi5lGlsZqRzxdHld63ZD5">
+        <div class="approve" id="approveCard" data-page-node-id="Elr9MUiQaOsTCOebyuBCZK">
+          <div class="approve-q" data-page-node-id="r1CqHAZrbngZDAqTW8ubz9">How many flavours should we launch?</div>
+          <div class="approve-opts" id="approveOpts" data-page-node-id="tHJK6trmdo9QpZpwt0h9uD">
+            <button class="opt" data-page-node-id="Id2ERZE7tm1HD2tGXPiqwD"><b data-page-node-id="9fGuj3WRBFYpwkeLYWLcK7">Three</b><span data-page-node-id="ZOcpCckV4GlEC6id2AxITr">core line only</span></button>
+            <button class="opt" data-page-node-id="6vQo0HhdvffGqMtlRfmAzw"><b data-page-node-id="kWpRE1x39xMssRygrd8Qk1">Five</b><span data-page-node-id="NNt5erHM9iTqWVOoAKUNKt">full case</span></button>
+            <button class="opt" data-page-node-id="c8ZKd93DiOxie4HcjxfDPO"><b data-page-node-id="lcPZ0u1LxOFAymP6VRlodn">One</b><span data-page-node-id="0iTpkTwLlmgfA1JjUCfjTu">hero flavour</span></button>
+          </div>
+          <div class="approve-foot" data-page-node-id="aABDvse66QRIQW9D96XAFR">
+            <span class="pager" data-page-node-id="DCTzOJleFrQgBN3ajpptni">1 / 3</span>
+            <div class="approve-actions" data-page-node-id="czMVCQvgJXkz87fl8UcHwe">
+              <button class="btn-mini ghost" id="approveSkip" data-page-node-id="nrXQp8ZB5AV3tdsiDGDSey">Skip</button>
+              <button class="btn-mini primary" id="approveGo" data-page-node-id="13QsbbLw8yyYZcH8YdbTqM">Continue</button>
+            </div>
+          </div>
+        </div>
+        <div class="approve-done" id="approveDone" hidden data-page-node-id="uvhlT8tuqJh5C6M7pzpBFH">
+          <span class="tick" data-page-node-id="qIhyhCQdQcSxbFkYt5jurT"></span> Locked: three flavours for the core line.
+        </div>
+      </div>
+      <p class="card-note" data-page-node-id="LMcliGy6Qm8BnUg8Jz1F3G">Ask before the irreversible step. Options beat free text — choosing is faster than composing.</p>
+    </article>
+
+    <!-- 06 Recommendation -->
+    <article class="card reveal" data-page-node-id="wyUW3a7hkRHW1wILVuy8kd">
+      <div class="card-head" data-page-node-id="9YSljfiKgQdzLC4CEXFhte">
+        <span class="num" data-page-node-id="SEftpPNXTnugKSPtJUFDXx">06</span>
+        <div data-page-node-id="Yn8irZPv2cxkauD3dSnfGS">
+          <h3 data-page-node-id="BnkxWj5HsyQEaK0SHraStD">Confidence meter</h3>
+          <p class="card-sub" data-page-node-id="HQp1xfORsKItG1Gl1mBrZL">Uncertainty shown, not hidden</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="T8HpiIrbAA1li2Vd2W6bbJ">
+        <div class="conf" data-page-node-id="iIFhYuYwQ5qclcpzRRdbF2">
+          <div class="conf-head" data-page-node-id="mUFIPTWICTkoHHmboHOoqT">
+            <span class="conf-title" data-page-node-id="uEwAqU0Ykxol6QZmAvDcHS">Interpretation</span>
+            <span class="conf-badge" id="confBadge" data-page-node-id="94T0ijicWMX2MB8Fpvs6tR">High confidence</span>
+          </div>
+          <div class="conf-rows" id="confRows" data-page-node-id="FoVHiwB58xkk4gsHLFB7Vf">
+            <button class="conf-row is-on" data-p="72" data-page-node-id="qVT37edqk6wASEnp6x80CE"><span class="conf-name" data-page-node-id="VKcBHjlA7FwHWQVpdI1nEj">Refund for damaged item</span><span class="conf-track" data-page-node-id="GhvgwXwNt6BojqldmLtERn"><i style="width:0%" data-page-node-id="J64KJdglwaPf9YGysqhChB"></i></span><span class="conf-val" data-page-node-id="5iq7CEz2N3hiqtk7PeGl6i">0.72</span></button>
+            <button class="conf-row" data-p="19" data-page-node-id="NAKdDjwKEGPnFRO2Ryn21Q"><span class="conf-name" data-page-node-id="j933etniaz9Otzu7nsX19w">Exchange request</span><span class="conf-track" data-page-node-id="I1tqOS2IBuZ6HeDMwGRiUT"><i style="width:0%" data-page-node-id="By6VTssrcwFh3aZuA1CiK5"></i></span><span class="conf-val" data-page-node-id="KjcQnWhY66bRg0eYzfwWlK">0.19</span></button>
+            <button class="conf-row" data-p="9" data-page-node-id="NFEzGBJlc6Xhwy6cL09Ygk"><span class="conf-name" data-page-node-id="w1iHXVy8ijSaSpOvBDcKS4">Complaint, no action wanted</span><span class="conf-track" data-page-node-id="HkI01X2VnDjmmEopEwqmWQ"><i style="width:0%" data-page-node-id="mWA7v5wIBNO2swFCV6xwiV"></i></span><span class="conf-val" data-page-node-id="PpHReUnKgWs55PsO27tpyl">0.09</span></button>
+          </div>
+          <div class="conf-foot" data-page-node-id="nFBpfeJP5G7WurvHbfLUgd">
+            <span class="thresh" data-page-node-id="fYNdpDJPFBAIbZbqYGHHAC">Threshold to act unaided: 0.60</span>
+            <span class="conf-note" id="confNote" data-page-node-id="ftnI6Kp2U3aXMKBecxHAHP">Above threshold — the agent acts.</span>
+          </div>
+        </div>
+      </div>
+      <p class="card-note" data-page-node-id="bvWJH88nLcUuTz9ut7vzfO">Showing the runner-up is the whole point. A single confident answer is a UI that lies.</p>
+    </article>
+
+    <!-- 07 Diff -->
+    <article class="card reveal" data-page-node-id="DxJ4ByqqmIKYDX4TR4FQU0">
+      <div class="card-head" data-page-node-id="HDEkHbqNzCudeOPPoCF9sg">
+        <span class="num" data-page-node-id="sEYRDw7pHbIeCHDdb7N47x">07</span>
+        <div data-page-node-id="iaZcoB4CpuTz5ahSJDoL3q">
+          <h3 data-page-node-id="lsOsYPFmZKEed6DteJVfiG">Diff table</h3>
+          <p class="card-sub" data-page-node-id="ErC2A3WrnbY88Lbu8AeSFl">Proposed edits sweeping tabular data</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="OWA2om0NMVAljEBCbcy705">
+        <table class="diff" id="diffTable" data-page-node-id="8jPkAD7che2yyS1oRQEBbG">
+          <thead data-page-node-id="Xde0TaD8xR6YUGSlbHyjFA"><tr data-page-node-id="2b6Ucqh2V5ZdX4UUM0Uu24"><th data-page-node-id="UGirCLaTut1sE7seoDAWLB">Flavour</th><th data-page-node-id="NDknGPfh9DoNjT2wUnXL8C">Status</th><th class="num" data-page-node-id="arWSayqEOERh4qBPtfWVH8">Change</th></tr></thead>
+          <tbody data-page-node-id="hlCANniAO3hWje6lrsS1qp">
+            <tr data-op="remove" data-page-node-id="hPu7Qs9pUUUsu6CMIdAswh"><td data-page-node-id="XuOC8JiGKqBtgKAHR5CbfC">Mint chip</td><td data-page-node-id="eRezuv6BESyWrr8JfkKRNU"><span class="tag tag-out" data-page-node-id="27HA688svJhD1FZxO8VPsw">remove</span></td><td class="num neg" data-page-node-id="CXxOs02DtHcHOvAcWVTwKr">−$2,377</td></tr>
+            <tr data-op="remove" data-page-node-id="PNv45NXJB2FdloFDs4yJcX"><td data-page-node-id="0X8DhEJGDSILKNtQooPcNX">Lemon sorbet</td><td data-page-node-id="Nz9gV3KGX6Jiphzh2BaoTu"><span class="tag tag-out" data-page-node-id="eGT0m9gfRnhJ0va2HAASi6">remove</span></td><td class="num neg" data-page-node-id="lYoEEtw8BiPEqCmhci8Kv3">−$410</td></tr>
+            <tr data-op="add" data-page-node-id="UWHfhQs7qQWgl6XKdiCHT9"><td data-page-node-id="U7DdEUPWZrBHqfiDxPoXTG">Brown butter</td><td data-page-node-id="eulrhwuVZsbslvbgJPbSri"><span class="tag tag-in" data-page-node-id="SQapGNW673Xl1yFAsDOg9u">add</span></td><td class="num pos" data-page-node-id="7Vp75RQeiIQ2F3hfG7sLD2">+$617</td></tr>
+            <tr data-op="keep" data-page-node-id="J985GHDyFtMBWhNOLO5bFj"><td data-page-node-id="X3ImyOpIOF8J8NCIiLPwYl">Pistachio</td><td data-page-node-id="ujBQjBnjC3wWdNCWA8LBVG"><span class="tag" data-page-node-id="tCQHKHpPXBOm4ztKevtwID">keep</span></td><td class="num" data-page-node-id="9GN6Qjo4Pi8gHox8DvnLAC">—</td></tr>
+          </tbody>
+        </table>
+        <div class="diff-foot" data-page-node-id="R11DNMYiP4O8eodPjb0TQT">
+          <span id="diffCount" data-page-node-id="iaVsrJQMO8FwJ8s1qB8E1D">2 removals · 1 addition</span>
+          <button class="btn-mini primary" id="diffApply" data-page-node-id="9bmiMFoLQhetWxvWFWCsAU">Apply 3 changes</button>
+        </div>
+      </div>
+      <p class="card-note" data-page-node-id="tulspQAZZBPqbQvT6oGEBM">Never bulk-apply silently. Let people toggle rows — the opt-out rows are where the design earns trust.</p>
+    </article>
+
+    <!-- 08 Selection actions -->
+    <article class="card reveal" data-page-node-id="H09W7OEtyyUqYW1hH9IldH">
+      <div class="card-head" data-page-node-id="ZhMpFLCyD9GUkIwss1xrf1">
+        <span class="num" data-page-node-id="JftSfuNf6Jh08dHKWwIe8I">08</span>
+        <div data-page-node-id="G4cCe7xsIIw7Jn6WKYyGBK">
+          <h3 data-page-node-id="Y4mwVejjOENUlpCurQigbx">Selection actions</h3>
+          <p class="card-sub" data-page-node-id="JJAb9Gfqxr0uM29Oz0cIjf">Highlight a passage, hand it to the agent</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="iNoCqyTEQJAaGwoqDTnY1R">
+        <p class="sel-copy" id="selCopy" data-page-node-id="USEfFD3ZOq28jOF4ULCo49">The refund window is thirty days from delivery. <span class="sel-seed" data-page-node-id="QQXCfugwqXwftfr5JbB5cw">Items damaged in transit are exempt from the restocking fee.</span> Select any of this text to see the agent actions appear.</p>
+        <div class="sel-bar" id="selBar" hidden data-page-node-id="cv1eCcy2kIgLxL2GDEvkph">
+          <button class="sel-btn" data-page-node-id="qYHTKvWnlBWOCHWnqrsUZU">Explain</button>
+          <button class="sel-btn" data-page-node-id="LrhDtnCjefW6djtHUhUnKE">Improve</button>
+          <button class="sel-btn" data-page-node-id="hLaFlTQZyCvwb0oFV0Hhva">Shorten</button>
+          <button class="sel-btn" data-page-node-id="SmvC954adwaB6EI8m33c6b">Tone</button>
+        </div>
+        <div class="sel-result" id="selResult" hidden data-page-node-id="gtFTt4YtDgeliRIgx5x0Fv"></div>
+      </div>
+      <p class="card-note" data-page-node-id="HImZHSMiqjtKGBOW5Dsz3j">Bring the agent to the object, not the object to the agent. No copy-paste, no context loss.</p>
+    </article>
+
+    <!-- 09 Correction -->
+    <article class="card reveal" data-page-node-id="xx3FofuPFELnoiVgh6wz5G">
+      <div class="card-head" data-page-node-id="6uxviKAlhPvZzAbLG15I0Q">
+        <span class="num" data-page-node-id="fZzFZmQT7gZIF25vBB4641">09</span>
+        <div data-page-node-id="Z94Cp8Fv8lkdo61kdosAO3">
+          <h3 data-page-node-id="j25XmN2JCTzvoSC4iiw5sY">Correction loop</h3>
+          <p class="card-sub" data-page-node-id="npZFROjpZnmDzjwrJgBDym">The edit that becomes an eval case</p>
+        </div>
+      </div>
+      <div class="demo" data-page-node-id="2rtdljYNLwt21oxAvZPNka">
+        <div class="corr" id="corrBlock" data-page-node-id="KAA5GQeXMqARimb7V6OBJN">
+          <div class="corr-out" data-page-node-id="PLqrbWL1XCsaqtTmUDU55S">
+            <span class="corr-span" id="corrSpan" tabindex="0" role="button" data-page-node-id="UyijaGhcdVKtvWCVVH3EEB">refund $42.00</span> has been issued to Priya for order #1183.
+          </div>
+          <div class="corr-hint" data-page-node-id="1chmpmoxvoH9yEfeuYj6AC">Click the highlighted value to correct it</div>
+          <div class="corr-tags" id="corrTags" hidden data-page-node-id="YHbkk3pAjqFqWd0BgKoXhA">
+            <span class="corr-tag" data-page-node-id="MQ7TEewl7iegd26xdle17F">Edited by human</span>
+            <span class="corr-tag ok" data-page-node-id="8VxOlAh7lCbZJ6yPhZ5yEZ">Added to eval set · run #14</span>
+          </div>
+        </div>
+      </div>
+      <p class="card-note" data-page-node-id="F0sIppRfULTjM2dVa4eF47">Every correction is a free labelled example. Route it to the eval set or you'll fix the same bug next sprint.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="autonomy" class="section section-dark" data-page-node-id="neuGvbAtAUa08jxBf0AbkC">
+  <div class="section-head reveal" data-page-node-id="8E0s8oHavyCAqa1Tjk2O3u">
+    <span class="eyebrow eyebrow-light" data-page-node-id="w2KbNy4uGUWJQBjmyq214U">Signature piece</span>
+    <h2 data-page-node-id="frtCu8WAapGV7GyYUFVKzk">The autonomy dial</h2>
+    <p data-page-node-id="fQx92SzKABAcb64fsi5KNM">Drag it. This is the artefact that separates an AI-native designer from someone who shipped a chatbot — it shows you understand autonomy as a design variable with a cost curve, not a feature flag.</p>
+  </div>
+
+  <div class="auto reveal" data-page-node-id="EjBAptK2Esf0ge5SoW5El4">
+    <div class="auto-left" data-page-node-id="D7unqBUXhgC0iCHKNZJK0B">
+      <label class="auto-label" for="autoRange" data-page-node-id="RmGwtJhRF6wye01EQ4y1Ic">Autonomy level</label>
+      <input type="range" id="autoRange" min="1" max="5" step="1" value="2" aria-describedby="autoTitle" data-page-node-id="6f7wbceHdID2qEGBxn76Sh" />
+      <div class="auto-ticks" data-page-node-id="BWtVBadSbRYBBYcKBcSXWZ"><span data-page-node-id="LKUjTbQCFfTa6mpdbnXQSD">1</span><span data-page-node-id="jC0iFTr1eLuqQtKDNjGcME">2</span><span data-page-node-id="aaXIBbE60MapAZsXFAnAu8">3</span><span data-page-node-id="zBXH5wMOUXTmqF0iEoA5fy">4</span><span data-page-node-id="xRF4TIFMQ81YDsnl4seFS0">5</span></div>
+      <div class="meters" data-page-node-id="nByfPnKBMPUCKtDUwlmAfx">
+        <div class="meter" data-page-node-id="SnW8XDw46RQ0Uzb34JOVrC"><span class="meter-name" data-page-node-id="GEoRi1NWeb01GvjvGGgxhR">User control</span><span class="meter-track" data-page-node-id="bnVuvFffJzEnD2kLw0nDeg"><i id="mControl" data-page-node-id="wA77OQNDqotrx2dOlYZU1y"></i></span><span class="meter-val" id="vControl" data-page-node-id="7Zq1TExBfEDIqG7iBRCggj"></span></div>
+        <div class="meter" data-page-node-id="3xnXPyUF01e8l1kXPrCRtg"><span class="meter-name" data-page-node-id="SeqnXPFEaYxUIg44u1mvPq">Speed to value</span><span class="meter-track" data-page-node-id="GP34OLnR1qSsqFudHPIF3Y"><i id="mSpeed" data-page-node-id="xhEyKOY6gcYM9g1FOsYHve"></i></span><span class="meter-val" id="vSpeed" data-page-node-id="Q4lIF9nBDrthhXbLIMW60x"></span></div>
+        <div class="meter" data-page-node-id="nXEtAMUPkJnQjgv1yBVzbq"><span class="meter-name" data-page-node-id="7mDe2ICgL86lLA56IiZcrn">Blast radius</span><span class="meter-track" data-page-node-id="0xRoMxgAow48YdyWueJbuv"><i id="mRisk" data-page-node-id="FGmEfVXBF0TPyyHay7ES6U"></i></span><span class="meter-val" id="vRisk" data-page-node-id="zZLTCGW8XQ5FeGFHF03bhh"></span></div>
+      </div>
+    </div>
+
+    <div class="auto-right" data-page-node-id="RddFhZnEFib4KVFlY8WNYF">
+      <h3 class="auto-title" id="autoTitle" data-page-node-id="ennxJCLSXDOhC0QWQGlmfD"></h3>
+      <p class="auto-desc" id="autoDesc" data-page-node-id="C7jldmYQNIcuXNvuSI02Ut"></p>
+      <div class="auto-surface" id="autoSurface" data-page-node-id="hBzcSCHwG7TqJSBvhNyBe9"></div>
+    </div>
+  </div>
+</section>
+
+<section id="notes" class="section" data-page-node-id="QSFKqhiJKDVKzitxRTFYuD">
+  <div class="section-head reveal" data-page-node-id="TlbeOHbaWKw1i5CSfQQYSz">
+    <h2 data-page-node-id="ZuhnMMVvHaQcooaBk5vKrm">How it stays free — and fast</h2>
+  </div>
+  <div class="notes" data-page-node-id="yxiWsNGOkerQDm49DXyA4e">
+    <div class="note reveal" data-page-node-id="AkEp6jaP8BdyQDBfv3GJ3z">
+      <h3 data-page-node-id="pwCKvH68xcEfPKVvB1pRYo">No build step, no dependencies</h3>
+      <p data-page-node-id="AlCK3LCfWGS4yuI8gwkk90">Three files: HTML, CSS, JavaScript. Nothing to install, nothing to break when a package updates in eighteen months and you need to change one line of copy.</p>
+    </div>
+    <div class="note reveal" data-page-node-id="XWWjpUi0BHt5S9ykHXUguN">
+      <h3 data-page-node-id="d8iCbSF16yeGdcSfVcK5Q3">Hosting</h3>
+      <p data-page-node-id="K25gRo4GwLUfHqkSZvOyTL">Cloudflare Pages or GitHub Pages. Push the folder, get a live URL. Free tier has no card, no trial clock, no bandwidth bill. A custom domain is the only real cost — about $12 a year, entirely optional.</p>
+    </div>
+    <div class="note reveal" data-page-node-id="68l2v8KKUJBVwNOhLkxub6">
+      <h3 data-page-node-id="tcUz9U6GapxtpRqfWcyM1Z">Zero API spend</h3>
+      <p data-page-node-id="IwZrqGccQ5pW0PfDdlE9It">Every demo on this page is scripted. It behaves like a live model but costs nothing, works offline, and never rate-limits during an interview. That is a feature, not a compromise — an interviewer on hotel wifi will still see it work.</p>
+    </div>
+    <div class="note reveal" data-page-node-id="BkGga4vMgZWlwPrg9R45SQ">
+      <h3 data-page-node-id="mYkj6hAG8PgR53ThNQs6Sn">Reduced motion is a first-class state</h3>
+      <p data-page-node-id="D0Smdy6M3zMOGTPchoun5y">Hit the toggle in the top right. The page honours <code data-page-node-id="zSmHBZSDZmZFsRi7eJ4QeA">prefers-reduced-motion</code> automatically, and streaming resolves instantly instead of crawling. About 30% of reviewers will thank you, silently.</p>
+    </div>
+    <div class="note reveal" data-page-node-id="CTmuH0JiKfXcSlMbWIVi1L">
+      <h3 data-page-node-id="4WO5Df1kquCv7EAufaVGSy">Performance budget</h3>
+      <p data-page-node-id="bHGm4WDUGOoIsoJ3KftD5C">Under 60KB total, uncompressed. No web fonts, no images, no framework runtime. It loads before the recruiter's thumb reaches the back button.</p>
+    </div>
+    <div class="note reveal" data-page-node-id="gIXFwlYzake4vKYNDuvEND">
+      <h3 data-page-node-id="Ib9QRtC8VEfAkDWtur37yj">You own it</h3>
+      <p data-page-node-id="rSPUKAhOwA2ntKVBpcwNwL">Not a template, not a platform. Plain files you can move anywhere, edit by hand, or hand to me to change in one sentence.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" data-page-node-id="Pe6bmyLM1cMItJ4lju146r">
+  <p data-page-node-id="OFza71LfRd3Y0Nzr7YCoil">Motion lab · built for a product design portfolio · every interaction on this page is hand-coded.</p>
+</footer>
+
+</main>
+
+<script src="motion.js"></script>
+</body>
+</html>
