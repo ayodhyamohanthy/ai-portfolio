@@ -7,6 +7,7 @@ Each candidate must include:
 - licence name and canonical licence/terms URL
 - access boundary: public/open source, paid, or unclear
 - intended user: designer, developer, or both
+- one or more design types from the public browse taxonomy
 - one sentence on the job the pattern does
 - reviewed date
 
