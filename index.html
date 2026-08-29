@@ -1,498 +1,498 @@
 <!DOCTYPE html>
-<html lang="en" data-motion="on" data-page-node-id="9zcV5kmO9I6IymaoqCCuK5">
-<head data-page-node-id="Axfwryf5XdnaPleVmAoGIt">
-<meta charset="utf-8" data-page-node-id="XBNAHNtPBpYOIKiVhWLgQX" />
-<meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="8E6bGJQLSkkQyZUaCd7bk3" />
+<html lang="en" data-motion="on">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AI-native interface primitives — an interaction library</title>
-<link rel="stylesheet" href="styles.css" data-page-node-id="1uuZdXiHF3cAZ3SHKnIS9Y" />
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page-node-id="hlEapMQvzGpL9htobx3LUG">
+<body>
 
-<div class="app" data-page-node-id="yosdVusaVxyEqtC1lGSSkG">
-  <aside class="sidebar" id="sidebar" data-page-node-id="zRihoTSNGWB7pPxa6hFtJ3">
-    <div class="side-head" data-page-node-id="Ocz7WzBahA6HR78jcIFHcK">
-      <a class="brand" href="#top" data-page-node-id="gcdmBmNZX8RVPC9uHSsOnA"><span class="brand-dot" data-page-node-id="3kV9Ja3cWhxeECcZTGRPjB"></span><span class="brand-txt" data-page-node-id="2lMGpFAAPiEW9NTtfwppZv">Primitives</span></a>
-      <button class="side-collapse" id="sideCollapse" aria-label="Collapse sidebar" data-page-node-id="e9bH6ZmqJh0CwHrSMXv2dl"><span data-page-node-id="j18LfQ3Dee7FCRDpGN7D0D"></span></button>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-head">
+      <a class="brand" href="#top"><span class="brand-dot"></span><span class="brand-txt">Primitives</span></a>
+      <button class="side-collapse" id="sideCollapse" aria-label="Collapse sidebar"><span></span></button>
     </div>
-    <p class="side-label" data-page-node-id="FdwvZXsuPnp3XGZytwtS92">Components</p>
-    <nav class="side-nav" id="sideNav" aria-label="Component index" data-page-node-id="5PgmcWMMUG89fsmKzcnc9C">
-      <span class="glider" id="glider" aria-hidden="true" data-page-node-id="BtLEsZLYP2e5l1E3C59sJF"></span>
-      <a href="#p01" data-page-node-id="atsZyfEDC8aEyFXFLxBAd7"><b data-page-node-id="d8C0Gk8xgfBUyvb54BMR40">01</b><span data-page-node-id="s03Wime061wfJcegjdlPny">Loading state</span></a>
-      <a href="#p02" data-page-node-id="52Wwu5KKEI68RL4uMdBaa9"><b data-page-node-id="1zcfWt9IJRANAKIy6rjseH">02</b><span data-page-node-id="Dwe2oC2Y4GYRKSWGROjZAp">Thinking trace</span></a>
-      <a href="#p03" data-page-node-id="enAYwaF8UEAw4SGi7rAR6p"><b data-page-node-id="PtwEN1kL1uZvSL2TZNjLlh">03</b><span data-page-node-id="5XsHGBBlLUCkgdm2q4jcBS">Streaming text</span></a>
-      <a href="#p04" data-page-node-id="Yl9ZsPc8bv4zPJlPE9JjNB"><b data-page-node-id="E5Rhpi7VIvqGyoxZiBxY3x">04</b><span data-page-node-id="rdorKhGRYCHdksN56sg6K0">Approval card</span></a>
-      <a href="#p05" data-page-node-id="GZzZmlGiDColheb0wiVkjU"><b data-page-node-id="x0qfgP8y59VuRhOd3ouhW8">05</b><span data-page-node-id="VdbhCi7RK3fbwbwMnDfxBp">Tool chips</span></a>
-      <a href="#p06" data-page-node-id="DsJiJyU6YLHpZaX8D54V9v"><b data-page-node-id="0CDnfBajM5lhjQAALcCCfx">06</b><span data-page-node-id="fqbBhsICdEWy61vEl5e06R">Task rows</span></a>
-      <a href="#p07" data-page-node-id="FFEHVEc6Au2RQH5hyA32mk"><b data-page-node-id="DN4CoZs4YACBNKnEk0z7Ix">07</b><span data-page-node-id="Bci6pcWQGCsEVfW6rlNtwZ">Chat</span></a>
-      <a href="#p08" data-page-node-id="RwLe4YZIi4iEknapcmnhgm"><b data-page-node-id="E0L2Er1zcOd1gDQuOwsWLq">08</b><span data-page-node-id="ZUXQg0dktRD7nzVWgRZA5M">Prompt bar</span></a>
-      <a href="#p09" data-page-node-id="om1NKvvQ4Exe2kPNscAYEl"><b data-page-node-id="CNtiz7xhEGnsyb11mghxws">09</b><span data-page-node-id="zSlBXBLbshVXAHy0Ei9A08">Recommendation</span></a>
-      <a href="#p10" data-page-node-id="eMbuyA8SXnBD1Mbna0uoyV"><b data-page-node-id="LteqeTjjsyN1Lj7OLyupDK">10</b><span data-page-node-id="BtBI3C9lJFqG7YzjXwRlKb">Context cards</span></a>
-      <a href="#p11" data-page-node-id="TWMxE8xvw6iWHeiouslDTp"><b data-page-node-id="M80g10UM4VVUzaQy2hELu9">11</b><span data-page-node-id="evX0ZMIdQq2AJqehJ58Zw6">Diff table</span></a>
-      <a href="#p12" data-page-node-id="c8FJPk2sAKd91lqBERxJZJ"><b data-page-node-id="HDT0uEpCroLJhJgexBHA1A">12</b><span data-page-node-id="FPNerc4yjdapDaLrvmQVRG">Records table</span></a>
-      <a href="#p13" data-page-node-id="Nd0Em9kOEpAmqn9wW7yzxF"><b data-page-node-id="k4kTObKLwS5H3ZkCID3oWu">13</b><span data-page-node-id="PFR3g3ASlsQUfb0iQm1blP">Filter table</span></a>
-      <a href="#p14" data-page-node-id="1xqD1kqL7GrGa5E3sYsBUa"><b data-page-node-id="jE9rvUnoKqFm4YjQgsulUA">14</b><span data-page-node-id="QR6hvUGbbkPdzasiIWzs4E">Sidebar nav</span></a>
-      <a href="#p15" data-page-node-id="dmyQw0SBvKuPuZfMpiDBI4"><b data-page-node-id="0c1d7KzJsbHbKHwEmiNnMA">15</b><span data-page-node-id="x0yKttoY1n6zBeaJe7lFS6">Command search</span></a>
-      <a href="#p16" data-page-node-id="3m1wkdV5rPHoeirAfA8jL7"><b data-page-node-id="fiZJ13LBX8VzZ9EXmMTW1C">16</b><span data-page-node-id="akUpGCN3uJHMka5GcUM8T9">Flowchart</span></a>
-      <a href="#p17" data-page-node-id="mQ0ALwn8tDBZNtHlTwAHgA"><b data-page-node-id="wkCnB9QAf0jEBdmVktZCFy">17</b><span data-page-node-id="eJkvk1CAMY5uUImgMZ2YdE">Insight cards</span></a>
-      <a href="#p18" data-page-node-id="pf8x3AYWDJgS0Xuuo0mlZ8"><b data-page-node-id="KmL27MihWR1CVZwLfBRMJa">18</b><span data-page-node-id="uLasQWnAqNmrUWQBsH8rAm">Code block</span></a>
-      <a href="#p19" data-page-node-id="a7MGkeXXYRWjrqCojv1FBd"><b data-page-node-id="snaAwub6sH6esjz5e1LXg2">19</b><span data-page-node-id="7WCvv2Frs7vrO1ckIhCl5f">Fine-tune card</span></a>
-      <a href="#p20" data-page-node-id="hgbe08MX3oQBgjlaj5T5Gr"><b data-page-node-id="SrQnd7li4982R56IbIrwkX">20</b><span data-page-node-id="OHJJSnGuquyiKgG7snxBk7">Selection actions</span></a>
-      <a href="#autonomy" data-page-node-id="XtHMXHr4MWdDlQtRvHmdE7"><b data-page-node-id="zePlBPByY8jDVnAjkUtxJq">◆</b><span data-page-node-id="XQQc7BUmD7D4I35ncUsZrm">Autonomy dial</span></a>
+    <p class="side-label">Components</p>
+    <nav class="side-nav" id="sideNav" aria-label="Component index">
+      <span class="glider" id="glider" aria-hidden="true"></span>
+      <a href="#p01"><b>01</b><span>Loading state</span></a>
+      <a href="#p02"><b>02</b><span>Thinking trace</span></a>
+      <a href="#p03"><b>03</b><span>Streaming text</span></a>
+      <a href="#p04"><b>04</b><span>Approval card</span></a>
+      <a href="#p05"><b>05</b><span>Tool chips</span></a>
+      <a href="#p06"><b>06</b><span>Task rows</span></a>
+      <a href="#p07"><b>07</b><span>Chat</span></a>
+      <a href="#p08"><b>08</b><span>Prompt bar</span></a>
+      <a href="#p09"><b>09</b><span>Recommendation</span></a>
+      <a href="#p10"><b>10</b><span>Context cards</span></a>
+      <a href="#p11"><b>11</b><span>Diff table</span></a>
+      <a href="#p12"><b>12</b><span>Records table</span></a>
+      <a href="#p13"><b>13</b><span>Filter table</span></a>
+      <a href="#p14"><b>14</b><span>Sidebar nav</span></a>
+      <a href="#p15"><b>15</b><span>Command search</span></a>
+      <a href="#p16"><b>16</b><span>Flowchart</span></a>
+      <a href="#p17"><b>17</b><span>Insight cards</span></a>
+      <a href="#p18"><b>18</b><span>Code block</span></a>
+      <a href="#p19"><b>19</b><span>Fine-tune card</span></a>
+      <a href="#p20"><b>20</b><span>Selection actions</span></a>
+      <a href="#autonomy"><b>◆</b><span>Autonomy dial</span></a>
     </nav>
   </aside>
 
-  <div class="main" data-page-node-id="srMdh8fkv54LFmjEFsfUYF">
-    <header class="topbar" data-page-node-id="qJ0IQutaE2K7Qloi1DPlLF">
-      <button class="side-open" id="sideOpen" aria-label="Open sidebar" data-page-node-id="XZbPSrI1C06z2IkZdf89Pg"><span data-page-node-id="R3tVrwW3tS9iGpZQMfYVaO"></span></button>
-      <button class="searchbtn" id="searchOpen" data-page-node-id="l338hePfedJr2BUtGjzfgA">
-        <span class="search-ic" data-page-node-id="Ys3GTqrJsWcRRWAgZZxTXu"></span><span class="search-txt" data-page-node-id="wGfmWgMT3MrFDPd3eTHTlU">Search components</span><kbd data-page-node-id="6zinLWa2BJEqRcfFQaOCUm">⌘K</kbd>
+  <div class="main">
+    <header class="topbar">
+      <button class="side-open" id="sideOpen" aria-label="Open sidebar"><span></span></button>
+      <button class="searchbtn" id="searchOpen">
+        <span class="search-ic"></span><span class="search-txt">Search components</span><kbd>⌘K</kbd>
       </button>
-      <button class="toggle" id="motionToggle" aria-pressed="true" data-page-node-id="GVCxRgSqxLfztbeD4adlNv">
-        <span class="toggle-dot" data-page-node-id="AiRcZmSAF3cTnpnSV4y0kZ"></span><span id="motionLabel" data-page-node-id="nv70ydAT5LydoDh6rnJvxK">Motion on</span>
+      <button class="toggle" id="motionToggle" aria-pressed="true">
+        <span class="toggle-dot"></span><span id="motionLabel">Motion on</span>
       </button>
     </header>
 
-    <main data-page-node-id="OFCAhBrWajbhWz1FG2OUQt">
-      <section class="hero" id="top" data-page-node-id="qSEZTulJ7zceGBJPaGg6KA">
-        <p class="eyebrow reveal" data-page-node-id="rmvb9xvvYh8FKJXgT6LCsR">An interaction library for AI-native products · v2</p>
-        <h1 class="reveal" data-page-node-id="x7YYKLFCHGxqEBdK2n3ReT">Twenty primitives for systems<br  data-page-node-id="BATZgJJ6hbx0WmpgcY8zOi"/>that <em data-page-node-id="lubarPT6PN7xNDfqskzR33">might</em> be right.</h1>
-        <p class="lede reveal" data-stream="Most AI portfolios show screenshots of chat windows. This one ships the actual components — streaming, reasoning traces, approvals, evals, uncertainty — running live in your browser with no server, no API key, and no bill." data-page-node-id="EN4xvdPoI2d1yhLrOdrcQz"></p>
-        <div class="hero-actions reveal" data-page-node-id="IqCRHEnFrRIeQxqBdriR5l">
-          <a class="btn btn-primary" href="#p01" data-page-node-id="kIZVNTgTpZNZTyZ9WGF6jh">Browse the primitives</a>
-          <button class="btn" id="searchOpen2" data-page-node-id="bF1kgTEE1vEeCio2M7jXsg">Search · ⌘K</button>
+    <main>
+      <section class="hero" id="top">
+        <p class="eyebrow reveal">An interaction library for AI-native products · v2</p>
+        <h1 class="reveal">Twenty primitives for systems<br />that <em>might</em> be right.</h1>
+        <p class="lede reveal" data-stream="Most AI portfolios show screenshots of chat windows. This one ships the actual components — streaming, reasoning traces, approvals, evals, uncertainty — running live in your browser with no server, no API key, and no bill."></p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#p01">Browse the primitives</a>
+          <button class="btn" id="searchOpen2">Search · ⌘K</button>
         </div>
-        <div class="hero-meta reveal" data-page-node-id="FhTDuNr6fEfcpSR0b9bFsw">
-          <span data-page-node-id="LxDH3NTtol0u3ZpEnv1UhI"><b data-page-node-id="FuxDNajE4rTXxUj7JWtQGR">20</b> primitives</span>
-          <span data-page-node-id="puSttRy9RsDMArJwlZGevn"><b data-page-node-id="U9sQeBDfoVgIDpQMChstcV">0</b> dependencies</span>
-          <span data-page-node-id="svwZf3qta4OdAt1GEIVWoU"><b data-page-node-id="GnAN89PrJqp1lJdCbt5EiX">0</b> API calls</span>
-          <span data-page-node-id="nTqXvvgwTV2MvEuEfh8ZQj"><b data-page-node-id="R9Nxfh3b1i1p5JP0pbIRlG">₹0</b> to host</span>
-        </div>
-      </section>
-
-      <section class="callout reveal" data-page-node-id="ozVZ4M6VS0Si0kWEruTCvB">
-        <div class="callout-mark" data-page-node-id="ItC8Gglw3YDr1qQPX7cCd1">/</div>
-        <div data-page-node-id="s52n6EVyctPXZbJvcVdnsJ">
-          <h2 data-page-node-id="hEKjDOsFGHDdauhV507lyF">Every component here is a design argument.</h2>
-          <p data-page-node-id="vFHGAoGWD09i4Fiu6blgUs">A portfolio that says "I designed AI features" is a claim. A portfolio where the reviewer can drag an autonomy dial and watch the interface renegotiate control is evidence. Each primitive below encodes a decision I'd defend in a critique — and the note under every one says why.</p>
+        <div class="hero-meta reveal">
+          <span><b>20</b> primitives</span>
+          <span><b>0</b> dependencies</span>
+          <span><b>0</b> API calls</span>
+          <span><b>₹0</b> to host</span>
         </div>
       </section>
 
-      <section class="section" id="components" data-page-node-id="mVuRN52Dk9B5wiAGy7cRmW">
-        <div class="grid" data-page-node-id="rbJm5sGRXkUpcWvkEr8mQD">
+      <section class="callout reveal">
+        <div class="callout-mark">/</div>
+        <div>
+          <h2>Every component here is a design argument.</h2>
+          <p>A portfolio that says "I designed AI features" is a claim. A portfolio where the reviewer can drag an autonomy dial and watch the interface renegotiate control is evidence. Each primitive below encodes a decision I'd defend in a critique — and the note under every one says why.</p>
+        </div>
+      </section>
+
+      <section class="section" id="components">
+        <div class="grid">
 
           <!-- 01 -->
-          <article class="card reveal" id="p01" data-page-node-id="Xk6DcFYZYGz5QS7R5YgJmC">
-            <div class="card-head" data-page-node-id="DTe6dEM4oIQDvXpoO8xiN2"><span class="num" data-page-node-id="Z8vK7O1K1k2HCch5HD4nFf">01</span><div data-page-node-id="J7j7yv7DJb5aY9ur5kkNVK"><h3 data-page-node-id="NvDMaDNI4vwBZK8QNekzDc">Loading state</h3><p class="card-sub" data-page-node-id="viy9lAzNkqeYmpFN2DnLQo">Pixel-grid loader with shimmer and elapsed time</p></div></div>
-            <div class="demo" data-page-node-id="wYMYPcob0O3scs5OebekX9">
-              <div class="loader-block" data-page-node-id="2nB1k6KNh2U0bCPU97DoeF">
-                <div class="pixel-grid" id="pixelGrid" aria-hidden="true" data-page-node-id="CCo1aq7VLijlyYDAMZ6ZV7"></div>
-                <div class="loader-text" data-page-node-id="dFv8SAcyp9rDm360B4xQON"><span id="loaderVerb" data-page-node-id="ULhYZj5YRpWFVcyFbJ6F77">Churning</span><span class="loader-time" id="loaderTime" data-page-node-id="czMjzXAUvw5HoLu2AlKuzn">0.0s</span></div>
+          <article class="card reveal" id="p01">
+            <div class="card-head"><span class="num">01</span><div><h3>Loading state</h3><p class="card-sub">Pixel-grid loader with shimmer and elapsed time</p></div></div>
+            <div class="demo">
+              <div class="loader-block">
+                <div class="pixel-grid" id="pixelGrid" aria-hidden="true"></div>
+                <div class="loader-text"><span id="loaderVerb">Churning</span><span class="loader-time" id="loaderTime">0.0s</span></div>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="yeACZjpBlxbgVHGCiqCbD2">Past ~800ms a spinner becomes a suspicion that it broke. An elapsed clock turns waiting into progress, and the verbs tell you <em data-page-node-id="KjqdXAbZ9Z4eygbzjVG8sH">what</em> it's doing — not just that it's busy.</p>
+            <p class="card-note">Past ~800ms a spinner becomes a suspicion that it broke. An elapsed clock turns waiting into progress, and the verbs tell you <em>what</em> it's doing — not just that it's busy.</p>
           </article>
 
           <!-- 02 -->
-          <article class="card reveal" id="p02" data-page-node-id="Kz2lc86Ds275RWfZVvHCcb">
-            <div class="card-head" data-page-node-id="13kZ1Wc3PvAmDm8HF0a7kY"><span class="num" data-page-node-id="ZNu8ENzlWnxyZ78V2xklxS">02</span><div data-page-node-id="De6jxFiLVJRpWbE0EkH3VD"><h3 data-page-node-id="Wf1SlJd4TdFTZFRVmvhuoG">Thinking trace</h3><p class="card-sub" data-page-node-id="cHir7gwYHkRQPDVN64FqfK">Expandable steps, reasoning, search, code</p></div></div>
-            <div class="demo" data-page-node-id="ZSGRKBTQrBSOcThImUlA7R">
-              <div class="tabs" id="traceTabs" data-page-node-id="WFlhcVN37SwHNtwK3xoBAG">
-                <button class="tab on" data-page-node-id="00aY6oJzm4AQNdXDY727xl">Steps</button><button class="tab" data-page-node-id="xgH7DlbEHzLxi5Op8Dcn1R">Reasoning</button><button class="tab" data-page-node-id="EGxnsKHBbDZ8idWsOaYJ4F">Search</button><button class="tab" data-page-node-id="QZkcoD3M656aCeNg5LDlFK">Code</button>
+          <article class="card reveal" id="p02">
+            <div class="card-head"><span class="num">02</span><div><h3>Thinking trace</h3><p class="card-sub">Expandable steps, reasoning, search, code</p></div></div>
+            <div class="demo">
+              <div class="tabs" id="traceTabs">
+                <button class="tab on">Steps</button><button class="tab">Reasoning</button><button class="tab">Search</button><button class="tab">Code</button>
               </div>
-              <div class="trace-pane" id="tracePane" data-page-node-id="SlwkWEBLyYVWutBHkDym8B">
-                <button class="trace-toggle" id="traceToggle" aria-expanded="false" data-page-node-id="tEI3aIlgFFJx2JOoBLKb3v"><span class="trace-dot" data-page-node-id="cqjhTo3XwfzeE4PXL8j85r"></span><span id="traceLabel" data-page-node-id="rQrdgkXcHGWFvo1lpNoB32">Thinking</span><span class="trace-meta" data-page-node-id="IyQwwIfafOvbF8wsCfAk8X">4 steps · 2.4s</span><span class="chev" data-page-node-id="Ap5UljyyKCYgERD9yMhXhF"></span></button>
-                <ol class="trace-list" id="traceList" hidden data-page-node-id="UoIuGkEUHfV7FBNZj1Cjnx">
-                  <li data-page-node-id="AHApZlO0gu8YO5pfnVs9gS"><b data-page-node-id="Cx6Lc2bvItpq4OJsIvjBJF">Classify intent</b><em data-page-node-id="GWO9MxDBWJVw3gdt4V2oZV">inventory.reorder · 0.94</em></li>
-                  <li data-page-node-id="zKCTUBuEqjWeUXXvV7nNks"><b data-page-node-id="xYxm3rQg8Kl09JAFb0e50J">Retrieve context</b><em data-page-node-id="XXREzZV3urUZ0c3jTxyCVP">stock levels, supplier lead times, 6-week sales</em></li>
-                  <li data-page-node-id="Ttk7UJOaWxaI5mUMXtPeAC"><b data-page-node-id="jGWWtP6xBVSBtIMd2soIhQ">Check threshold</b><em data-page-node-id="4eKIC0YaiP6bL0MtQdgIQH">pistachio below reorder point by 4.2 kg</em></li>
-                  <li data-page-node-id="AwT92dauGDQCPws7jSxCFA"><b data-page-node-id="lx8ExYUs6uH0NRuOm149ub">Draft action</b><em data-page-node-id="8TEI1nmI3ilQd2T4SJ3D3l">order 12 kg from C Cone King</em></li>
+              <div class="trace-pane" id="tracePane">
+                <button class="trace-toggle" id="traceToggle" aria-expanded="false"><span class="trace-dot"></span><span id="traceLabel">Thinking</span><span class="trace-meta">4 steps · 2.4s</span><span class="chev"></span></button>
+                <ol class="trace-list" id="traceList" hidden>
+                  <li><b>Classify intent</b><em>inventory.reorder · 0.94</em></li>
+                  <li><b>Retrieve context</b><em>stock levels, supplier lead times, 6-week sales</em></li>
+                  <li><b>Check threshold</b><em>pistachio below reorder point by 4.2 kg</em></li>
+                  <li><b>Draft action</b><em>order 12 kg from C Cone King</em></li>
                 </ol>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="BDOr8B8iNWDsWT2XE9qFqu">Reasoning should be inspectable but collapsed. Trust comes from being able to look — and four different lenses, because "what did it search" and "how did it reason" are different questions.</p>
+            <p class="card-note">Reasoning should be inspectable but collapsed. Trust comes from being able to look — and four different lenses, because "what did it search" and "how did it reason" are different questions.</p>
           </article>
 
           <!-- 03 -->
-          <article class="card reveal" id="p03" data-page-node-id="qxAIAoVYwdc7gNU1cHfOzN">
-            <div class="card-head" data-page-node-id="q0w1Fq8QdczYHZnLm5GbvG"><span class="num" data-page-node-id="G5lSQ5l0WVCDfPFTB2dqwa">03</span><div data-page-node-id="rytH8oNbe8yKsaRtfDYECF"><h3 data-page-node-id="SS90zx0rSAOfk8ia7BFDDg">Streaming text</h3><p class="card-sub" data-page-node-id="5DfOX2kQ4TaN1LZoFle3Fs">Token cadence, inline sources, follow-ups</p></div></div>
-            <div class="demo" data-page-node-id="kWzQC1uNcB5kW4oxmLAX49">
-              <div class="stream-ask" data-page-node-id="nthFGUaPHbUVvqBACFh3wv">Which flavours should we cut for winter?</div>
-              <div class="stream-out" data-page-node-id="fdR1WENHRCOg1nucNuiZOU">
-                <p class="stream-body" id="streamBody" data-page-node-id="5ejRLc15sELTQOKGZC8MhF"></p>
-                <div class="sources" id="streamSources" hidden data-page-node-id="rhM7c36XFUKD6erq6Xue0V">
-                  <span class="sources-label" data-page-node-id="vLgQfV9vaAiXny8Bh4L9L9">Sources</span>
-                  <button class="src" data-page-node-id="giz03qHzJF9G74MlQB2w7P">POS export</button><button class="src" data-page-node-id="iQ3ZZyxyEx8CVD88uDuLy8">Sales velocity</button><button class="src" data-page-node-id="toVTJ3szTPZbNNHb7eEJd1">Supplier lead times</button>
+          <article class="card reveal" id="p03">
+            <div class="card-head"><span class="num">03</span><div><h3>Streaming text</h3><p class="card-sub">Token cadence, inline sources, follow-ups</p></div></div>
+            <div class="demo">
+              <div class="stream-ask">Which flavours should we cut for winter?</div>
+              <div class="stream-out">
+                <p class="stream-body" id="streamBody"></p>
+                <div class="sources" id="streamSources" hidden>
+                  <span class="sources-label">Sources</span>
+                  <button class="src">POS export</button><button class="src">Sales velocity</button><button class="src">Supplier lead times</button>
                 </div>
-                <div class="followups" id="streamFollowups" hidden data-page-node-id="nKlbs9T2HfeBreoFyLBs2w">
-                  <button class="fu" data-page-node-id="7iiijuwFDblYLNlDk8LQhw">What about a limited run?</button><button class="fu" data-page-node-id="8NBpGtTwnSGvHdA9mqAkg5">Show the margin impact</button>
+                <div class="followups" id="streamFollowups" hidden>
+                  <button class="fu">What about a limited run?</button><button class="fu">Show the margin impact</button>
                 </div>
               </div>
-              <div class="stream-bar" data-page-node-id="St2ZuVLpEEDTv6Su6AxMPc">
-                <button class="btn-mini" id="streamStop" data-page-node-id="LxmV2LomAhUsMgfk6ezmay">Stop</button>
-                <button class="btn-mini ghost" id="streamReplay" data-page-node-id="mWRPoTF2zFaQuGQ5THpI2G">Replay</button>
-                <span class="stream-status" id="streamStatus" data-page-node-id="pByHrwTIn26fkav2Vkg7Z6">streaming…</span>
+              <div class="stream-bar">
+                <button class="btn-mini" id="streamStop">Stop</button>
+                <button class="btn-mini ghost" id="streamReplay">Replay</button>
+                <span class="stream-status" id="streamStatus">streaming…</span>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="AHYu7eY9h3minFvEDyFHiF">Cadence carries meaning. Pauses at punctuation read as deliberation; a Stop button that <em data-page-node-id="aIcjKf1KZ28BOozExghAg9">keeps</em> partial output reads as control. Both are design decisions, not implementation details.</p>
+            <p class="card-note">Cadence carries meaning. Pauses at punctuation read as deliberation; a Stop button that <em>keeps</em> partial output reads as control. Both are design decisions, not implementation details.</p>
           </article>
 
           <!-- 04 -->
-          <article class="card reveal" id="p04" data-page-node-id="R5uMxovVH13xuBPqlzAP7U">
-            <div class="card-head" data-page-node-id="aQiRXwSmUviearhFXNLkWK"><span class="num" data-page-node-id="aBNpX4zk9ti2sYuMBFqnhU">04</span><div data-page-node-id="LoDjl6DfLWaYw5cAd9bbnB"><h3 data-page-node-id="gxV1P12nAUMU0U70V0INfr">Approval card</h3><p class="card-sub" data-page-node-id="v14gs6G9Aits7Yt7qXqwd2">Human-in-the-loop before acting</p></div></div>
-            <div class="demo" data-page-node-id="pM41f47RM5bEHyerNsmfvX">
-              <div class="approve" id="approveCard" data-page-node-id="Zfq6QAYuLp4gzSQd9Vrr7c">
-                <div class="approve-q" id="approveQ" data-page-node-id="LPB0vu3ZDdKSCEA3tizFMt">How many flavours should we launch?</div>
-                <div class="approve-opts" id="approveOpts" data-page-node-id="KQmEHR0MloKtdSvlvkxLrc">
-                  <button class="opt" data-page-node-id="tnC8G79deFnULgpKRzl0u8"><b data-page-node-id="PMvL8nST5JaZQasBCk5ixj">Three</b><span data-page-node-id="hFUrm07kXvCH1f0cCF6u0g">core line only</span></button>
-                  <button class="opt" data-page-node-id="UDvXsZJP5eHF8ELITtnMLN"><b data-page-node-id="c6rGtGqOvDwk5sd9beeZwu">Five</b><span data-page-node-id="8mTyqPqRhCG1FkxKn83e8q">full case</span></button>
-                  <button class="opt" data-page-node-id="1CSHmmxvGGrPveMCrXaoGG"><b data-page-node-id="Rp54UitBgH6EVdN6VkNFaZ">One</b><span data-page-node-id="17DDcmTRqRfpJaHRIKvKtK">hero flavour</span></button>
+          <article class="card reveal" id="p04">
+            <div class="card-head"><span class="num">04</span><div><h3>Approval card</h3><p class="card-sub">Human-in-the-loop before acting</p></div></div>
+            <div class="demo">
+              <div class="approve" id="approveCard">
+                <div class="approve-q" id="approveQ">How many flavours should we launch?</div>
+                <div class="approve-opts" id="approveOpts">
+                  <button class="opt"><b>Three</b><span>core line only</span></button>
+                  <button class="opt"><b>Five</b><span>full case</span></button>
+                  <button class="opt"><b>One</b><span>hero flavour</span></button>
                 </div>
-                <div class="approve-foot" data-page-node-id="ykyzd6sapAT5rEn5XYlGcO"><span class="pager" id="approvePager" data-page-node-id="YaEp7tS8LgPVLNcKltzyEr">1 / 3</span>
-                  <div class="approve-actions" data-page-node-id="sAn55m9uPDc6PaIE43o3it"><button class="btn-mini ghost" id="approveSkip" data-page-node-id="jCHg0n3Wjm8KreROJ4AtgN">Skip</button><button class="btn-mini primary" id="approveGo" data-page-node-id="GePIDpueiKNwFptCVJ2E0t">Continue</button></div>
+                <div class="approve-foot"><span class="pager" id="approvePager">1 / 3</span>
+                  <div class="approve-actions"><button class="btn-mini ghost" id="approveSkip">Skip</button><button class="btn-mini primary" id="approveGo">Continue</button></div>
                 </div>
               </div>
-              <div class="approve-done" id="approveDone" hidden data-page-node-id="3Vdiuz3o1bEObAnPohZIRn"><span class="tick" data-page-node-id="yG7AGOt04d3EGgtdhMqXCI"></span><span id="approveDoneTxt" data-page-node-id="udH12NzGcm27x65nHHePXI"></span></div>
+              <div class="approve-done" id="approveDone" hidden><span class="tick"></span><span id="approveDoneTxt"></span></div>
             </div>
-            <p class="card-note" data-page-node-id="GsQj95LfGkKRuJVm6qoI04">Ask before the irreversible step, and offer options rather than a blank field — choosing is faster than composing, and you get structured data back.</p>
+            <p class="card-note">Ask before the irreversible step, and offer options rather than a blank field — choosing is faster than composing, and you get structured data back.</p>
           </article>
 
           <!-- 05 -->
-          <article class="card reveal" id="p05" data-page-node-id="VdS524KfH4qrRcg6Hhgelk">
-            <div class="card-head" data-page-node-id="43qHJZts3rWZfu98RYzyAV"><span class="num" data-page-node-id="S6fdSKymRx7qCCG73u75OT">05</span><div data-page-node-id="leTEJHWaZlHi1mvypvnDuy"><h3 data-page-node-id="tCpH0xFh6PnOTjpYTH38Z6">Tool chips</h3><p class="card-sub" data-page-node-id="lhuJDZ42YEJKcQm1BLkH4H">What the agent did, compressed</p></div></div>
-            <div class="demo" data-page-node-id="AMPpXoEVvVbmjOJVFsxJ6M">
-              <div class="chips" id="chipRow" data-page-node-id="eAtvxUj54eEBCi97BNaME0">
-                <button class="chip" data-page-node-id="NXBzctpMBkptsNTfvY4QR1"><span class="chip-ic" data-page-node-id="pHCevfJus2iD1GONReh4gq"></span>search_inventory</button>
-                <button class="chip" data-page-node-id="F4tEk1NQC1PEuHOGzoca2d"><span class="chip-ic" data-page-node-id="AuoGGBAhF1VctTbHOjP2ra"></span>read_supplier_terms</button>
-                <button class="chip" data-page-node-id="LctL1Dveek11Xg2BaTKggu"><span class="chip-ic" data-page-node-id="GPnAz5SuNS064z5VLCIEym"></span>place_order</button>
-                <button class="chip" data-page-node-id="nzHTs0S6TgWA83VUZ4AQZj"><span class="chip-ic" data-page-node-id="BfL49siJPAfgBvH0R53P5I"></span>notify_owner</button>
+          <article class="card reveal" id="p05">
+            <div class="card-head"><span class="num">05</span><div><h3>Tool chips</h3><p class="card-sub">What the agent did, compressed</p></div></div>
+            <div class="demo">
+              <div class="chips" id="chipRow">
+                <button class="chip"><span class="chip-ic"></span>search_inventory</button>
+                <button class="chip"><span class="chip-ic"></span>read_supplier_terms</button>
+                <button class="chip"><span class="chip-ic"></span>place_order</button>
+                <button class="chip"><span class="chip-ic"></span>notify_owner</button>
               </div>
-              <div class="chips-foot" data-page-node-id="Ai2UM06cXrkBx0R1OuJLD8"><span id="chipCount" data-page-node-id="VMMY35jWqupWAdsZh25vqN">0 of 4 tool calls</span><button class="btn-mini ghost" id="chipReplay" data-page-node-id="7CgD9qxMytKYuLGrTIC8Tb">Run</button></div>
+              <div class="chips-foot"><span id="chipCount">0 of 4 tool calls</span><button class="btn-mini ghost" id="chipReplay">Run</button></div>
             </div>
-            <p class="card-note" data-page-node-id="zRGdsaU5GpfXo22xID5KTD">Four words of tool name beats a paragraph of explanation. Reveal them as they fire — the sequence itself is the progress indicator.</p>
+            <p class="card-note">Four words of tool name beats a paragraph of explanation. Reveal them as they fire — the sequence itself is the progress indicator.</p>
           </article>
 
           <!-- 06 -->
-          <article class="card reveal" id="p06" data-page-node-id="Q3Z0W2AGKAeXQDNWSxzsbJ">
-            <div class="card-head" data-page-node-id="K8GLvpEKCHQaEqZqv2vmEE"><span class="num" data-page-node-id="qIAtC9abZZDvpdzqoS4t4H">06</span><div data-page-node-id="CtbY5yp9VLhimvnWskGB8D"><h3 data-page-node-id="F8uKZUBACqPiXNDkeVPEEj">Task rows</h3><p class="card-sub" data-page-node-id="Anr6bd679iG3gHbHl1jdeC">Live agent task status</p></div></div>
-            <div class="demo" data-page-node-id="nZ9oGwv1hHAWUS2KBPlnLr">
-              <div class="tabs" id="taskTabs" data-page-node-id="qXvUhyIMORpZwdiV5i7vAn"><button class="tab on" data-page-node-id="iRBKF2gJDBwLbbxRsooEYq">List</button><button class="tab" data-page-node-id="4QbzCyAS4IIWyaOYUzOn6K">Capsules</button></div>
-              <div class="tasks" id="tasks" data-page-node-id="zBlWZySXOYC51VBZBwEqyf">
-                <div class="task running" data-s="running" data-page-node-id="JrrobuEK8lnG1aKjwChSQN"><span class="t-ic" data-page-node-id="iM0PhzNNrFK3dPGmeyilWu"></span><span class="t-name" data-page-node-id="tNKnHKkNqvWUAl9QYIWukN">Reorder waffle cones</span><span class="t-meta" data-page-node-id="lGtMYdFVsXeBDy47vCrA0F">2 of 3 suppliers</span><span class="t-prog" data-page-node-id="TQdjfFDC64iiOY3srif5ZL"><i style="width:62%" data-page-node-id="MCFgrqErHEAhWDeWFQZRjx"></i></span></div>
-                <div class="task done" data-s="completed" data-page-node-id="1ps8xnIgcFEgCkRVmZMHiA"><span class="t-ic" data-page-node-id="05dnvOyLMRH2YIskSPOhYm"></span><span class="t-name" data-page-node-id="0kjszEQhwzm6FhneAZ0KGq">Update menu board</span><span class="t-meta" data-page-node-id="8NYeAI9wvf8B7g5bF2ax2V">12 SKUs</span><span class="t-prog" data-page-node-id="6Ekmnuv1JQA2oiTvSyGPRn"><i style="width:100%" data-page-node-id="80Bq8Uo4nuLSiJhgTa5OF1"></i></span></div>
-                <div class="task fail" data-s="failed" data-page-node-id="Vf8hHaR7C0JeymFywWYFAH"><span class="t-ic" data-page-node-id="jVFL3aueZPeLTBTLUB7GJj"></span><span class="t-name" data-page-node-id="ZVWDbqNLh6YEIVtzIiRAqd">Sync POS export</span><span class="t-meta" data-page-node-id="nk6HMf7X9EBRI1IlXG7iDy">timeout after 30s</span><span class="t-prog" data-page-node-id="IsU5cyWRmbFklwx3awytKG"><i style="width:34%" data-page-node-id="dsAGlVLBqolL0QxCcssx8v"></i></span></div>
-                <div class="task queued" data-s="queued" data-page-node-id="4gBDuWb7Jz5kRifwag0MP3"><span class="t-ic" data-page-node-id="fTaQKQjpu1A1wpRaJfClsY"></span><span class="t-name" data-page-node-id="1CNfwBUlMFjPtkgb461kyl">Flag stockout risk</span><span class="t-meta" data-page-node-id="NNNrENrOJSDqfyb76YGj72">queued</span><span class="t-prog" data-page-node-id="WCK1V80OYRcTFbiZ6wSV2E"><i style="width:0%" data-page-node-id="CfjPa7vMAmrgKsFynQKuOI"></i></span></div>
+          <article class="card reveal" id="p06">
+            <div class="card-head"><span class="num">06</span><div><h3>Task rows</h3><p class="card-sub">Live agent task status</p></div></div>
+            <div class="demo">
+              <div class="tabs" id="taskTabs"><button class="tab on">List</button><button class="tab">Capsules</button></div>
+              <div class="tasks" id="tasks">
+                <div class="task running" data-s="running"><span class="t-ic"></span><span class="t-name">Reorder waffle cones</span><span class="t-meta">2 of 3 suppliers</span><span class="t-prog"><i style="width:62%"></i></span></div>
+                <div class="task done" data-s="completed"><span class="t-ic"></span><span class="t-name">Update menu board</span><span class="t-meta">12 SKUs</span><span class="t-prog"><i style="width:100%"></i></span></div>
+                <div class="task fail" data-s="failed"><span class="t-ic"></span><span class="t-name">Sync POS export</span><span class="t-meta">timeout after 30s</span><span class="t-prog"><i style="width:34%"></i></span></div>
+                <div class="task queued" data-s="queued"><span class="t-ic"></span><span class="t-name">Flag stockout risk</span><span class="t-meta">queued</span><span class="t-prog"><i style="width:0%"></i></span></div>
               </div>
-              <div class="tasks-foot" data-page-node-id="9xgH6MBXJ9MwwO2WxfxYeB"><span id="taskSummary" data-page-node-id="gdwFiDkA0pGS3YUe86mx4U">1 running · 1 failed · 68% stockout risk</span><button class="btn-mini ghost" id="taskRetry" data-page-node-id="HVIX54r4kj2PDCxE3BpxvO">Retry failed</button></div>
+              <div class="tasks-foot"><span id="taskSummary">1 running · 1 failed · 68% stockout risk</span><button class="btn-mini ghost" id="taskRetry">Retry failed</button></div>
             </div>
-            <p class="card-note" data-page-node-id="z5jktzZbabFKb7vFnS2OV2">Never show a task list without a failed state. The failure row — and a Retry that doesn't restart everything — is where users decide whether to trust the agent.</p>
+            <p class="card-note">Never show a task list without a failed state. The failure row — and a Retry that doesn't restart everything — is where users decide whether to trust the agent.</p>
           </article>
 
           <!-- 07 -->
-          <article class="card reveal" id="p07" data-page-node-id="zxPEcDnzYnvLlqIJk5KXJn">
-            <div class="card-head" data-page-node-id="FUMJmsddQKdbf8xAd04y87"><span class="num" data-page-node-id="uZEHsBhbfJSu4NBlnK7lpH">07</span><div data-page-node-id="yjBZkO7OCfMHcQdIFMv0zH"><h3 data-page-node-id="8EmE5BZMwrvjb2IfkJCC0a">Chat</h3><p class="card-sub" data-page-node-id="XGGTquMBTAz4TX9UCGzp8G">Reasoning replies in a tabbed thread</p></div></div>
-            <div class="demo" data-page-node-id="6gWw6WGkMejisMTMQVJ2v1">
-              <div class="tabs" id="chatTabs" data-page-node-id="BwQblrFYtO1ABE3KhfXZ1l"><button class="tab on" data-page-node-id="RtqWsOAOq6lxu8wmZwgE5Y">Flavours</button><button class="tab" data-page-node-id="tS0dh8FJxvBrL4bYFnTXki">Suppliers</button></div>
-              <div class="chat" id="chat" data-page-node-id="AsNHjFAKyIEu3HWLor6FdJ">
-                <div class="msg you" data-page-node-id="zR7Ow9ZoiaXPzFozNKgN83">Which suppliers are risky right now?</div>
-                <div class="msg ai" data-page-node-id="Aer3qqmNH3cN6jSvVmxRAK"><button class="reason" id="chatReason" data-page-node-id="F9llm6CyGKOET2TiRTtfei"><span class="trace-dot" data-page-node-id="mrUDncs1BlOXHMEIs6lTsm"></span>Compared 2 sources for 3s<span class="chev" data-page-node-id="AJLjLVANkAO0HetONHp4jU"></span></button><div class="reason-body" id="chatReasonBody" hidden data-page-node-id="3VU2hJwGwBu4cy34N4KWr7">Lead-time history · Delivery variance · Contract terms</div><p class="msg-p" id="chatReply" data-page-node-id="qKDlc8YKo7AyiLB2aAdcNI"></p></div>
+          <article class="card reveal" id="p07">
+            <div class="card-head"><span class="num">07</span><div><h3>Chat</h3><p class="card-sub">Reasoning replies in a tabbed thread</p></div></div>
+            <div class="demo">
+              <div class="tabs" id="chatTabs"><button class="tab on">Flavours</button><button class="tab">Suppliers</button></div>
+              <div class="chat" id="chat">
+                <div class="msg you">Which suppliers are risky right now?</div>
+                <div class="msg ai"><button class="reason" id="chatReason"><span class="trace-dot"></span>Compared 2 sources for 3s<span class="chev"></span></button><div class="reason-body" id="chatReasonBody" hidden>Lead-time history · Delivery variance · Contract terms</div><p class="msg-p" id="chatReply"></p></div>
               </div>
-              <div class="composer" data-page-node-id="D6nZ1QxQE0dIz34AjJvCWw"><input type="text" id="chatInput" placeholder="Ask about suppliers…" data-page-node-id="wpT0VQERBWHZLYVkNB5Bn1" /><button class="send" id="chatSend" aria-label="Send" data-page-node-id="eOW9lWlI6vdBTjAHqTP3Yi"></button></div>
+              <div class="composer"><input type="text" id="chatInput" placeholder="Ask about suppliers…" /><button class="send" id="chatSend" aria-label="Send"></button></div>
             </div>
-            <p class="card-note" data-page-node-id="ZVDyWPLrcrxIvb34jh9eBn">Reasoning belongs <em data-page-node-id="iAKtbByHWTL4r95oiO8PVp">above</em> the answer, collapsed. Put it below and people read the conclusion before they know how it was reached.</p>
+            <p class="card-note">Reasoning belongs <em>above</em> the answer, collapsed. Put it below and people read the conclusion before they know how it was reached.</p>
           </article>
 
           <!-- 08 -->
-          <article class="card reveal" id="p08" data-page-node-id="d6ehEZDBAj8psEVkYegs7N">
-            <div class="card-head" data-page-node-id="ugP4qGfE4XjtzqpNUbzFSl"><span class="num" data-page-node-id="fShoGNNDi8ZveplGklv6lU">08</span><div data-page-node-id="dFmuGFD3nalDXae9QnQHpv"><h3 data-page-node-id="Dfj5eZYr11OmQ5IUWRDCDi">Prompt bar</h3><p class="card-sub" data-page-node-id="u5jkfHAydSUfNwxd83ib4s">@ sources, / commands, model picker</p></div></div>
-            <div class="demo" data-page-node-id="4AUzH4AW73FIjryiFQStqP">
-              <div class="promptbar" id="promptBar" data-page-node-id="s4RRlR62NDgzBjWd1JAD8P">
-                <div class="pb-row" data-page-node-id="wVCO3B6LFLErVKENkm7Lqc">
-                  <span class="pb-at" data-page-node-id="VcCUo4oMQFk9H5ohvXFRMd">@</span>
-                  <input type="text" id="pbInput" value="Summarise winter sales for " aria-label="Prompt" data-page-node-id="pvDDTCtTrsJx0L67aW9Da3" />
-                  <button class="pb-ic" id="pbMic" aria-label="Dictation" data-page-node-id="47cOIsD8D8pPRaWNlPFSAR"></button>
+          <article class="card reveal" id="p08">
+            <div class="card-head"><span class="num">08</span><div><h3>Prompt bar</h3><p class="card-sub">@ sources, / commands, model picker</p></div></div>
+            <div class="demo">
+              <div class="promptbar" id="promptBar">
+                <div class="pb-row">
+                  <span class="pb-at">@</span>
+                  <input type="text" id="pbInput" value="Summarise winter sales for " aria-label="Prompt" />
+                  <button class="pb-ic" id="pbMic" aria-label="Dictation"></button>
                 </div>
-                <div class="pb-row pb-foot" data-page-node-id="Q0FgKXhqZZRWfD3KEZnsPx">
-                  <button class="pb-chip" id="pbSlash" data-page-node-id="gSG18fW8HjRW8AWlCGn6If">/ commands</button>
-                  <button class="pb-chip" id="pbAt" data-page-node-id="PDODN8FCx9aE6ZjFegYWPQ">@ sources</button>
-                  <select class="pb-model" id="pbModel" aria-label="Model" data-page-node-id="5cvaCzGAKQREb9kfyVuHWA"><option data-page-node-id="cnPERZ6m0vUyo8PsUbcAAx">Fast</option><option data-page-node-id="7C7brYYHGTsRuEEM4ydoIm">Balanced</option><option data-page-node-id="Z34u2Kr7gTlvPSjlpqc8Rr">Reasoning</option></select>
-                  <button class="pb-chip pb-shape" id="pbShape" data-page-node-id="zMaYHXN3xumQxtM3bkFVtM">Shape: rounded</button>
+                <div class="pb-row pb-foot">
+                  <button class="pb-chip" id="pbSlash">/ commands</button>
+                  <button class="pb-chip" id="pbAt">@ sources</button>
+                  <select class="pb-model" id="pbModel" aria-label="Model"><option>Fast</option><option>Balanced</option><option>Reasoning</option></select>
+                  <button class="pb-chip pb-shape" id="pbShape">Shape: rounded</button>
                 </div>
-                <div class="pb-menu" id="pbMenu" hidden data-page-node-id="sK6kd0UpGIzPhF0iZGrNIi">
-                  <button class="pb-item" data-page-node-id="hqMVwKlx3E1ecTMh4ddCZg"><b data-page-node-id="k4OOn48LMN5ocGhXEsDRHw">/compare</b><span data-page-node-id="jsBWLIuSuoPkS7AQOchm5W">Compare two periods</span></button>
-                  <button class="pb-item" data-page-node-id="3DyqryA3iN0bGa2RTAyiRm"><b data-page-node-id="yIslhDlqVg1WZMiMVck5QP">/forecast</b><span data-page-node-id="aVNhPhls0A1OXDj0quVAsH">Project next 8 weeks</span></button>
-                  <button class="pb-item" data-page-node-id="l412T9jv1Yemx8CcaWtPZV"><b data-page-node-id="cT7oQsGPfe5DqPNQ1Eip7P">/explain</b><span data-page-node-id="vYBaGBrTXDP7qfwYNV5AB3">Explain a change</span></button>
+                <div class="pb-menu" id="pbMenu" hidden>
+                  <button class="pb-item"><b>/compare</b><span>Compare two periods</span></button>
+                  <button class="pb-item"><b>/forecast</b><span>Project next 8 weeks</span></button>
+                  <button class="pb-item"><b>/explain</b><span>Explain a change</span></button>
                 </div>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="b5Q1DXu8wgadaUiiupbWQc">The composer is the product. @ and / turn prompting from a blank page into a menu, and a visible model picker makes the speed/quality trade the user's call rather than yours.</p>
+            <p class="card-note">The composer is the product. @ and / turn prompting from a blank page into a menu, and a visible model picker makes the speed/quality trade the user's call rather than yours.</p>
           </article>
 
           <!-- 09 -->
-          <article class="card reveal" id="p09" data-page-node-id="Gn3eayrBlYpmpfSQaYGAfF">
-            <div class="card-head" data-page-node-id="XZSBk1wV9RrmLLQcaCD5w3"><span class="num" data-page-node-id="lxQduZvuDUpGwPeA1WDp5Q">09</span><div data-page-node-id="3UhdOjlSNhcSNpTNhpH9q0"><h3 data-page-node-id="9dJDtt3AOwlOm4ooGpiTsU">Recommendation</h3><p class="card-sub" data-page-node-id="QZpFpcpD8bs8D3ToBSPzGj">Confidence meter with alternatives</p></div></div>
-            <div class="demo" data-page-node-id="Ni1e8A8WTeDYLt7MXnSOWu">
-              <div class="rec" data-page-node-id="zIUV3jPPozAKhUCRRB9GAg">
-                <div class="rec-head" data-page-node-id="Dss9kpXUEsvof120AM0nBw"><span class="rec-q" data-page-node-id="vyQvvSQtCKO2T5wfQLIRbC">Want me to place this restock order?</span><span class="conf-badge" id="recBadge" data-page-node-id="X1D9N2pEGrtvzPlw3EBfP2">High confidence</span></div>
-                <p class="rec-body" data-page-node-id="FyhjKNSsf5VXUewgEa7sBF">Order 12 kg of pistachio from C Cone King. Arrives Thursday, covers 3.5 weeks at current velocity.</p>
-                <div class="conf-rows" id="confRows" data-page-node-id="4TTMo8duewDnleDqKyKZ2w">
-                  <button class="conf-row is-on" data-p="78" data-page-node-id="kjD1MlCSmg7IF5zI24KJRt"><span class="conf-name" data-page-node-id="vzDta7NwNGRXtHm6gbheKQ">Restock from C Cone King</span><span class="conf-track" data-page-node-id="t6httRfv8lHfIJOwGHbmED"><i style="width:0%" data-page-node-id="R8dF5CtZOdmoqE2j0DTgy6"></i></span><span class="conf-val" data-page-node-id="7VPjXbHgzVVeDQDPIfaM1d">0.78</span></button>
-                  <button class="conf-row" data-p="14" data-page-node-id="g8wakEDpBRWCW7ayyQPKSL"><span class="conf-name" data-page-node-id="W67RSy6eeHCyiIIw7Do5UE">Split across two suppliers</span><span class="conf-track" data-page-node-id="fnNymABv3DUaRdzgLFy3QC"><i style="width:0%" data-page-node-id="GD1lWg53iQhBPM8feYkxCT"></i></span><span class="conf-val" data-page-node-id="A3Mm2uAxDfbaYPeMDDkfIG">0.14</span></button>
-                  <button class="conf-row" data-p="8" data-page-node-id="P4d4qjrsFR9TSDlUN8SOJK"><span class="conf-name" data-page-node-id="bFFnUX5uJ7fQaYEdRsUoCn">Reduce menu instead</span><span class="conf-track" data-page-node-id="l1nJnmLAenjBTo9BiEdUkZ"><i style="width:0%" data-page-node-id="hSGaZV6a7ZALUxB9AomSn4"></i></span><span class="conf-val" data-page-node-id="XJ6HtDJbcUApcCr9YU8BCK">0.08</span></button>
+          <article class="card reveal" id="p09">
+            <div class="card-head"><span class="num">09</span><div><h3>Recommendation</h3><p class="card-sub">Confidence meter with alternatives</p></div></div>
+            <div class="demo">
+              <div class="rec">
+                <div class="rec-head"><span class="rec-q">Want me to place this restock order?</span><span class="conf-badge" id="recBadge">High confidence</span></div>
+                <p class="rec-body">Order 12 kg of pistachio from C Cone King. Arrives Thursday, covers 3.5 weeks at current velocity.</p>
+                <div class="conf-rows" id="confRows">
+                  <button class="conf-row is-on" data-p="78"><span class="conf-name">Restock from C Cone King</span><span class="conf-track"><i style="width:0%"></i></span><span class="conf-val">0.78</span></button>
+                  <button class="conf-row" data-p="14"><span class="conf-name">Split across two suppliers</span><span class="conf-track"><i style="width:0%"></i></span><span class="conf-val">0.14</span></button>
+                  <button class="conf-row" data-p="8"><span class="conf-name">Reduce menu instead</span><span class="conf-track"><i style="width:0%"></i></span><span class="conf-val">0.08</span></button>
                 </div>
-                <div class="rec-foot" data-page-node-id="FvtWt6bA7QASat7ESiERqp"><span class="thresh" data-page-node-id="5qbwj9oBzreKuNUhtAbavo">Acts unaided above 0.60</span>
-                  <div class="rec-actions" data-page-node-id="wZTsvlkU9jLkshfzBDVKXq"><button class="btn-mini ghost" data-page-node-id="lfXvnyG1CuE0FwVIfAu2KN">Alternatives</button><button class="btn-mini primary" id="recAccept" data-page-node-id="fjxOquQG7rtjD5bf4EkFlm">Accept</button></div>
+                <div class="rec-foot"><span class="thresh">Acts unaided above 0.60</span>
+                  <div class="rec-actions"><button class="btn-mini ghost">Alternatives</button><button class="btn-mini primary" id="recAccept">Accept</button></div>
                 </div>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="8eXk0fdrQsGyyV9Rh9fJoN">Showing the runner-up is the whole point. A single confident recommendation is a UI that quietly lies — let people see the option you didn't pick.</p>
+            <p class="card-note">Showing the runner-up is the whole point. A single confident recommendation is a UI that quietly lies — let people see the option you didn't pick.</p>
           </article>
 
           <!-- 10 -->
-          <article class="card reveal" id="p10" data-page-node-id="imIoHS0Oqiw79QtQizsj7V">
-            <div class="card-head" data-page-node-id="nUcyE4dHQEoKwp1DTFEb9N"><span class="num" data-page-node-id="eJSkpEREZnocOvxlHARp8Q">10</span><div data-page-node-id="NQBKXTiO1w62zmZbS52I0e"><h3 data-page-node-id="RmyREZNxuQgFBV1OG7r0qE">Context cards</h3><p class="card-sub" data-page-node-id="qVE72dR54d6KLL9CfHvFLA">Retrieved chunks with their sources</p></div></div>
-            <div class="demo" data-page-node-id="upqSId3Ng8cXoLsMYPuOJS">
-              <div class="ctx-head" data-page-node-id="uuCgQlUxTTVGkmtk8KJ7Bo"><span data-page-node-id="Ej1qgMHI1w1s8adBBN5xds">All chunks 32</span><button class="btn-mini ghost" id="ctxToggle" data-page-node-id="7eIE5YTPwTHTtFFO2FKtZT">Expand</button></div>
-              <div class="ctx" id="ctx" data-page-node-id="HDiQOioP0aICFZ2RGOdRow">
-                <div class="ctx-card" data-page-node-id="a1oeCKclfP3Ax5JAQpBAlN"><div class="ctx-top" data-page-node-id="aCn9Mwam4mZOBPEhFRT6I6"><span class="ctx-ic pdf" data-page-node-id="imj4gxsTNLLIgad5EBWJE6"></span><span class="ctx-src" data-page-node-id="bw22cd1Gvi85xhWkMxqYBB">Dairy Onboarding SOP.pdf</span><span class="ctx-chars" data-page-node-id="2bIzf4ojjnwQTcpU2OmXs7">1.2k</span></div><p class="ctx-txt" data-page-node-id="nY1CEJYCQ2ovZFEFJ1ypBu">Pistachio base requires a 48-hour rest before churning. Supplier substitutions void the texture warranty…</p></div>
-                <div class="ctx-card" data-page-node-id="LQT9GNw3xFNKS6v0xJfdCD"><div class="ctx-top" data-page-node-id="9FtPeidCAZz0Z3B6cFBfBe"><span class="ctx-ic csv" data-page-node-id="FX29jJLQvsFxtZw4FiVAuy"></span><span class="ctx-src" data-page-node-id="UwI6sWM3vFL8nIiTzIDNfO">Sales Velocity Export.csv</span><span class="ctx-chars" data-page-node-id="cHG0tL9qBkubFZGX18wF19">860</span></div><p class="ctx-txt" data-page-node-id="uyAPoLu414o8C6WTljFFSU">Weekly units by flavour, 26 weeks. Pistachio +23% QoQ; mint chip −4.4%; lemon sorbet flat…</p></div>
-                <div class="ctx-card" data-page-node-id="4poqOQNOziR2xyD1D8ibLn"><div class="ctx-top" data-page-node-id="k9AyN6smi0TDNu7W02ZDZd"><span class="ctx-ic doc" data-page-node-id="2gSPIpFavuTqa8hRDyrFKG"></span><span class="ctx-src" data-page-node-id="N5mFwMFRKFTP9yJw5BzP9O">Supplier terms · C Cone King</span><span class="ctx-chars" data-page-node-id="Id4ULOH0LyKbz2S5ZiDIjX">410</span></div><p class="ctx-txt" data-page-node-id="2W2EiuIcTLotEwY0DTKoog">Minimum order 10 kg. Lead time 4 business days. Restocking fee waived above 8 kg…</p></div>
+          <article class="card reveal" id="p10">
+            <div class="card-head"><span class="num">10</span><div><h3>Context cards</h3><p class="card-sub">Retrieved chunks with their sources</p></div></div>
+            <div class="demo">
+              <div class="ctx-head"><span>All chunks 32</span><button class="btn-mini ghost" id="ctxToggle">Expand</button></div>
+              <div class="ctx" id="ctx">
+                <div class="ctx-card"><div class="ctx-top"><span class="ctx-ic pdf"></span><span class="ctx-src">Dairy Onboarding SOP.pdf</span><span class="ctx-chars">1.2k</span></div><p class="ctx-txt">Pistachio base requires a 48-hour rest before churning. Supplier substitutions void the texture warranty…</p></div>
+                <div class="ctx-card"><div class="ctx-top"><span class="ctx-ic csv"></span><span class="ctx-src">Sales Velocity Export.csv</span><span class="ctx-chars">860</span></div><p class="ctx-txt">Weekly units by flavour, 26 weeks. Pistachio +23% QoQ; mint chip −4.4%; lemon sorbet flat…</p></div>
+                <div class="ctx-card"><div class="ctx-top"><span class="ctx-ic doc"></span><span class="ctx-src">Supplier terms · C Cone King</span><span class="ctx-chars">410</span></div><p class="ctx-txt">Minimum order 10 kg. Lead time 4 business days. Restocking fee waived above 8 kg…</p></div>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="yxvNajKFsNYGV9v0E4NNkZ">Retrieval is the most-failed part of any AI feature and the least-shown. Surface the chunks, the source, and the size — it's the only way a user can tell a good answer from a lucky one.</p>
+            <p class="card-note">Retrieval is the most-failed part of any AI feature and the least-shown. Surface the chunks, the source, and the size — it's the only way a user can tell a good answer from a lucky one.</p>
           </article>
 
           <!-- 11 -->
-          <article class="card reveal" id="p11" data-page-node-id="euuDmLGOC2BVeQXaaeLniR">
-            <div class="card-head" data-page-node-id="q5fODI2v7ipukkAOULKHg4"><span class="num" data-page-node-id="K8ZDDnsBJDReFtR4yVckms">11</span><div data-page-node-id="X1TVNGRrltDK2HsEBDoG11"><h3 data-page-node-id="wU3mMIGLWFz9xGxzbiumEl">Diff table</h3><p class="card-sub" data-page-node-id="UU6GS3HkqzVeeKI5N1upr1">Proposed edits sweeping tabular data</p></div></div>
-            <div class="demo" data-page-node-id="HTUEB7YBCXbssg3YYwkn01">
-              <table class="diff" id="diffTable" data-page-node-id="LdoxrhKkVGpgsD3TnbBKng">
-                <thead data-page-node-id="fpLwqBFckdvs3bg1az1YZg"><tr data-page-node-id="e35jn6LOfnLl3GtUkCRuw4"><th data-page-node-id="YkAVqVqn3xAOmtzOH46tD6">Flavour</th><th data-page-node-id="FBkb71AV2TPuvPvF11JXu1">Status</th><th class="num" data-page-node-id="FaoYFRm6qKqj6ewJrlWJkP">Impact</th></tr></thead>
-                <tbody data-page-node-id="6qCJnkxlsphd3EZZPqSv8a">
-                  <tr data-op="remove" data-page-node-id="U6DppYWqbUdjnVnMXpbuVn"><td data-page-node-id="FhPyDu47iPgFbfNE3dubsk">Mint chip</td><td data-page-node-id="qqKV2XhWHucx5ksHQPQETS"><span class="tag tag-out" data-page-node-id="Y5VV4yXcqD2FTF6peBhBiK">remove</span></td><td class="num neg" data-page-node-id="rBIWZpJRhbIE5sivuobH2K">−$2,377</td></tr>
-                  <tr data-op="remove" data-page-node-id="ARyhGzpJshNHpO4VF9FzZU"><td data-page-node-id="kBZ0hBEn7pulF0bmcAwMJV">Lemon sorbet</td><td data-page-node-id="st1Ra0aIL18WrnDa39xciT"><span class="tag tag-out" data-page-node-id="GX5g1p5baCdQ4MmaXGfJ7h">remove</span></td><td class="num neg" data-page-node-id="X7XMln86JWqFCZFjrwiemI">−$410</td></tr>
-                  <tr data-op="add" data-page-node-id="Y9rrSYOs6f00L85QpGIck1"><td data-page-node-id="b99THAarrwxRFthVgBSGf3">Brown butter</td><td data-page-node-id="Y9ku0qwOe3632ADdEKxVqe"><span class="tag tag-in" data-page-node-id="HzU45LsSRngAMqBCVD9SsZ">add</span></td><td class="num pos" data-page-node-id="Cc3ZyX4AvRMWczt6TfgRxi">+$617</td></tr>
-                  <tr data-op="keep" data-page-node-id="sqlYwVuxBEpKBCBd0Q1JCO"><td data-page-node-id="ExcOn8u1DIFKcmBE1mYSTy">Pistachio</td><td data-page-node-id="gl1TwJErwzsamW19G9Xs2E"><span class="tag" data-page-node-id="9C64OnGoHkKJk52Z4gQR11">keep</span></td><td class="num" data-page-node-id="AdaT5ldzbx5lDNFKOj6beH">—</td></tr>
+          <article class="card reveal" id="p11">
+            <div class="card-head"><span class="num">11</span><div><h3>Diff table</h3><p class="card-sub">Proposed edits sweeping tabular data</p></div></div>
+            <div class="demo">
+              <table class="diff" id="diffTable">
+                <thead><tr><th>Flavour</th><th>Status</th><th class="num">Impact</th></tr></thead>
+                <tbody>
+                  <tr data-op="remove"><td>Mint chip</td><td><span class="tag tag-out">remove</span></td><td class="num neg">−$2,377</td></tr>
+                  <tr data-op="remove"><td>Lemon sorbet</td><td><span class="tag tag-out">remove</span></td><td class="num neg">−$410</td></tr>
+                  <tr data-op="add"><td>Brown butter</td><td><span class="tag tag-in">add</span></td><td class="num pos">+$617</td></tr>
+                  <tr data-op="keep"><td>Pistachio</td><td><span class="tag">keep</span></td><td class="num">—</td></tr>
                 </tbody>
               </table>
-              <div class="diff-foot" data-page-node-id="XWYUlMFycBWbzjSJhKW07V"><span id="diffCount" data-page-node-id="00kvsgJMNwXDM0AYvZf3Qq">2 removals · 1 addition</span><button class="btn-mini primary" id="diffApply" data-page-node-id="KxXSzXqBj6OAktTs0vDmoW">Apply 3 changes</button></div>
+              <div class="diff-foot"><span id="diffCount">2 removals · 1 addition</span><button class="btn-mini primary" id="diffApply">Apply 3 changes</button></div>
             </div>
-            <p class="card-note" data-page-node-id="YivN5y2Sq4dHqgUh4QfvFK">Never bulk-apply silently. Row-level opt-out is where the design earns trust — the rows a user deselects are the most useful feedback you'll ever get.</p>
+            <p class="card-note">Never bulk-apply silently. Row-level opt-out is where the design earns trust — the rows a user deselects are the most useful feedback you'll ever get.</p>
           </article>
 
           <!-- 12 -->
-          <article class="card reveal" id="p12" data-page-node-id="lPrFSqI4eRxelO0gp5Sote">
-            <div class="card-head" data-page-node-id="37p924mw8b3vXEDSgoCUMI"><span class="num" data-page-node-id="OJGbgtOdcMbeAejADlagYp">12</span><div data-page-node-id="8hJp5tOFQA4e5lmMaRoEyW"><h3 data-page-node-id="Ze00JvPDwktKzeHeEDKHms">Records table</h3><p class="card-sub" data-page-node-id="66s56eG91rzwRt3gflNbbZ">Sortable grid with tags and strength</p></div></div>
-            <div class="demo" data-page-node-id="c0X3p8f5DwcGrTGODlAUfG">
-              <table class="rec-table" id="recTable" data-page-node-id="GI9YPrFCeRITaQE1Nvl6N2">
-                <thead data-page-node-id="3UmdwB3w3smBqVSVukkaBs"><tr data-page-node-id="AYOsdked3CcI7I7aifKIo7"><th data-sort="name" data-page-node-id="2qCYjkx1RRXXdHVB6q97H3">Supplier</th><th data-sort="cat" data-page-node-id="aIYCEB5qKWkc5cHO0d2RtJ">Categories</th><th data-sort="last" data-page-node-id="R2SS4nThfpq35cQQsyv7c2">Last contact</th><th data-sort="str" data-page-node-id="WhKTiV5NBy1f0uLL0vYcn3">Strength</th></tr></thead>
-                <tbody data-page-node-id="puMC8H7YnrHWNwwEIiMA3y">
-                  <tr data-name="Alpine Churn" data-cat="Dairy" data-last="2" data-str="88" data-page-node-id="VDpaf5DduIoRqfJmG8MDcH"><td data-page-node-id="DAaby7rCvbU9zK6oZ2G7eZ">Alpine Churn</td><td data-page-node-id="2KLUGHoAPoyv3egzB6N5Fe"><span class="tag" data-page-node-id="doTsCdWwvAOaOyPwiQ6VpX">Dairy</span></td><td data-page-node-id="bVwaepNupN8Zlm3fgLQIfE">2 days ago</td><td data-page-node-id="XeMxQDHs1CjnMYASgDTdle"><span class="strength" data-page-node-id="h9MUWD9mcigdX1FFK01Grd"><i style="width:88%" data-page-node-id="yta3btXuggHtyTlu3tkcZi"></i></span></td></tr>
-                  <tr data-name="C Cone King" data-cat="Cones" data-last="9" data-str="64" data-page-node-id="44DkaWNF129G2qs85kAqhb"><td data-page-node-id="CuQTBIyTgsachCFdZ24gdy">C Cone King</td><td data-page-node-id="PUjhfqhLGmwsaPF6mKvYGr"><span class="tag" data-page-node-id="4EKb3SxTGf9CaLA4CHJevZ">Cones</span></td><td data-page-node-id="tiWCI51oJYGO1R3VRgaKnG">9 days ago</td><td data-page-node-id="9TYMGKcpp3IswM7Yd9VTKH"><span class="strength" data-page-node-id="TlkDxWXSUjSHT35Gm5Re0L"><i style="width:64%" data-page-node-id="lMqsp1AzirgGiu7wDOBwoF"></i></span></td></tr>
-                  <tr data-name="Aurora Scoops" data-cat="Dairy" data-last="31" data-str="41" data-page-node-id="IYAkE6zM6OvwuxSFpP9p51"><td data-page-node-id="NYhY8tvIHzDoaA43Nyt0av">Aurora Scoops</td><td data-page-node-id="fm141nL8bGxOibYch5spqF"><span class="tag" data-page-node-id="vmCoA9yUeghBVZGhpxd36P">Dairy</span></td><td data-page-node-id="gWX5hK884ncwg06YEqLCgW">31 days ago</td><td data-page-node-id="axESGBJlDzBTCMRrX3dkCI"><span class="strength" data-page-node-id="i6veSZ6DS9aQPffqGdpyjO"><i style="width:41%" data-page-node-id="atBcV5bAC5aCkbHAPDJQio"></i></span></td></tr>
-                  <tr data-name="Bramble & Fig" data-cat="Fruit" data-last="4" data-str="73" data-page-node-id="wfwSeU5TH2n9T69fNCzpzY"><td data-page-node-id="mLSuj2ruYipgc8WIGkgIG8">Bramble &amp; Fig</td><td data-page-node-id="JnI5NHWd0rkkSoI7UUGwB7"><span class="tag" data-page-node-id="JSxZwVUpvHAR33l3U6TOw3">Fruit</span></td><td data-page-node-id="JI6nAjoQoZ29rB3tnxn8eZ">4 days ago</td><td data-page-node-id="YCDYcFlQKP0ZlZfXGG6MzK"><span class="strength" data-page-node-id="9NOqCOXK6kuNk1mgzaHOyg"><i style="width:73%" data-page-node-id="ha0pzMRVNENg1tGjxmKt1e"></i></span></td></tr>
+          <article class="card reveal" id="p12">
+            <div class="card-head"><span class="num">12</span><div><h3>Records table</h3><p class="card-sub">Sortable grid with tags and strength</p></div></div>
+            <div class="demo">
+              <table class="rec-table" id="recTable">
+                <thead><tr><th data-sort="name">Supplier</th><th data-sort="cat">Categories</th><th data-sort="last">Last contact</th><th data-sort="str">Strength</th></tr></thead>
+                <tbody>
+                  <tr data-name="Alpine Churn" data-cat="Dairy" data-last="2" data-str="88"><td>Alpine Churn</td><td><span class="tag">Dairy</span></td><td>2 days ago</td><td><span class="strength"><i style="width:88%"></i></span></td></tr>
+                  <tr data-name="C Cone King" data-cat="Cones" data-last="9" data-str="64"><td>C Cone King</td><td><span class="tag">Cones</span></td><td>9 days ago</td><td><span class="strength"><i style="width:64%"></i></span></td></tr>
+                  <tr data-name="Aurora Scoops" data-cat="Dairy" data-last="31" data-str="41"><td>Aurora Scoops</td><td><span class="tag">Dairy</span></td><td>31 days ago</td><td><span class="strength"><i style="width:41%"></i></span></td></tr>
+                  <tr data-name="Bramble & Fig" data-cat="Fruit" data-last="4" data-str="73"><td>Bramble &amp; Fig</td><td><span class="tag">Fruit</span></td><td>4 days ago</td><td><span class="strength"><i style="width:73%"></i></span></td></tr>
                 </tbody>
               </table>
-              <div class="diff-foot" data-page-node-id="FycEDH3KaKpAqERI51CDD8"><span id="recNote" data-page-node-id="9M1aWtq0eitqSKldcG1fjq">Sorted by strength, descending</span><span class="thresh" data-page-node-id="EY0fDddmbfzT6GrnhCqGUB">4 suppliers · 12 SKUs</span></div>
+              <div class="diff-foot"><span id="recNote">Sorted by strength, descending</span><span class="thresh">4 suppliers · 12 SKUs</span></div>
             </div>
-            <p class="card-note" data-page-node-id="4WxLCnZr5cF7MZt6Qv5X1F">Relationship strength as a bar, not a number. Sorting is free to build and the first thing anyone does — ship it on every column rather than guessing which one matters.</p>
+            <p class="card-note">Relationship strength as a bar, not a number. Sorting is free to build and the first thing anyone does — ship it on every column rather than guessing which one matters.</p>
           </article>
 
           <!-- 13 -->
-          <article class="card reveal" id="p13" data-page-node-id="fEb1TRMOKYVNWVRID5EFH0">
-            <div class="card-head" data-page-node-id="gRfJ0QKdtNEX41T3yIG7Fb"><span class="num" data-page-node-id="886AKBuP8meWlmgVF6GtaC">13</span><div data-page-node-id="3YI3CtXFhTQVsKe8czC19T"><h3 data-page-node-id="KA3BO12oSDz5Fxpm99Z2LF">Filter table</h3><p class="card-sub" data-page-node-id="Sb73M8GjXhlKwXuGzzhwI4">Status chips reorganise live data</p></div></div>
-            <div class="demo" data-page-node-id="27cquhHyE3TCFHyLjEzj7Y">
-              <div class="filters" id="filters" data-page-node-id="MOoyKhpG9Mfaw8V2XBWGBD">
-                <button class="fchip on" data-f="all" data-page-node-id="Ao6bXUBDnw5E8Gi4m6QcR6">All <b data-page-node-id="4vbx9gWiafU9CDjzyGcLy5">6</b></button>
-                <button class="fchip" data-f="running" data-page-node-id="14GPz6SNzkINoY2E9nYYKj">Running <b data-page-node-id="nW8HCVdHOAd6RcV9AuQqXN">2</b></button>
-                <button class="fchip" data-f="completed" data-page-node-id="gZbPM3E3EM9C7jbSqAe9ty">Completed <b data-page-node-id="RMSgMRFpv2a9s73Chwsypn">3</b></button>
-                <button class="fchip" data-f="failed" data-page-node-id="2JKD1n9sAFTHWyLNDsheJN">Failed <b data-page-node-id="03uxCkQLyZmbmXNX8Utaak">1</b></button>
+          <article class="card reveal" id="p13">
+            <div class="card-head"><span class="num">13</span><div><h3>Filter table</h3><p class="card-sub">Status chips reorganise live data</p></div></div>
+            <div class="demo">
+              <div class="filters" id="filters">
+                <button class="fchip on" data-f="all">All <b>6</b></button>
+                <button class="fchip" data-f="running">Running <b>2</b></button>
+                <button class="fchip" data-f="completed">Completed <b>3</b></button>
+                <button class="fchip" data-f="failed">Failed <b>1</b></button>
               </div>
-              <table class="ftable" id="ftable" data-page-node-id="0qeZbDae1SJbDuECtsq3vm">
-                <tbody data-page-node-id="u8cRn9T2UqLJxtkiMxQWtR">
-                  <tr data-f="running" data-page-node-id="JBQFGvX4jPEZMlA2RtEllw"><td data-page-node-id="1CvcgaHChX0YCfEEgSuD58"><span class="dot running" data-page-node-id="OfoBPkiFkch162jz4EVOJ7"></span>Reorder waffle cones</td><td class="num" data-page-node-id="fEbvdpEr4aeUEQNtqBJcmu">62%</td></tr>
-                  <tr data-f="completed" data-page-node-id="XyTmWvI9dTMIkL1AsV8aEz"><td data-page-node-id="uqHYsQoBABLaJZT2AXE3lN"><span class="dot completed" data-page-node-id="noCq06O0JTQo1N7zd10qD9"></span>Update menu board</td><td class="num" data-page-node-id="8YeZoz6h3LAjYLEpbmoXn6">100%</td></tr>
-                  <tr data-f="failed" data-page-node-id="nKXsKoqY8urg3kW5oXyu4q"><td data-page-node-id="WXHJ8pfb4bbWLDPdzlSWFv"><span class="dot failed" data-page-node-id="bUboH7urppcGKboL2oNmzu"></span>Sync POS export</td><td class="num" data-page-node-id="oc33FeFxPZ5mHnF4NZNJq2">34%</td></tr>
-                  <tr data-f="running" data-page-node-id="RRKdVx21bhz4PMKlGxMiKL"><td data-page-node-id="ZTxBT6sv1S5UnhHiWNElRr"><span class="dot running" data-page-node-id="cjLwoQawUlEO2SzSGHHN6G"></span>Forecast winter demand</td><td class="num" data-page-node-id="mBjlyAno8LzFFun7jYJoSb">18%</td></tr>
-                  <tr data-f="completed" data-page-node-id="eoDn7cJudh4uMDUHk1Mmsj"><td data-page-node-id="R3OzztiZ5EuyTREMtY8jvr"><span class="dot completed" data-page-node-id="jkVwXrVJ9UYyab9ijCtoqo"></span>Archive Q3 report</td><td class="num" data-page-node-id="o8ov95mQgz9YkhTZeCG5TL">100%</td></tr>
-                  <tr data-f="completed" data-page-node-id="m0Ft0s4iC3LSH4Smhj4TEZ"><td data-page-node-id="i16K7GR97Qsh59hmzKGuLH"><span class="dot completed" data-page-node-id="qVoXX936YftNCx5MZBY8on"></span>Refresh supplier terms</td><td class="num" data-page-node-id="qGI1quDJxWlnpThWmJCPJh">100%</td></tr>
+              <table class="ftable" id="ftable">
+                <tbody>
+                  <tr data-f="running"><td><span class="dot running"></span>Reorder waffle cones</td><td class="num">62%</td></tr>
+                  <tr data-f="completed"><td><span class="dot completed"></span>Update menu board</td><td class="num">100%</td></tr>
+                  <tr data-f="failed"><td><span class="dot failed"></span>Sync POS export</td><td class="num">34%</td></tr>
+                  <tr data-f="running"><td><span class="dot running"></span>Forecast winter demand</td><td class="num">18%</td></tr>
+                  <tr data-f="completed"><td><span class="dot completed"></span>Archive Q3 report</td><td class="num">100%</td></tr>
+                  <tr data-f="completed"><td><span class="dot completed"></span>Refresh supplier terms</td><td class="num">100%</td></tr>
                 </tbody>
               </table>
-              <div class="diff-foot" data-page-node-id="zQncPOJGvJOgfl6H0OYM0X"><span id="fCount" data-page-node-id="0yYoFgAx5WDDlxooBje1u8">6 tasks shown</span><span class="thresh" data-page-node-id="bvlK0pEfJUkhZMWWiQ7aHr">Counts update live</span></div>
+              <div class="diff-foot"><span id="fCount">6 tasks shown</span><span class="thresh">Counts update live</span></div>
             </div>
-            <p class="card-note" data-page-node-id="gzxlWq8Zb88DmycyRtNYFL">Put the count in the chip. A filter that shows "Failed (1)" before you click it changes behaviour — people check failures first, and that's the right default.</p>
+            <p class="card-note">Put the count in the chip. A filter that shows "Failed (1)" before you click it changes behaviour — people check failures first, and that's the right default.</p>
           </article>
 
           <!-- 14 -->
-          <article class="card reveal" id="p14" data-page-node-id="rrhLJXVhfHGvBITxQhefQv">
-            <div class="card-head" data-page-node-id="a5l6SrJQ7s6ALsR29OOHrN"><span class="num" data-page-node-id="jIsSmSBMQnkdegpJiuwJhl">14</span><div data-page-node-id="wagtULIsJ1ENiWGesIEwOP"><h3 data-page-node-id="MBE4viAZQEEOQg8XE94mNV">Sidebar nav</h3><p class="card-sub" data-page-node-id="lTJgENz2wbDXhkql6O2MHo">Collapsible, with a gliding hover state</p></div></div>
-            <div class="demo" data-page-node-id="nS6wgduEAGGVUH7Yr3Nk03">
-              <div class="mini-side" data-page-node-id="0Qyv2CwWYUfRWEJIuvi07B">
-                <div class="mini-side-head" data-page-node-id="EeQVFsUrlH2M8bXHCVHUkc"><span class="brand-dot" data-page-node-id="L5TdiCH8DlFValA5vZglC2"></span><span class="mini-txt" data-page-node-id="JkHCwW8OAGQ59zPQCiJ6ME">Workspace</span><button class="mini-collapse" id="miniCollapse" aria-label="Collapse" data-page-node-id="68ZKpatazjsDMtlXKPS9c6"><span data-page-node-id="UgYEWLYRf8TGFOJ9jXmORj"></span></button></div>
-                <nav class="mini-nav" id="miniNav" data-page-node-id="ZfWE3wTkatJ1wnycVWOhPU"><span class="glider" id="miniGlider" data-page-node-id="7O4sRC5oiXShQ65cmYGASB"></span>
-                  <a class="on" data-page-node-id="0smZND3Y8D0ECg7gCq7BeY"><b data-page-node-id="WH74wcBC6p5OsNMmZe8EnJ">◇</b><span data-page-node-id="bSh0LgM7DDmepioLECTZzs">Overview</span></a>
-                  <a data-page-node-id="C85NHXa4dg3SWsEuUAjKxR"><b data-page-node-id="5z0t2OI76EdoLwjdDziDFD">◇</b><span data-page-node-id="DxLM2cUxzl6H8NgPecXNNn">Inventory</span></a>
-                  <a data-page-node-id="6yzDY7w0MaICJHM9nPQGB2"><b data-page-node-id="gNlBkYACCVC6rjinidrLLw">◇</b><span data-page-node-id="zC42aKb9F1UOI3Jb56CbL8">Suppliers</span></a>
-                  <a data-page-node-id="ckBrLF0skEvI483dvr3voz"><b data-page-node-id="Qj6uqBzxkm6dUIxfe1pVTJ">◇</b><span data-page-node-id="3txvK9ct6qReMqXYgiuEOJ">Menu</span></a>
+          <article class="card reveal" id="p14">
+            <div class="card-head"><span class="num">14</span><div><h3>Sidebar nav</h3><p class="card-sub">Collapsible, with a gliding hover state</p></div></div>
+            <div class="demo">
+              <div class="mini-side">
+                <div class="mini-side-head"><span class="brand-dot"></span><span class="mini-txt">Workspace</span><button class="mini-collapse" id="miniCollapse" aria-label="Collapse"><span></span></button></div>
+                <nav class="mini-nav" id="miniNav"><span class="glider" id="miniGlider"></span>
+                  <a class="on"><b>◇</b><span>Overview</span></a>
+                  <a><b>◇</b><span>Inventory</span></a>
+                  <a><b>◇</b><span>Suppliers</span></a>
+                  <a><b>◇</b><span>Menu</span></a>
                 </nav>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="sKu5ydiFLm3pD1jzMVOlwJ">You're hovering it right now — the sidebar on the left is this component. A gliding indicator tells you where focus is without a colour change, and collapsing buys 200px back for content.</p>
+            <p class="card-note">You're hovering it right now — the sidebar on the left is this component. A gliding indicator tells you where focus is without a colour change, and collapsing buys 200px back for content.</p>
           </article>
 
           <!-- 15 -->
-          <article class="card reveal" id="p15" data-page-node-id="lKC0iFk09VeEvLjiowh8q7">
-            <div class="card-head" data-page-node-id="7Lz5Vw0go6C2gz4Ahs5cPB"><span class="num" data-page-node-id="elE45PCavsNDj6IfAE70sB">15</span><div data-page-node-id="FOH9zImYSqmcXFfF1dCQ7f"><h3 data-page-node-id="jwklt4qKF43tasWuhFxwRG">Command search</h3><p class="card-sub" data-page-node-id="uGLnAxJjNeQW2YdEuwzv0C">Live filtering with a real empty state</p></div></div>
-            <div class="demo" data-page-node-id="O9D98fPAmsAVslmMUDGqGO">
-              <button class="palette-trigger" id="searchOpen3" data-page-node-id="de58HxXDJOiVgYzoKJnrLE">
-                <span class="search-ic" data-page-node-id="7PnAKochN2bLfynm2EMsSp"></span><span data-page-node-id="o66WBSeT4RYkjc7A1qQobz">Jump to a component…</span><kbd data-page-node-id="YoNhhBOoUztiI2Qq5P0bFA">⌘K</kbd>
+          <article class="card reveal" id="p15">
+            <div class="card-head"><span class="num">15</span><div><h3>Command search</h3><p class="card-sub">Live filtering with a real empty state</p></div></div>
+            <div class="demo">
+              <button class="palette-trigger" id="searchOpen3">
+                <span class="search-ic"></span><span>Jump to a component…</span><kbd>⌘K</kbd>
               </button>
-              <div class="mini-results" id="miniResults" data-page-node-id="NoLx7E0E8SnaxKpP75niWa"></div>
+              <div class="mini-results" id="miniResults"></div>
             </div>
-            <p class="card-note" data-page-node-id="M9RlLZgcCoQNvp9CrfzNu9">The empty state is the design work. "No results" is a dead end; suggesting the three most likely destinations is a recovery. Try searching for something that doesn't exist.</p>
+            <p class="card-note">The empty state is the design work. "No results" is a dead end; suggesting the three most likely destinations is a recovery. Try searching for something that doesn't exist.</p>
           </article>
 
           <!-- 16 -->
-          <article class="card reveal" id="p16" data-page-node-id="Z4tOx96Vqm9tBrWHAtZePM">
-            <div class="card-head" data-page-node-id="41Z4cDbfyzRE0klECK3gVA"><span class="num" data-page-node-id="D0DAHFgCQFwodDoMbtWWiZ">16</span><div data-page-node-id="O3GgApG96akvehHicu88uw"><h3 data-page-node-id="5nT84tVQ6FQUJRqOgRB8W2">Flowchart</h3><p class="card-sub" data-page-node-id="z0yO1SfiTgvJRSIYChdaXZ">Triggers and conditions on a dotted canvas</p></div></div>
-            <div class="demo" data-page-node-id="pGG53crwcAZD18rOgcXXNy">
-              <div class="flow" id="flow" data-page-node-id="dCsmMBMC3F07TnI4OVMFVq">
-                <svg viewBox="0 0 450 175" preserveAspectRatio="none" aria-hidden="true" data-page-node-id="Iwa9JaRS9hXj0HQ6xCg3wk">
-                  <path d="M75 52 L75 108" class="flow-line" data-page-node-id="4BXsa50C6I05I0kSachlHc" />
-                  <path d="M150 133 L296 133" class="flow-line" data-page-node-id="RPyBC2ABMLSGMVTJsyDzyW" />
-                  <path d="M150 133 L223 133 L223 26 L296 26" class="flow-line dashed" data-page-node-id="jDlHjSpdsE82deziHUjMiQ" />
+          <article class="card reveal" id="p16">
+            <div class="card-head"><span class="num">16</span><div><h3>Flowchart</h3><p class="card-sub">Triggers and conditions on a dotted canvas</p></div></div>
+            <div class="demo">
+              <div class="flow" id="flow">
+                <svg viewBox="0 0 450 175" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M75 52 L75 108" class="flow-line" />
+                  <path d="M150 133 L296 133" class="flow-line" />
+                  <path d="M150 133 L223 133 L223 26 L296 26" class="flow-line dashed" />
                 </svg>
-                <div class="fnode trigger" style="left:0;top:0" data-page-node-id="8TkGMJmYBISO3D1JLdXZE6"><b data-page-node-id="dkmkhEfs8e4pGJgBcjpDMY">Trigger</b><span data-page-node-id="qTiPRk67lTPi1dx2PQbpLv">Order received</span></div>
-                <div class="fnode cond" style="left:0;top:108" data-page-node-id="i5dJvEOfFFPEvt4CIrFtcq"><b data-page-node-id="MGdd4pEmsZzDzyrOJE51iS">Condition</b><span data-page-node-id="N0OKXg3HumseLfqCj2IREU">Stock below reorder point?</span></div>
-                <div class="fnode act" style="left:296px;top:108px" data-page-node-id="SYqPRH3fyRFzVC87oi6mu7"><b data-page-node-id="S1vmu70sSqRoZk4XxGlHjq">Action</b><span data-page-node-id="CNQAHKjpl7XvadjxOnASA9">Place restock order</span></div>
-                <div class="fnode act alt" style="left:296px;top:0" data-page-node-id="ugdqwCMMYY6NPaTE9YmEId"><b data-page-node-id="e3D3i2omveYaPBG3pIT6Oo">Action</b><span data-page-node-id="l5KR5bTi0vz1UiPJW4l4Ms">Hold and notify owner</span></div>
-                <span class="flabel" style="left:196px;top:120px" data-page-node-id="JAX7cH5oFwypbKlgiC52fv">yes</span>
-                <span class="flabel" style="left:196px;top:44px" data-page-node-id="ilhyjUT2nIPLE04ZFjWPDY">no</span>
+                <div class="fnode trigger" style="left:0;top:0"><b>Trigger</b><span>Order received</span></div>
+                <div class="fnode cond" style="left:0;top:108"><b>Condition</b><span>Stock below reorder point?</span></div>
+                <div class="fnode act" style="left:296px;top:108px"><b>Action</b><span>Place restock order</span></div>
+                <div class="fnode act alt" style="left:296px;top:0"><b>Action</b><span>Hold and notify owner</span></div>
+                <span class="flabel" style="left:196px;top:120px">yes</span>
+                <span class="flabel" style="left:196px;top:44px">no</span>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="AVJ6Cwj3kZVSGoTUeon2ui">Workflow builders fail when the condition is invisible. Put "yes" and "no" on the edges, and give the negative branch equal visual weight — it's the one nobody tests.</p>
+            <p class="card-note">Workflow builders fail when the condition is invisible. Put "yes" and "no" on the edges, and give the negative branch equal visual weight — it's the one nobody tests.</p>
           </article>
 
           <!-- 17 -->
-          <article class="card reveal" id="p17" data-page-node-id="NvftZjeQ6Gvs3di3G2DXkM">
-            <div class="card-head" data-page-node-id="ufZHe0kfJMySIQtN9ibt8X"><span class="num" data-page-node-id="WankgrZ6z4bllRQpZH3SCI">17</span><div data-page-node-id="D1hCSlmz0AUjNHOZWzGBD6"><h3 data-page-node-id="8AXQHLAQrk1nK3gRNnauqE">Insight cards</h3><p class="card-sub" data-page-node-id="pr375zCeWudGSDPu24wGg4">Paged insights with a scrub-ready chart</p></div></div>
-            <div class="demo" data-page-node-id="gRi2jlbn3wg5E3dM2QllYn">
-              <div class="insight" data-page-node-id="4DpVLPBpx1QQJCDvFkfKy7">
-                <div class="ins-head" data-page-node-id="oD0iuBM2xMFeK26n2QH167"><span class="pager" id="insPager" data-page-node-id="bFpEULfa3ILdAlxP0n1SVR">1 / 3</span>
-                  <div class="ins-nav" data-page-node-id="VUPG0kyHfHEBrOyj6sEQ0x"><button class="btn-mini ghost" id="insPrev" data-page-node-id="TXG0gv26ZQXvFhRlv4Enfi">Prev</button><button class="btn-mini ghost" id="insNext" data-page-node-id="3pPLjHvpsGpFt3JqOaeBfk">Next</button></div>
+          <article class="card reveal" id="p17">
+            <div class="card-head"><span class="num">17</span><div><h3>Insight cards</h3><p class="card-sub">Paged insights with a scrub-ready chart</p></div></div>
+            <div class="demo">
+              <div class="insight">
+                <div class="ins-head"><span class="pager" id="insPager">1 / 3</span>
+                  <div class="ins-nav"><button class="btn-mini ghost" id="insPrev">Prev</button><button class="btn-mini ghost" id="insNext">Next</button></div>
                 </div>
-                <div class="ins-title" id="insTitle" data-page-node-id="6ry4WWOXpDduTDEaToqenf">Mint chip is dragging the menu down</div>
-                <div class="ins-metric" data-page-node-id="9kYEhsZFa0pboDqrVMUkh9"><span class="ins-val neg" id="insVal" data-page-node-id="d2jaXnji7H94C7nSDT2KIO">−$2,377.66</span><span class="ins-delta neg" id="insDelta" data-page-node-id="CeYa38AFA69zTHN08BbcFW">−4.41%</span></div>
-                <div class="spark" id="spark" data-page-node-id="swRDXtLHorHWeaMSqNeyJr">
-                  <svg viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true" data-page-node-id="28Misw5JJ40NMqF1E4m1R1">
-                    <polyline id="sparkLine" points="" fill="none" stroke="#B3341F" stroke-width="1.6" data-page-node-id="e25pFKqLFa27yN2BJQYmCI" />
-                    <line id="sparkGuide" x1="0" y1="0" x2="0" y2="64" stroke="#1A1A17" stroke-width="0.5" opacity="0" data-page-node-id="DnJiIaR3GN4cGRL5pc5Vz6" />
-                    <circle id="sparkDot" r="3" fill="#B3341F" opacity="0" data-page-node-id="ipnwkFifIfpU3ZebaRRnau" />
+                <div class="ins-title" id="insTitle">Mint chip is dragging the menu down</div>
+                <div class="ins-metric"><span class="ins-val neg" id="insVal">−$2,377.66</span><span class="ins-delta neg" id="insDelta">−4.41%</span></div>
+                <div class="spark" id="spark">
+                  <svg viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true">
+                    <polyline id="sparkLine" points="" fill="none" stroke="#B3341F" stroke-width="1.6" />
+                    <line id="sparkGuide" x1="0" y1="0" x2="0" y2="64" stroke="#1A1A17" stroke-width="0.5" opacity="0" />
+                    <circle id="sparkDot" r="3" fill="#B3341F" opacity="0" />
                   </svg>
-                  <span class="spark-read" id="sparkRead" data-page-node-id="Vuopif9wQgt8PhCNQFUPnN"></span>
+                  <span class="spark-read" id="sparkRead"></span>
                 </div>
-                <p class="ins-note" id="insNote" data-page-node-id="mWuZILzuW6gKH0xnLjGcGl">Hover the chart to scrub 26 weeks of units sold.</p>
+                <p class="ins-note" id="insNote">Hover the chart to scrub 26 weeks of units sold.</p>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="ZyUN7YwkUOltKNh1yWIA5L">Charts in an AI product should be scrubbable, not static. If the agent spotted the trend, let the user verify it in two seconds — that's the difference between insight and assertion.</p>
+            <p class="card-note">Charts in an AI product should be scrubbable, not static. If the agent spotted the trend, let the user verify it in two seconds — that's the difference between insight and assertion.</p>
           </article>
 
           <!-- 18 -->
-          <article class="card reveal" id="p18" data-page-node-id="MelgvrXCqq6A8IJQ0Ibkol">
-            <div class="card-head" data-page-node-id="MBlWBbNkz5BQEorVkDlKTK"><span class="num" data-page-node-id="K9Ohn7DQyIzLEkh9pCfKPk">18</span><div data-page-node-id="x1yWCOpc1J2v572HwstZZD"><h3 data-page-node-id="o8MNtcDmDcyJC5f4buUYFf">Code block</h3><p class="card-sub" data-page-node-id="HIdCWlUtAmcgD05fV4OEvu">Line numbers and a unified diff</p></div></div>
-            <div class="demo" data-page-node-id="MjDeLcEVK5ECwMM090swkm">
-              <div class="tabs" id="codeTabs" data-page-node-id="gBm4jfdEbjWH3bKRZCE3fz"><button class="tab on" data-page-node-id="iSWIsrkEnjlQr32MEWmNLi">Source</button><button class="tab" data-page-node-id="sDv4XDVtDg8PvtWMoJPFUD">Unified diff</button></div>
-              <div class="code" id="codeBlock" data-page-node-id="KGJpP57ONtRiDtlVlXQzzM">
-                <pre id="codeSrc" data-page-node-id="TPlmdL7dKjDA7gulXP1aXY"><span class="ln" data-page-node-id="JwqgJkhBDHnHYeIcxJJS5F">1</span>function reorderPoint(sku, leadDays) {
-<span class="ln" data-page-node-id="1rPGE9akRC8r4nEFyRfpjd">2</span>  const daily = sku.units / 26 / 7;
-<span class="ln" data-page-node-id="ZvApEN6NsdwgfeVx7WIJLG">3</span>  const safety = daily * leadDays * 1.5;
-<span class="ln" data-page-node-id="n8jjl7bzKwkswI7MALXvy7">4</span>  return Math.ceil(daily * leadDays + safety);
-<span class="ln" data-page-node-id="hJgfXusbft86lVlZPsh1AD">5</span>}</pre>
-                <pre id="codeDiff" hidden data-page-node-id="Z2h469IQZT9QG2Kxp7nYHq"><span class="dl add" data-page-node-id="FFezCquPItdX8OEtcCMWI6">+ const safety = daily * leadDays * 1.5;</span><span class="dl" data-page-node-id="HqWhXmPAsdLQ6j1GyfLa3h">  const daily = sku.units / 26 / 7;</span><span class="dl del" data-page-node-id="G26Qi6KXxGMe4qF1LJ6TMc">- const safety = daily * leadDays;</span><span class="dl" data-page-node-id="VkJOkZVbNo7ipN1gRHpgjE">  return Math.ceil(daily * leadDays + safety);</span></pre>
+          <article class="card reveal" id="p18">
+            <div class="card-head"><span class="num">18</span><div><h3>Code block</h3><p class="card-sub">Line numbers and a unified diff</p></div></div>
+            <div class="demo">
+              <div class="tabs" id="codeTabs"><button class="tab on">Source</button><button class="tab">Unified diff</button></div>
+              <div class="code" id="codeBlock">
+                <pre id="codeSrc"><span class="ln">1</span>function reorderPoint(sku, leadDays) {
+<span class="ln">2</span>  const daily = sku.units / 26 / 7;
+<span class="ln">3</span>  const safety = daily * leadDays * 1.5;
+<span class="ln">4</span>  return Math.ceil(daily * leadDays + safety);
+<span class="ln">5</span>}</pre>
+                <pre id="codeDiff" hidden><span class="dl add">+ const safety = daily * leadDays * 1.5;</span><span class="dl">  const daily = sku.units / 26 / 7;</span><span class="dl del">- const safety = daily * leadDays;</span><span class="dl">  return Math.ceil(daily * leadDays + safety);</span></pre>
               </div>
-              <div class="diff-foot" data-page-node-id="ovPi2s4HKfOZHSR7Rrlee9"><span id="codeNote" data-page-node-id="Ex9snydmEZIkEPeoQECHAR">5 lines · TypeScript</span><button class="btn-mini ghost" id="codeCopy" data-page-node-id="dXpmVPzfbADLOoE9pn9Vm2">Copy</button></div>
+              <div class="diff-foot"><span id="codeNote">5 lines · TypeScript</span><button class="btn-mini ghost" id="codeCopy">Copy</button></div>
             </div>
-            <p class="card-note" data-page-node-id="lARALsyF6hYgE5BIvRRVJW">Line numbers matter for one reason: they let someone say "line 3 is wrong." Without them, reviewing generated code is a guessing game.</p>
+            <p class="card-note">Line numbers matter for one reason: they let someone say "line 3 is wrong." Without them, reviewing generated code is a guessing game.</p>
           </article>
 
           <!-- 19 -->
-          <article class="card reveal" id="p19" data-page-node-id="HvoUG1dRqOTE1IWi59F7TT">
-            <div class="card-head" data-page-node-id="3I6DablIuLQSDsoxgLeTmq"><span class="num" data-page-node-id="QXqlYXwWvjni8KtIsnvTOd">19</span><div data-page-node-id="3iuunGePFCFMBH7EzZg3ht"><h3 data-page-node-id="y3CxhRsgJ86RNlOD0tu7C3">Fine-tune card</h3><p class="card-sub" data-page-node-id="xqhIgzHgJkLW6hLUpAXaHS">The agent adjusts properties in an inspector</p></div></div>
-            <div class="demo" data-page-node-id="hUzqiNZQrQmMO4NzibYFAg">
-              <div class="finetune" data-page-node-id="e94vdMy93yBhggt5KYUM6C">
-                <div class="ft-preview" id="ftPreview" data-page-node-id="sLFqctsXYLOc83EuWzZDx3"><span data-page-node-id="dhaw0GLDP9YMDTBmNYUYWK">Free cone Friday</span><small data-page-node-id="rs28P1Igy8AEOwXZyYWUJ5">Pistachio · this week only</small></div>
-                <div class="ft-controls" data-page-node-id="v1BSDs2NfICXmfIVEUAFis">
-                  <label class="ft-row" data-page-node-id="un5MZKAudd1w7UzR2hblyk"><span data-page-node-id="CfTjm9VCDJ0rlWvOvjFjfg">Radius</span><input type="range" id="ftRadius" min="0" max="24" value="10" data-page-node-id="6ZKKNrk1iK2BTpVoYSKvqH" /><b id="ftRadiusV" data-page-node-id="JUopVMCMI0ndZnZ8o8z5JC">10</b></label>
-                  <label class="ft-row" data-page-node-id="VJpKlYiBzD17wMM1DLkLoV"><span data-page-node-id="ePHR6FyT6rAczz6ua6f5oW">Padding</span><input type="range" id="ftPad" min="8" max="40" value="18" data-page-node-id="XLw3C2XGub7vrrnBvdegjd" /><b id="ftPadV" data-page-node-id="2CZvHQyfwkZRisj4xfFztr">18</b></label>
-                  <label class="ft-row" data-page-node-id="7CmBEpwWiGvWLKmQLe16an"><span data-page-node-id="eveqFBD9YJpazsvYBgyWBY">Weight</span><input type="range" id="ftWeight" min="400" max="700" step="100" value="500" data-page-node-id="2eGPSzz2tce6dDEuWm9qS4" /><b id="ftWeightV" data-page-node-id="uCU3I4zzvSfJVViW1sddA8">500</b></label>
+          <article class="card reveal" id="p19">
+            <div class="card-head"><span class="num">19</span><div><h3>Fine-tune card</h3><p class="card-sub">The agent adjusts properties in an inspector</p></div></div>
+            <div class="demo">
+              <div class="finetune">
+                <div class="ft-preview" id="ftPreview"><span>Free cone Friday</span><small>Pistachio · this week only</small></div>
+                <div class="ft-controls">
+                  <label class="ft-row"><span>Radius</span><input type="range" id="ftRadius" min="0" max="24" value="10" /><b id="ftRadiusV">10</b></label>
+                  <label class="ft-row"><span>Padding</span><input type="range" id="ftPad" min="8" max="40" value="18" /><b id="ftPadV">18</b></label>
+                  <label class="ft-row"><span>Weight</span><input type="range" id="ftWeight" min="400" max="700" step="100" value="500" /><b id="ftWeightV">500</b></label>
                 </div>
-                <button class="ft-agent" id="ftAgent" data-page-node-id="aIU5Gcv9MhZH9tlANn0uHW"><span class="chip-ai" data-page-node-id="PoO0s12pn6W8esOxTgfm6Z">Agent suggests</span>Make it punchier</button>
+                <button class="ft-agent" id="ftAgent"><span class="chip-ai">Agent suggests</span>Make it punchier</button>
               </div>
             </div>
-            <p class="card-note" data-page-node-id="BdCFxlFAf5RlizMQEkBzPy">Don't let the agent rewrite the artefact — let it move the sliders. The user sees what changed, can reverse any single value, and learns the design system by watching it.</p>
+            <p class="card-note">Don't let the agent rewrite the artefact — let it move the sliders. The user sees what changed, can reverse any single value, and learns the design system by watching it.</p>
           </article>
 
           <!-- 20 -->
-          <article class="card reveal" id="p20" data-page-node-id="MR12ylyXA8183rC1tAEhtL">
-            <div class="card-head" data-page-node-id="Csbv5mdBQe3jDxD9wHbZ5b"><span class="num" data-page-node-id="uYrD3BUzPu4q3C71J3Kssd">20</span><div data-page-node-id="Xo5FBqKsL0JdaGdrlHP8uO"><h3 data-page-node-id="r2P6EAF8BXfxRAm1WF55So">Selection actions</h3><p class="card-sub" data-page-node-id="grFN5OkXLqTaFpUaFpAru8">Highlight a passage, hand it to the agent</p></div></div>
-            <div class="demo" data-page-node-id="KjPk2p8yM3C1ckpMEeJZRF">
-              <p class="sel-copy" id="selCopy" data-page-node-id="YmFKnZijebLOAzJszMXG6k">The refund window is thirty days from delivery. <span class="sel-seed" data-page-node-id="qFYzpHBRJ2vCaFJpOCmOl9">Items damaged in transit are exempt from the restocking fee.</span> Select any of this text to see the agent actions appear.</p>
-              <div class="sel-bar" id="selBar" hidden data-page-node-id="LVNVrNGULNeGrsTDpR36Y1">
-                <button class="sel-btn" data-page-node-id="DuO1nAMDjSMpSYGQjliUXu">Explain</button><button class="sel-btn" data-page-node-id="bWahCXpLTTyzRl4szDV4Fo">Improve</button><button class="sel-btn" data-page-node-id="cU9dhHdaMOBx6bAgBeERfY">Shorten</button><button class="sel-btn" data-page-node-id="qEnsurMsiqQXSTDWLws6JA">Tone</button>
+          <article class="card reveal" id="p20">
+            <div class="card-head"><span class="num">20</span><div><h3>Selection actions</h3><p class="card-sub">Highlight a passage, hand it to the agent</p></div></div>
+            <div class="demo">
+              <p class="sel-copy" id="selCopy">The refund window is thirty days from delivery. <span class="sel-seed">Items damaged in transit are exempt from the restocking fee.</span> Select any of this text to see the agent actions appear.</p>
+              <div class="sel-bar" id="selBar" hidden>
+                <button class="sel-btn">Explain</button><button class="sel-btn">Improve</button><button class="sel-btn">Shorten</button><button class="sel-btn">Tone</button>
               </div>
-              <div class="sel-result" id="selResult" hidden data-page-node-id="Ks1cG8jIClw8EvN4ArF3HI"></div>
+              <div class="sel-result" id="selResult" hidden></div>
             </div>
-            <p class="card-note" data-page-node-id="A43U2GK3l6hzGeNa4eoSeI">Bring the agent to the object instead of the object to the agent. No copy-paste, no lost context, and the action set adapts to what was selected.</p>
+            <p class="card-note">Bring the agent to the object instead of the object to the agent. No copy-paste, no lost context, and the action set adapts to what was selected.</p>
           </article>
 
         </div>
       </section>
 
-      <section id="autonomy" class="section section-dark" data-page-node-id="HoVN6aFpBA4KcMV1wpeNw1">
-        <div class="section-head reveal" data-page-node-id="BpQDMLuSmGXTWiFvzIdiwx">
-          <span class="eyebrow eyebrow-light" data-page-node-id="KEHfxTXxX7BmDQHdRcK78F">Signature piece</span>
-          <h2 data-page-node-id="OSvWATpMdvUqDBHArOT4eK">The autonomy dial</h2>
-          <p data-page-node-id="O24XXO804mEiQQ8H30jQG6">Drag it. Autonomy isn't a feature flag — it's a dial with a cost curve, and the design work is deciding where the guardrail sits. This is the artefact that separates someone who shipped a chatbot from someone who designs agentic systems.</p>
+      <section id="autonomy" class="section section-dark">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-light">Signature piece</span>
+          <h2>The autonomy dial</h2>
+          <p>Drag it. Autonomy isn't a feature flag — it's a dial with a cost curve, and the design work is deciding where the guardrail sits. This is the artefact that separates someone who shipped a chatbot from someone who designs agentic systems.</p>
         </div>
-        <div class="auto reveal" data-page-node-id="cIuQ04r6oNB0QRmrrTzXxN">
-          <div class="auto-left" data-page-node-id="ewy4rTyl415yYY1QbXBrEO">
-            <label class="auto-label" for="autoRange" data-page-node-id="oKAaqf13eON7tOM5xQ6284">Autonomy level</label>
-            <input type="range" id="autoRange" min="1" max="5" step="1" value="2" aria-describedby="autoTitle" data-page-node-id="EqUTa8bEtvCCllp7mlS7LD" />
-            <div class="auto-ticks" data-page-node-id="rc1U8aqZsOjDZZoHmE1oQp"><span data-page-node-id="DK2OHuz7gXVu215mgYHRMf">1</span><span data-page-node-id="6xA9ro2JEyFzrRsjOhO4vK">2</span><span data-page-node-id="40G4vExpzN165Hy1DJpHez">3</span><span data-page-node-id="9vTE79FfKAicZSe0i6sLz5">4</span><span data-page-node-id="6jUfHVCQfSmFYmYTG93eYw">5</span></div>
-            <div class="meters" data-page-node-id="uXOtyAlLguv5Hl4YtqpitT">
-              <div class="meter" data-page-node-id="9op9X7UUN28OqVY9c8xlWG"><span class="meter-name" data-page-node-id="FXv1l3LBH4SBXup1DtaJAH">User control</span><span class="meter-track" data-page-node-id="Lj257KQ9FFhI2hAE1xtKlD"><i id="mControl" data-page-node-id="GiphDXUfSRYecTS1INZxgA"></i></span><span class="meter-val" id="vControl" data-page-node-id="EcmAaQOPegVthZjY1DSGLv"></span></div>
-              <div class="meter" data-page-node-id="8Dlgo1o1QoPHKdTzbXKWwA"><span class="meter-name" data-page-node-id="7LuIQF9yEgwvtrxHTV02CB">Speed to value</span><span class="meter-track" data-page-node-id="5dw01vH7YMwEK4LvFW3jWb"><i id="mSpeed" data-page-node-id="1jYlpMcbZQ5pZOHKgqggLx"></i></span><span class="meter-val" id="vSpeed" data-page-node-id="St0Ffp9rwBUmmnfvPHU6u9"></span></div>
-              <div class="meter" data-page-node-id="DqxAQ7uRqvmmlm1UjRXN6u"><span class="meter-name" data-page-node-id="OpXdqxEIGnWepOCMgEgJCp">Blast radius</span><span class="meter-track" data-page-node-id="wsS5alaGd02AbWQI2BVNEP"><i id="mRisk" data-page-node-id="Y526HOEmGA6WGp4Y8R8Vvx"></i></span><span class="meter-val" id="vRisk" data-page-node-id="qO3moP7uovJGSszNGxeEjo"></span></div>
+        <div class="auto reveal">
+          <div class="auto-left">
+            <label class="auto-label" for="autoRange">Autonomy level</label>
+            <input type="range" id="autoRange" min="1" max="5" step="1" value="2" aria-describedby="autoTitle" />
+            <div class="auto-ticks"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+            <div class="meters">
+              <div class="meter"><span class="meter-name">User control</span><span class="meter-track"><i id="mControl"></i></span><span class="meter-val" id="vControl"></span></div>
+              <div class="meter"><span class="meter-name">Speed to value</span><span class="meter-track"><i id="mSpeed"></i></span><span class="meter-val" id="vSpeed"></span></div>
+              <div class="meter"><span class="meter-name">Blast radius</span><span class="meter-track"><i id="mRisk"></i></span><span class="meter-val" id="vRisk"></span></div>
             </div>
           </div>
-          <div class="auto-right" data-page-node-id="cKLbXN5jV2MYZfiXGMHVRI">
-            <h3 class="auto-title" id="autoTitle" data-page-node-id="4fgUuxb1ngjJn5JaCHVjp3"></h3>
-            <p class="auto-desc" id="autoDesc" data-page-node-id="bFbeXuEwnTM6xeyjtaI4rS"></p>
-            <div class="auto-surface" id="autoSurface" data-page-node-id="qGNv4hsXr7yCsY4cGmHAol"></div>
+          <div class="auto-right">
+            <h3 class="auto-title" id="autoTitle"></h3>
+            <p class="auto-desc" id="autoDesc"></p>
+            <div class="auto-surface" id="autoSurface"></div>
           </div>
         </div>
       </section>
 
-      <section id="notes" class="section" data-page-node-id="ZAIGzZCHYnhwl9fN5JXhnj">
-        <div class="section-head reveal" data-page-node-id="Sz6poFDpIEiPamcvYz3NAp"><h2 data-page-node-id="5F1q24iABOVs5sl8u0x4a1">How this stays free and fast</h2></div>
-        <div class="notes" data-page-node-id="ZuDxLQRXkBdupk4eenGnww">
-          <div class="note reveal" data-page-node-id="a6pZSakBKQAdxg9lZd3Q7F"><h3 data-page-node-id="JFFzOnNAMEXpfPIHR1x2iR">No build step, no dependencies</h3><p data-page-node-id="8geFCA7TNjiRl0jiOiNpa0">Three files: HTML, CSS, JavaScript. Nothing to install, nothing to break when a package updates in eighteen months and you need to change one line of copy.</p></div>
-          <div class="note reveal" data-page-node-id="1fKsx9XKTg43mDLPwPT6nu"><h3 data-page-node-id="bIH1q0tzhAHkVcgPMsRajC">Hosting</h3><p data-page-node-id="NUGtnzo64HzvNj4yLRdcDK">GitHub Pages. Push the folder, get a live URL. No card, no trial clock, no bandwidth bill. A custom domain is the only real cost — around ₹800 a year, entirely optional.</p></div>
-          <div class="note reveal" data-page-node-id="Sc21XDig2Bk4l1fepOgH6e"><h3 data-page-node-id="XseBFBVsayalqB8g8BV6Ex">Zero API spend</h3><p data-page-node-id="VS4gQT6uj3hT0ioC63xSNZ">Every demo is scripted. It behaves like a live model but costs nothing, works offline, and never rate-limits mid-interview. That's a feature: an interviewer on hotel wifi still sees it work.</p></div>
-          <div class="note reveal" data-page-node-id="LuKHsBBo0K3Zz95ZchGGHc"><h3 data-page-node-id="6V7kbvyYhp5EhGPj9SLuqs">Reduced motion is a first-class state</h3><p data-page-node-id="AG3FAvv8D0DGfqHtw1WZeg">Toggle it in the top right. The page honours <code data-page-node-id="kMcq1FgJ0Qy4t5dYUNmrHY">prefers-reduced-motion</code> automatically and streaming resolves instantly instead of crawling.</p></div>
-          <div class="note reveal" data-page-node-id="r6IlhUxCtpnZ0DDF1wfRjC"><h3 data-page-node-id="s3nBLk8eK1wRqk9mxgknRQ">Performance budget</h3><p data-page-node-id="OL9wFc25WOUccAObc0MWxH">Under 120KB uncompressed. No web fonts, no images, no framework runtime. It loads before a recruiter's thumb reaches the back button.</p></div>
-          <div class="note reveal" data-page-node-id="MnlPAUW8v47WLmpq4eSQmS"><h3 data-page-node-id="8YTAZ23GLDnRSwXfcTIWNk">You own it</h3><p data-page-node-id="IXRe3tHM84fMUZrtEngXa3">Not a template, not a platform. Plain files you can move anywhere, edit by hand, or hand over to be changed in one sentence.</p></div>
+      <section id="notes" class="section">
+        <div class="section-head reveal"><h2>How this stays free and fast</h2></div>
+        <div class="notes">
+          <div class="note reveal"><h3>No build step, no dependencies</h3><p>Three files: HTML, CSS, JavaScript. Nothing to install, nothing to break when a package updates in eighteen months and you need to change one line of copy.</p></div>
+          <div class="note reveal"><h3>Hosting</h3><p>GitHub Pages. Push the folder, get a live URL. No card, no trial clock, no bandwidth bill. A custom domain is the only real cost — around ₹800 a year, entirely optional.</p></div>
+          <div class="note reveal"><h3>Zero API spend</h3><p>Every demo is scripted. It behaves like a live model but costs nothing, works offline, and never rate-limits mid-interview. That's a feature: an interviewer on hotel wifi still sees it work.</p></div>
+          <div class="note reveal"><h3>Reduced motion is a first-class state</h3><p>Toggle it in the top right. The page honours <code>prefers-reduced-motion</code> automatically and streaming resolves instantly instead of crawling.</p></div>
+          <div class="note reveal"><h3>Performance budget</h3><p>Under 120KB uncompressed. No web fonts, no images, no framework runtime. It loads before a recruiter's thumb reaches the back button.</p></div>
+          <div class="note reveal"><h3>You own it</h3><p>Not a template, not a platform. Plain files you can move anywhere, edit by hand, or hand over to be changed in one sentence.</p></div>
         </div>
       </section>
 
-      <footer class="footer" data-page-node-id="seowZF84K63QFgPUEzyXfH"><p data-page-node-id="rEfkTW3us1sxcWWigA9K05">Twenty AI-native primitives · hand-coded · every component on this page is running, not recorded.</p></footer>
+      <footer class="footer"><p>Twenty AI-native primitives · hand-coded · every component on this page is running, not recorded.</p></footer>
     </main>
   </div>
 </div>
 
-<div class="palette-wrap" id="paletteWrap" hidden data-page-node-id="OJh9YWtZrvdVu7WDa8dVFF">
-  <div class="palette" role="dialog" aria-modal="true" aria-label="Search components" data-page-node-id="wVTChyt0196CLU6x5CiJi1">
-    <div class="palette-input" data-page-node-id="5gryyrLEpXxw1yZ8SOPQ6n"><span class="search-ic" data-page-node-id="4rpvuW25AIid4P1XHKOO1V"></span><input type="text" id="paletteInput" placeholder="Search components…" autocomplete="off" data-page-node-id="F56YF7m9EEdcXL2IGjiSm8" /><kbd data-page-node-id="04d1MDm0tIWwxKEl7fTOZ4">esc</kbd></div>
-    <div class="palette-results" id="paletteResults" data-page-node-id="SisethAKAKXaZj7o0yWmFY"></div>
+<div class="palette-wrap" id="paletteWrap" hidden>
+  <div class="palette" role="dialog" aria-modal="true" aria-label="Search components">
+    <div class="palette-input"><span class="search-ic"></span><input type="text" id="paletteInput" placeholder="Search components…" autocomplete="off" /><kbd>esc</kbd></div>
+    <div class="palette-results" id="paletteResults"></div>
   </div>
 </div>
 
