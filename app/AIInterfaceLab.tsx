@@ -1,0 +1,24 @@
+'use client';
+import {useEffect,useState} from 'react';
+import {PixelLoader,SegmentedTrace,StreamText} from './vendor/beautiful-ui/Primitives';
+
+const tasks=[['Evidence gathered','done'],['Contradictions checked','done'],['Recommendation drafted','active'],['Human approval','waiting']];
+export default function AIInterfaceLab(){
+ const [run,setRun]=useState(0),[approved,setApproved]=useState<'idle'|'yes'|'no'>('idle'),[query,setQuery]=useState('Show the strongest healthcare outcome'),[confidence,setConfidence]=useState(72),[selected,setSelected]=useState('Clinical Trial Tool');
+ useEffect(()=>{const id=setInterval(()=>setRun(x=>x+1),8000);return()=>clearInterval(id)},[]);
+ return <div className="native-lab">
+  <div className="lab-toolbar"><div><PixelLoader label="Interface lab running"/><span>10 live patterns · local only</span></div><button onClick={()=>setRun(x=>x+1)}>Replay motion</button></div>
+  <div className="lab-grid">
+   <section className="lab-card lab-wide"><div className="lab-label"><span>01</span>Streaming answer</div><h3 key={run}><StreamText run>Clinical Trial Tool carries the strongest published healthcare outcome: the case reports a 40% streamlined workflow and 90% user satisfaction.</StreamText></h3><div className="source-chip">Source attached · native case study</div></section>
+   <section className="lab-card"><div className="lab-label"><span>02</span>Reasoning trace</div><SegmentedTrace items={[{label:'Plan',content:'Match the question to case tags and outcome claims.'},{label:'Evidence',content:'Clinical Trial Tool · healthcare · three published outcome claims.'},{label:'Limits',content:'Claims are reproduced from the published case, not independently verified.'}]}/></section>
+   <section className="lab-card"><div className="lab-label"><span>03</span>Human approval</div><p className="lab-question">Use the case-study claim in a recruiter summary?</p><div className="approval-facts"><span>Action</span><b>Publish claim</b><span>Risk</span><b>Needs source label</b></div>{approved==='idle'?<div className="lab-actions"><button onClick={()=>setApproved('no')}>Hold</button><button className="primary" onClick={()=>setApproved('yes')}>Approve with label</button></div>:<button className="reset" onClick={()=>setApproved('idle')}>{approved==='yes'?'Approved with source visible':'Held for review'} · reset</button>}</section>
+   <section className="lab-card"><div className="lab-label"><span>04</span>Agent task state</div><div className="task-stack">{tasks.map(([label,state],i)=><div className={state} key={label}><i>{state==='done'?'✓':state==='active'?'↻':'·'}</i><span>{label}</span><em>{state}</em></div>)}</div></section>
+   <section className="lab-card"><div className="lab-label"><span>05</span>Prompt contract</div><div className="contract"><div><span>Goal</span><b>Find decision-ready evidence</b></div><div><span>Must</span><b>Show source and limit</b></div><div><span>Never</span><b>Invent experience</b></div></div></section>
+   <section className="lab-card lab-wide"><div className="lab-label"><span>06</span>Intent composer</div><div className="prompt-box"><input value={query} onChange={e=>setQuery(e.target.value)} aria-label="Try a portfolio question"/><button onClick={()=>setRun(x=>x+1)}>Run</button></div><div className="tool-chips"><span>search_cases</span><span>rank_evidence</span><span>attach_sources</span></div></section>
+   <section className="lab-card"><div className="lab-label"><span>07</span>Confidence control</div><div className="confidence"><b>{confidence}%</b><span>{confidence>80?'High confidence':confidence>55?'Review recommended':'Human decision required'}</span><input type="range" min="20" max="95" value={confidence} onChange={e=>setConfidence(+e.target.value)}/></div></section>
+   <section className="lab-card"><div className="lab-label"><span>08</span>Recommendation</div><div className="reco"><span>Best evidence match</span><select value={selected} onChange={e=>setSelected(e.target.value)}><option>Clinical Trial Tool</option><option>Application Automation</option><option>Orbit</option></select><p>{selected==='Clinical Trial Tool'?'Healthcare depth + quantified outcome claims.':selected==='Application Automation'?'Enterprise workflow + business outcome claims.':'AI-native product thinking + visible accountability.'}</p></div></section>
+   <section className="lab-card"><div className="lab-label"><span>09</span>Before / after</div><div className="diff"><del>AI gives one opaque answer</del><ins>AI shows answer + evidence + limits</ins></div></section>
+   <section className="lab-card"><div className="lab-label"><span>10</span>Escalation rule</div><div className="escalation"><span>If confidence &lt; 60%</span><b>Stop before action</b><p>Show the unresolved choice to a person with the evidence already gathered.</p></div></section>
+  </div>
+ </div>
+}
