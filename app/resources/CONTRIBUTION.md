@@ -13,7 +13,7 @@ Each candidate must include:
 
 Publication gates:
 1. Source resolves and the component/pattern is still present.
-2. Licence is explicit. Unclear means index-only until confirmed.
+2. Licence is explicit. Unclear means index-only until confirmed. Any local visual for that entry must be an original interpretation, not copied site content.
 3. Hosted previews contain only code traceable to an open licence and preserve notices.
 4. Paid/restricted sources get an original link-only card, never a mirrored screenshot or copied code.
 5. Preview works at desktop/mobile, keyboard and reduced motion.
