@@ -9,4 +9,7 @@
   {"source":"/content-patterns/","destination":"/resources","permanent":true},
   {"source":"/process/ai-native","destination":"/work/ai-interface-exploration","permanent":true},
   {"source":"/process/ai-native/","destination":"/work/ai-interface-exploration","permanent":true}
+,
+  {"source":"/work/orbit","destination":"/work/ai-interface-exploration","permanent":true},
+  {"source":"/work/orbit/","destination":"/work/ai-interface-exploration","permanent":true}
 ]}
