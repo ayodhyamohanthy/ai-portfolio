@@ -399,3 +399,4 @@
 @media(max-width:760px){.native-case-rail,.case-detail-rail{border-bottom-color:#e3e3e6}}
 .native-case-rail nav,.case-detail-rail nav{position:static;background:none;backdrop-filter:none;border:0;padding:0}
 .case-hero-system b{color:#f3efe7}
+.tool-what{font-weight:500;color:#272727;margin:4px 0 8px;font-size:15px}
