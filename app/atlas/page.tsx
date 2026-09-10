@@ -1,6 +1,6 @@
 import Link from 'next/link';import AtlasClient from './AtlasClient';import {fieldNotes} from '../atlasData';
 export const metadata={title:'Atlas · Ayodhya Mohanthy',description:'A living map of AI-native design: patterns, templates and case evidence by territory, with dated field notes.'};
-export default function Atlas(){return <main className="resource-page atlas-page">
+export default function Atlas(){return <main className="resource-page atlas-page atlas-light">
 <nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/fresh">Fresh</Link><Link href="/library">Starter kit</Link><Link href="/work/ai-interface-exploration">Interface lab</Link></div></nav>
 <header className="atlas-hero"><p className="eyebrow">THE ATLAS · AI-NATIVE DESIGN</p><h1>The field, mapped.<br/><i>Changed when the field changes.</i></h1><p>Every node is something that already exists here: a verified live pattern, a starter-kit template, or case evidence. Hover to trace relations. Open a note to see why it matters.</p></header>
 <AtlasClient/>
