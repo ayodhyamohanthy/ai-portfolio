@@ -1,5 +1,5 @@
 'use client';
-import {useMemo,useRef,useState} from 'react';
+import {useEffect,useMemo,useRef,useState} from 'react';
 import {territories,atlasNodes,atlasEdges,fieldNotes,AtlasNode} from '../atlasData';
 
 const COLS=3,ZW=412,ZH=268,ZX=14,ZY=20;
@@ -18,6 +18,7 @@ const H=ZY*2+Math.ceil(territories.length/COLS)*ZH;
 
 export default function AtlasClient(){
  const [filter,setFilter]=useState('All'),[sel,setSel]=useState<AtlasNode|null>(null),[hov,setHov]=useState<string|null>(null);
+ useEffect(()=>{const t=new URLSearchParams(window.location.search).get('t');if(t&&territories.some(x=>x.id===t))setFilter(t)},[]);
  const mapRef=useRef<HTMLDivElement>(null);
  const active=hov||sel?.id||null;
  const linked=useMemo(()=>{if(!active)return new Set<string>();const s=new Set([active]);atlasEdges.forEach(e=>{if(e.from===active)s.add(e.to);if(e.to===active)s.add(e.from)});return s},[active]);
