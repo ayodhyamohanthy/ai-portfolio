@@ -433,3 +433,14 @@
 .nl-error{font-size:13px;color:#e8b8b8}
 .nl-error a{color:#f4f1ea}
 @media(max-width:800px){.nl-band{grid-template-columns:1fr;gap:24px}}
+
+/* Generative surface demo (Interface lab card 21) */
+.gen-demo{margin-top:26px}.gen-prompts{display:flex;gap:8px;flex-wrap:wrap}.gen-prompts button{border:1px solid #444;background:#202020;color:#ddd;border-radius:99px;padding:8px 14px;cursor:pointer;font-size:12px}.gen-prompts button.on{background:var(--lime);border-color:var(--lime);color:#111}
+.gen-body{display:grid;grid-template-columns:150px 1fr;gap:16px;margin-top:16px}
+.gen-catalog{display:grid;gap:6px;align-content:start}.gen-catalog span{font-size:10px;color:#777;letter-spacing:.1em;margin-bottom:4px}.gen-catalog b{font-size:11px;font-weight:500;color:#666;border:1px solid #333;border-radius:6px;padding:6px 9px;transition:all .25s}.gen-catalog b.used{color:var(--lime);border-color:#4a5a2a}
+.gen-surface{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-content:start;min-height:150px}
+.gen-block{background:#1d1d1d;border:1px solid #333;border-radius:8px;padding:12px;display:grid;gap:8px;animation:genIn .4s cubic-bezier(.2,.9,.3,1.1) both}.gen-block span{font-size:10px;color:var(--lime);text-transform:uppercase;letter-spacing:.08em}.gen-block i{display:block;height:7px;border-radius:4px;background:#333}.gen-ghost{opacity:.4;animation:genPulse 1s ease-in-out infinite}.gen-ghost span{color:#777}
+.gen-caption{margin-top:14px;font-size:12px;color:#999;max-width:60ch}
+@keyframes genIn{from{opacity:0;transform:scale(.9) translateY(8px)}to{opacity:1;transform:none}}
+@keyframes genPulse{50%{opacity:.15}}
+@media(max-width:720px){.gen-body{grid-template-columns:1fr}.gen-catalog{grid-template-columns:repeat(4,1fr)}.gen-catalog span{grid-column:1/-1}.gen-surface{grid-template-columns:repeat(2,minmax(0,1fr))}}

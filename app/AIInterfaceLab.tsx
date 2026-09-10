@@ -1,13 +1,13 @@
 'use client';
 import {useEffect,useState} from 'react';
-import {PixelLoader,SegmentedTrace,StreamText} from './vendor/beautiful-ui/Primitives';
+import {PixelLoader,SegmentedTrace,StreamText} from './vendor/beautiful-ui/Primitives';import GenerativeLab from './GenerativeLab';
 
 const tasks=[['Evidence gathered','done'],['Contradictions checked','done'],['Recommendation drafted','active'],['Human approval','waiting']];
 export default function AIInterfaceLab(){
  const [run,setRun]=useState(0),[approved,setApproved]=useState<'idle'|'yes'|'no'>('idle'),[query,setQuery]=useState('Show the strongest healthcare outcome'),[confidence,setConfidence]=useState(72),[selected,setSelected]=useState('Clinical Trial Tool'),[command,setCommand]=useState(''),[nav,setNav]=useState('Evidence'),[codeView,setCodeView]=useState<'source'|'diff'>('source'),[fine,setFine]=useState(64),[selection,setSelection]=useState(''),[insight,setInsight]=useState(1);
  useEffect(()=>{const id=setInterval(()=>setRun(x=>x+1),8000);return()=>clearInterval(id)},[]);
  return <div className="native-lab">
-  <div className="lab-toolbar"><div><PixelLoader label="Interface lab running"/><span>20 live patterns · local only</span></div><button onClick={()=>setRun(x=>x+1)}>Replay motion</button></div>
+  <div className="lab-toolbar"><div><PixelLoader label="Interface lab running"/><span>21 live patterns · local only</span></div><button onClick={()=>setRun(x=>x+1)}>Replay motion</button></div>
   <div className="lab-grid">
    <section className="lab-card lab-wide"><div className="lab-label"><span>01</span>Streaming answer</div><h3 key={run}><StreamText run>Clinical Trial Tool carries the strongest published healthcare outcome: the case reports a 40% streamlined workflow and 90% user satisfaction.</StreamText></h3><div className="source-chip">Source attached · native case study</div></section>
    <section className="lab-card"><div className="lab-label"><span>02</span>Reasoning trace</div><SegmentedTrace items={[{label:'Plan',content:'Match the question to case tags and outcome claims.'},{label:'Evidence',content:'Clinical Trial Tool · healthcare · three published outcome claims.'},{label:'Limits',content:'Claims are reproduced from the published case, not independently verified.'}]}/></section>
@@ -33,6 +33,7 @@ export default function AIInterfaceLab(){
 - return opaqueOutput`}</pre></section>
    <section className="lab-card"><div className="lab-label"><span>19</span>Fine-tune card</div><div className="fine-card"><div><span>Answer confidence</span><b>{fine}%</b></div><input type="range" min="20" max="95" value={fine} onChange={e=>setFine(+e.target.value)}/><div className="fine-preview" style={{opacity:.45+fine/180}}>Evidence is visible. Human judgment stays in control.</div></div></section>
    <section className="lab-card lab-wide"><div className="lab-label"><span>20</span>Selection actions</div><div className="selection-demo"><p><mark>AI proposes alternatives</mark>, but the designer verifies the evidence, chooses the direction and owns the recommendation.</p><div><button onClick={()=>setSelection('Made more direct')}>Rewrite</button><button onClick={()=>setSelection('Key claim saved')}>Save insight</button><button onClick={()=>setSelection('Source check attached')}>Add source</button></div>{selection&&<span>{selection} ✓</span>}</div></section>
+   <section className="lab-card lab-wide"><div className="lab-label"><span>21</span>Generative surface</div><GenerativeLab/></section>
   </div>
  </div>
 }

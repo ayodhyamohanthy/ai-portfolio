@@ -1,7 +1,7 @@
 import Link from 'next/link';import {snapshots,results,boards} from '../benchData';import Reveal from '../Reveal';
 export const metadata={title:'Benchmarks · Ayodhya Mohanthy',description:'Benchmark data for AI models on design work, every number linked to its source.'};
 export default function Benchmarks(){return <main className="resource-page atlas-page fresh-page tools-page benchmarks-page">
-<nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link></div></nav>
+<nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link><Link href="/thinking">Thinking</Link></div></nav>
 <header className="atlas-hero"><p className="eyebrow">BENCHMARKS · AI-NATIVE DESIGN</p><h1>The models, scored on design.<br/><i>Numbers with sources.</i></h1><p>Benchmark data for models doing design work. Every number is read off a live source page on the date stamped - follow the link and check it yourself.</p></header>
 {snapshots.map(s=><section className="sources-track bench-snapshot" key={s.board+s.category} data-rv>
 <div className="track-head"><b>LIVE</b><div><h2>{s.board}</h2><p>{s.category} · {s.what}</p></div></div>
