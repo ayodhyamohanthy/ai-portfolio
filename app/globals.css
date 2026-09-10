@@ -452,3 +452,7 @@
 .process-row p{font-size:14px;color:#4a4741;line-height:1.5}
 .process-row span{display:block;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.1em;color:#8a873f;margin-bottom:4px}
 @media(max-width:720px){.process-row{grid-template-columns:1fr;gap:10px}}
+
+/* Benchmarks: open-weight tag + params tag */
+.bench-open{display:inline-block;margin-left:10px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:9px;letter-spacing:.1em;color:#6a8a12;border:1px solid #c4d68a;border-radius:99px;padding:2px 7px;vertical-align:2px}
+.bench-params{color:#8a873f;border-color:#ddd8c8}
