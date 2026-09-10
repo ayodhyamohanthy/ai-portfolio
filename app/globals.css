@@ -335,3 +335,67 @@
 .pattern-modal>article{animation:rvPanel .32s cubic-bezier(.23,1,.32,1) both}
 @media(prefers-reduced-motion:reduce){.atlas-detail,.pattern-modal>article{animation:none}}
 .atlas-filters button,.rail-filter button,.front-cats .scroll-chips a{transition:background-color .18s,color .18s,border-color .18s}
+/* Phase E: case studies into the light design system */
+.native-case-page{background:#f7f7f8;color:#272727;font-family:'Overused Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;grid-template-columns:minmax(330px,31vw) 1fr}
+.native-case-page h1,.native-case-page h2,.native-case-page h3,.visual-case-page h1,.visual-case-page h2,.visual-case-page h3{font-family:'Overused Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;font-weight:450}
+.native-case-rail{background:#f7f7f8;border-right:1px solid #e3e3e6}
+.native-case-rail>a{font-family:'Departure Mono',ui-monospace,monospace;font-weight:400}
+.native-case-rail p,.native-case-hero p,.native-gallery>div p{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500}
+.native-case-rail span{color:#66666b}
+.native-case-rail i{border-color:#dcdce0;color:#66666b}
+.native-case-rail nav a{border-color:#d8d8dc;background:#fff;color:#272727;transition:border-color .18s,transform .18s}
+.native-case-rail nav a:hover{border-color:#272727;transform:translateY(-1px)}
+.native-case-hero{border-bottom:1px solid #e3e3e6}
+.native-case-hero b{color:#5f8c1f}
+.native-case-hero>img{background:#fff;border-top:1px solid #eeeef1}
+.native-impact-line{border-top-color:#e3e3e6}
+.native-impact-line span,.deep-summary span{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace}
+.native-impact-line b{color:#272727;font-family:'Overused Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+.deep-summary{background:#fff;border-bottom-color:#e3e3e6}
+.deep-summary>div p{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace}
+.deep-summary article{border-left-color:#e3e3e6}
+.deep-summary article p{color:#55555a}
+.thin-case-note{border-color:#e6d9a8;background:#fdf8e7}
+.thin-case-note p{color:#7a6f4a}
+.native-story-block{border-bottom:1px solid #e3e3e6}
+.native-story-copy>span{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace}
+.native-story-copy p{color:#55555a}
+.native-story-block figure{background:#fff;border-left:1px solid #eeeef1}
+.native-story-block figure img{background:#fff}
+.native-gallery{background:#e3e3e6}
+.native-gallery>div{background:#f7f7f8}
+.native-gallery figure{background:#fff}
+.native-gallery img{background:#fff}
+.native-case-source{color:#66666b;border-top:1px solid #e3e3e6}
+.native-case-source a{color:#272727}
+.visual-case-page{background:#f7f7f8;color:#272727;font-family:'Overused Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+.case-detail-rail{background:#f7f7f8;border-right:1px solid #e3e3e6}
+.case-detail-rail>a{font-family:'Departure Mono',ui-monospace,monospace;font-weight:400}
+.case-detail-rail p{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500}
+.case-detail-rail>div>span{color:#66666b}
+.case-detail-rail i{border-color:#dcdce0;color:#66666b}
+.case-detail-rail nav a{border-color:#d8d8dc;background:#fff;color:#272727;transition:border-color .18s,transform .18s}
+.case-detail-rail nav a:hover{border-color:#272727;transform:translateY(-1px)}
+.case-visual{border-color:#e3e3e6;background:#fff;box-shadow:0 1px 2px rgba(20,20,30,.04)}
+.case-visual>p{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500}
+.hero-visual,.lab-visual{background:#151515;border-color:#151515}
+.hero-visual>span{color:#8a8a8e}
+.problem-lines i{background:#e3e3e6}
+.problem-lines i:nth-child(2){background:#b9ff47}
+.impact-visual>div{border-top-color:#e3e3e6}
+.impact-visual b{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500}
+.approach-visual>div article{border-color:#e3e3e6}
+.approach-visual span{color:#8a8a8e}
+.approach-visual article i{background:#5f8c1f}
+.decision-visual article{border-top-color:#e3e3e6}
+.decision-visual b{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500}
+.decision-visual span{color:#8a8a8e}
+.outcome-visual span{color:#66666b}
+.ai-process-visual>p{color:#5f8c1f;font-family:'IBM Plex Mono',ui-monospace,monospace}
+.ai-process-visual>div{border-top-color:#e3e3e6}
+.ai-process-visual article{border-bottom-color:#e3e3e6}
+.ai-process-visual article:nth-child(odd){border-right-color:#e3e3e6}
+.case-play-tabs button{border-color:#d8d8dc;background:#fff;color:#272727}
+@media(max-width:760px){.native-case-rail,.case-detail-rail{border-bottom-color:#e3e3e6}}
+.native-case-rail nav,.case-detail-rail nav{position:static;background:none;backdrop-filter:none;border:0;padding:0}
+.case-hero-system b{color:#f3efe7}

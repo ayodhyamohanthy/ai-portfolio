@@ -9,5 +9,5 @@ export default function Fresh(){return <main className="resource-page atlas-page
 <h3>{f.title}</h3><p className="source-note">{f.body}</p>
 <a className="fresh-src" href={f.source.url} target="_blank" rel="noopener noreferrer">{f.source.label} ↗</a>
 </div></article>)}</section>
-<footer className="resource-footer"><Link href="/">Ayodhya Mohanthy</Link><span>{freshFinds.length} finds · curated by Ayodhya · reviewed 10 Sep 2026</span><Link href="/sources">Sources ↗</Link><Link href="/atlas">Atlas ↗</Link><Link href="/accessibility">Accessibility ↗</Link></footer><Reveal/>
+<footer className="resource-footer"><Link href="/">Ayodhya Mohanthy</Link><span>{freshFinds.length} finds · curated by Ayodhya · reviewed 10 Sep 2026</span><Link href="/sources">Sources ↗</Link><Link href="/atlas">Atlas ↗</Link><a href="https://x.com/ayodhyamohanthy" target="_blank" rel="noopener noreferrer">Follow on X ↗</a><a href="https://www.linkedin.com/in/ayodhyamohanthy/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ayodhyamohanthy" target="_blank" rel="noopener noreferrer">GitHub ↗</a><Link href="/accessibility">Accessibility ↗</Link></footer><Reveal/>
 </main>}
