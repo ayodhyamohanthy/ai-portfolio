@@ -1,6 +1,6 @@
 import Link from 'next/link';import {sourceTracks} from '../sourcesData';
 export const metadata={title:'Sources · Ayodhya Mohanthy',description:'Canonical readings for AI-native design in reading order, each with a short first-person note.'};
-export default function Sources(){const total=sourceTracks.reduce((n,t)=>n+t.items.length,0);return <main className="resource-page atlas-page">
+export default function Sources(){const total=sourceTracks.reduce((n,t)=>n+t.items.length,0);return <main className="resource-page atlas-page sources-page">
 <nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/library">Starter kit</Link></div></nav>
 <header className="atlas-hero"><p className="eyebrow">SOURCES · AI-NATIVE DESIGN</p><h1>Read the field.<br/><i>In the order I would.</i></h1><p>Canonical readings for AI-native design, sequenced as a path. Every note is mine, written after reading the piece. Suggest what is missing: <a href="mailto:ayodhyarammohanthy@gmail.com">ayodhyarammohanthy@gmail.com</a>.</p></header>
 {sourceTracks.map((t,ti)=><section className="sources-track" key={t.id}>

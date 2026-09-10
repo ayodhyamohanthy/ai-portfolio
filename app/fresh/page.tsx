@@ -1,6 +1,6 @@
 import Link from 'next/link';import {freshFinds} from '../freshData';
 export const metadata={title:'Fresh · Ayodhya Mohanthy',description:'New sources, products and methods in AI-native design, landed when they verify.'};
-export default function Fresh(){return <main className="resource-page atlas-page">
+export default function Fresh(){return <main className="resource-page atlas-page fresh-page">
 <nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link></div></nav>
 <header className="atlas-hero"><p className="eyebrow">FRESH · AI-NATIVE DESIGN</p><h1>New, and checked.<br/><i>Landed when the field moves.</i></h1><p>Sources, products and methods in AI-native design, watched hourly and landed only when they verify. No timer promises. Spot something first: <a href="mailto:ayodhyarammohanthy@gmail.com">ayodhyarammohanthy@gmail.com</a>.</p></header>
 <section className="sources-track">{freshFinds.map((f,i)=><article className="source-item fresh-item" key={f.title}><span className="num">{String(freshFinds.length-i).padStart(2,'0')}</span><div>
