@@ -251,3 +251,4 @@
 .sources-page .resource-footer,.fresh-page .resource-footer{border-top-color:#e3e3e6;color:#9a9aa0;font-family:'IBM Plex Mono',ui-monospace,monospace}
 .sources-page .resource-footer a,.fresh-page .resource-footer a{color:#6a6a70}
 @media(max-width:520px){.atlas-nav{gap:10px}.atlas-nav div{gap:10px;flex-wrap:wrap;justify-content:flex-end}.atlas-nav a{font-size:10px}}
+@media(max-width:760px){.atlas-nav div a:nth-child(1),.atlas-nav div a:nth-child(4){display:inline}}
