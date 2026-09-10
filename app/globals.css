@@ -325,3 +325,13 @@
 .atlas-light .atlas-note-meta button{border-color:#d7d7db;background:#fff;color:#3a3a3f;border-radius:99px;padding:5px 9px;font-size:10px;cursor:pointer}
 .resources-light .variant-label h2{color:#f3efe7}
 .resources-light .variant-label i{color:#8a8a8e}
+/* Phase D: motion polish - reveal on entry, panel entrances, chip transitions */
+.rv-on [data-rv]{opacity:0}
+.rv-on [data-rv].rv-in{animation:rvIn .6s cubic-bezier(.22,.61,.21,1) var(--rd,0s) both}
+@keyframes rvIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.rv-on [data-rv]{opacity:1}.rv-on [data-rv].rv-in{animation:none}}
+@keyframes rvPanel{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:none}}
+.atlas-detail{animation:rvPanel .32s cubic-bezier(.23,1,.32,1) both}
+.pattern-modal>article{animation:rvPanel .32s cubic-bezier(.23,1,.32,1) both}
+@media(prefers-reduced-motion:reduce){.atlas-detail,.pattern-modal>article{animation:none}}
+.atlas-filters button,.rail-filter button,.front-cats .scroll-chips a{transition:background-color .18s,color .18s,border-color .18s}

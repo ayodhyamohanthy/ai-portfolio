@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
-import {territories,atlasNodes,atlasEdges,fieldNotes,AtlasNode} from '../atlasData';
+import {territories,atlasNodes,atlasEdges,fieldNotes,AtlasNode} from '../atlasData';import Reveal from '../Reveal';
 
 const COLS=3,ZW=412,ZH=268,ZX=14,ZY=20;
 function layout(){
@@ -62,7 +62,7 @@ export default function AtlasClient(){
  <section className="atlas-notes">
   <p className="eyebrow">FIELD NOTES</p>
   <h2>What changed, and what I think of it.</h2>
-  {fieldNotes.map(n=><article key={n.date+n.title}>
+  {fieldNotes.map((n,ni)=><article key={n.date+n.title} data-rv style={{'--rd':`${Math.min(ni,6)*55}ms`} as React.CSSProperties}>
    <b>{n.date}</b>
    <h3>{n.title}</h3>
    <p>{n.body}</p>
@@ -72,5 +72,5 @@ export default function AtlasClient(){
    </div>
   </article>)}
  </section>
- </>;
+ <Reveal/></>;
 }
