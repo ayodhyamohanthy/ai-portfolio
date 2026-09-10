@@ -414,3 +414,19 @@
 .bench-boards a:hover{transform:translateY(-2px);box-shadow:0 12px 28px -14px rgba(20,20,30,.18)}
 .bench-boards b{font-size:18px}
 .bench-boards span{color:#66666b;font-size:13px;line-height:1.5}
+/* Newsletter band */
+.nl-band{margin:10px;grid-column:1/-1;background:#1f1f1d;color:#f4f1ea;border-radius:18px;padding:clamp(28px,4vw,56px);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.nl-band .eyebrow{color:#b9ff47;font-family:'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.12em}
+.nl-band h2{font-size:clamp(30px,3.4vw,52px);margin:14px 0 16px;font-weight:450}
+.nl-band h2 i{font-family:'Departure Mono',ui-monospace,monospace;font-style:normal;font-weight:400}
+.nl-band>div>p{color:#b9b4a8;max-width:52ch;font-size:15px;line-height:1.55}
+.nl-form{display:grid;gap:10px}
+.nl-form input{background:#2a2a27;border:1px solid #3d3d38;border-radius:10px;color:#f4f1ea;padding:16px 18px;font-size:16px;font-family:inherit;outline:none;transition:border-color .18s}
+.nl-form input:focus{border-color:#b9ff47}
+.nl-form button{background:#b9ff47;color:#1f1f1d;border:0;border-radius:10px;padding:16px 18px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s}
+.nl-form button:hover{transform:translateY(-1px);box-shadow:0 8px 22px -8px rgba(185,255,71,.45)}
+.nl-form button:disabled{opacity:.6;cursor:default}
+.nl-done{font-size:18px;line-height:1.5;color:#e9e4d8}
+.nl-error{font-size:13px;color:#e8b8b8}
+.nl-error a{color:#f4f1ea}
+@media(max-width:800px){.nl-band{grid-template-columns:1fr;gap:24px}}
