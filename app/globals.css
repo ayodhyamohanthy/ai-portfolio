@@ -426,6 +426,9 @@
 .nl-form button{background:#b9ff47;color:#1f1f1d;border:0;border-radius:10px;padding:16px 18px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s}
 .nl-form button:hover{transform:translateY(-1px);box-shadow:0 8px 22px -8px rgba(185,255,71,.45)}
 .nl-form button:disabled{opacity:.6;cursor:default}
+.nl-substack{display:block;background:#b9ff47;color:#1f1f1d;border-radius:10px;padding:16px 18px;font-size:16px;font-weight:600;text-align:center;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.nl-substack:hover{transform:translateY(-1px);box-shadow:0 8px 22px -8px rgba(185,255,71,.45)}
+.nl-note{margin:0;font-size:13px;color:#b9b4a8;text-align:center}
 .nl-done{font-size:18px;line-height:1.5;color:#e9e4d8}
 .nl-error{font-size:13px;color:#e8b8b8}
 .nl-error a{color:#f4f1ea}
