@@ -1,0 +1,39 @@
+<html><head><meta charset='utf-8'><style>
+@font-face{font-family:'OG';src:url('file:///home/sandbox/portfolio/public/fonts/OverusedGrotesk-VF.woff2')}
+@font-face{font-family:'DM';src:url('file:///home/sandbox/portfolio/public/fonts/DepartureMono-Regular.woff2')}
+@font-face{font-family:'PM';font-weight:400;src:url('file:///home/sandbox/portfolio/public/fonts/ibm-plex-mono-latin-400-normal.woff2')}
+@font-face{font-family:'PM';font-weight:500;src:url('file:///home/sandbox/portfolio/public/fonts/ibm-plex-mono-latin-500-normal.woff2')}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1600px;height:900px;background:#1f1f1d;color:#f4f1ea;font-family:'OG';overflow:hidden;position:relative}
+.kicker{font-family:'PM';font-size:19px;font-weight:500;letter-spacing:.14em;color:#b9ff47}
+.hairline{background:#3d3d38}
+</style></head><body>
+<div style='position:absolute;inset:0;background:repeating-linear-gradient(to bottom, transparent 0 63px, #2a2a27 63px 64px);opacity:.45'></div>
+
+<!-- card bleeds off right edge: macro crop -->
+<div style='position:absolute;left:400px;top:180px;width:1320px;background:#262624;border:1px solid #3d3d38;border-radius:24px;padding:100px'>
+  <div style='font-size:132px;letter-spacing:-.03em;line-height:1'>Details.</div>
+  <div style='margin-top:72px;display:inline-block;background:#b9ff47;color:#1f1f1d;font-size:32px;font-weight:600;padding:28px 58px;border-radius:15px'>Ship it</div>
+</div>
+
+<!-- 24: left margin measure -->
+<div style='position:absolute;left:120px;top:180px;height:60px;display:flex;align-items:center'>
+  <div style='width:2px;height:60px;background:#b9ff47'></div>
+  <div style='width:240px;height:2px;background:#b9ff47'></div>
+  <div style='width:2px;height:60px;background:#b9ff47'></div>
+</div>
+<div class='kicker' style='position:absolute;left:210px;top:265px;font-size:22px'>24</div>
+
+<!-- 8: vertical gap between headline and button (headline bottom ~400, button top ~452) -->
+<div style='position:absolute;left:520px;top:400px;height:52px;display:flex;flex-direction:column;align-items:center;justify-content:space-between'>
+  <div style='width:56px;height:2px;background:#b9ff47'></div>
+  <div style='width:2px;height:40px;background:#b9ff47'></div>
+  <div style='width:56px;height:2px;background:#b9ff47'></div>
+</div>
+<div class='kicker' style='position:absolute;left:600px;top:408px;font-size:22px'>8</div>
+
+<!-- 1.25x scale callout pointing at headline -->
+<div class='kicker' style='position:absolute;left:1050px;top:96px;font-size:22px'>1.25x scale</div>
+<div style='position:absolute;left:1240px;top:106px;width:8px;height:8px;border-radius:50%;background:#b9ff47'></div>
+<div style='position:absolute;left:1244px;top:106px;width:2px;height:160px;background:#b9ff47;opacity:.75;transform:rotate(24deg);transform-origin:top left'></div>
+</body></html>
