@@ -444,3 +444,11 @@
 @keyframes genIn{from{opacity:0;transform:scale(.9) translateY(8px)}to{opacity:1;transform:none}}
 @keyframes genPulse{50%{opacity:.15}}
 @media(max-width:720px){.gen-body{grid-template-columns:1fr}.gen-catalog{grid-template-columns:repeat(4,1fr)}.gen-catalog span{grid-column:1/-1}.gen-surface{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Thinking page: division of labor */
+.process-split{margin-top:26px;border-top:1px solid var(--line)}
+.process-row{display:grid;grid-template-columns:130px 1fr 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.process-row b{font-weight:600;font-size:16px}
+.process-row p{font-size:14px;color:#4a4741;line-height:1.5}
+.process-row span{display:block;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.1em;color:#8a873f;margin-bottom:4px}
+@media(max-width:720px){.process-row{grid-template-columns:1fr;gap:10px}}

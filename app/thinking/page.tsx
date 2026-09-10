@@ -30,7 +30,11 @@ export default function Thinking(){const count=sections.reduce((n,s)=>n+s.entrie
 <h3>{e.title}</h3><p className="source-note">{e.note}</p>
 <a className="fresh-src" href={e.href}>lives at {e.href} ↗</a> <a className="fresh-src" href={e.ext} target="_blank" rel="noopener noreferrer">source ↗</a>
 </div></article>)}
-{s.label.startsWith('03')&&<div className="sources-anchors bench-boards"><Link href="/process/ai-native"><b>Who does what ↗</b><span>The division of labor I design by - what the AI does, what I decide, stage by stage.</span></Link><Link href="/atlas?t=human-control"><b>Human control territory ↗</b><span>The control surfaces, mapped: approval, steering, correction, recovery.</span></Link></div>}
+{s.label.startsWith('03')&&<>
+<div className="sources-anchors bench-boards"><Link href="/atlas?t=human-control"><b>Human control territory ↗</b><span>The control surfaces, mapped: approval, steering, correction, recovery.</span></Link></div>
+<div className="process-split">{[['Discover','AI clusters research and retrieves patterns.','I verify sources, separate signal from repetition, and decide what is trustworthy.'],['Frame','AI generates competing problem frames.','I choose the frame that connects user behavior to the business constraint.'],['Explore','AI widens the option space.','I set principles, reject weak patterns and select a direction deliberately.'],['Prototype','AI accelerates variants and working prototypes.','I decide what the prototype must prove and preserve interaction quality.'],['Validate','AI helps synthesize evidence.','I inspect contradictions, resist false certainty and own the final recommendation.']].map(x=><div className="process-row" key={x[0]}><b>{x[0]}</b><p><span>AI</span>{x[1]}</p><p><span>ME</span>{x[2]}</p></div>)}</div>
+<p className="bench-meta">THE DIVISION OF LABOR, AS PUBLISHED IN MY AI PROCESS</p>
+</>}
 </section>)}
 <section className="sources-track" data-rv>
 <div className="track-head"><b>04</b><div><h2>Prototypes over screens</h2><p>A static screen of an AI product proves nothing - the behaviour is the product. So the evidence on this site runs.</p></div></div>
@@ -38,6 +42,6 @@ export default function Thinking(){const count=sections.reduce((n,s)=>n+s.entrie
 </section>
 <section className="sources-track" data-rv>
 <div className="track-head"><b>05</b><div><h2>The stance as a system</h2><p>The positions hold together as a map and a ruleset, not a pile of takes.</p></div></div>
-<div className="sources-anchors bench-boards"><Link href="/atlas"><b>The field atlas ↗</b><span>Nine territories, thirty-seven nodes - the field mapped and re-mapped as it moves.</span></Link><Link href="/system"><b>The design system ↗</b><span>The production rules behind this interface, published and inspectable.</span></Link></div>
+<div className="sources-anchors bench-boards"><Link href="/atlas"><b>The field atlas ↗</b><span>Nine territories, thirty-seven nodes - the field mapped and re-mapped as it moves.</span></Link><a href="https://github.com/ayodhyamohanthy/ai-portfolio" target="_blank" rel="noopener noreferrer"><b>The design system ↗</b><span>The production rules behind this interface, versioned in the open source history.</span></a></div>
 </section>
 <footer className="resource-footer"><Link href="/">Ayodhya Mohanthy</Link><span>{count} positions · gathered from the live site · 10 Sep 2026</span><a href="https://x.com/ayodhyamohanthy" target="_blank" rel="noopener noreferrer">Follow on X ↗</a><a href="https://www.linkedin.com/in/ayodhyamohanthy/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ayodhyamohanthy" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://ayodhyamohanthy.substack.com" target="_blank" rel="noopener noreferrer">Newsletter ↗</a><Link href="/accessibility">Accessibility ↗</Link></footer><Reveal/></main>}
