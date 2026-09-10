@@ -400,3 +400,17 @@
 .native-case-rail nav,.case-detail-rail nav{position:static;background:none;backdrop-filter:none;border:0;padding:0}
 .case-hero-system b{color:#f3efe7}
 .tool-what{font-weight:500;color:#272727;margin:4px 0 8px;font-size:15px}
+/* Benchmarks page */
+.bench-table{width:100%;max-width:680px;border-collapse:collapse;background:#fff;border:1px solid #e7e7ea;border-radius:14px;overflow:hidden}
+.bench-table{display:block;overflow:hidden}
+.bench-table tbody{display:table;width:100%}
+.bench-table td{padding:12px 18px;border-top:1px solid #efeff2;font-size:15px}
+.bench-table tr:first-child td{border-top:0}
+.bench-rank{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;color:#9a9aa0;width:44px}
+.bench-score{font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500;text-align:right;color:#5f8c1f}
+.bench-meta{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.06em;color:#9a9aa0;margin-top:12px}
+.bench-meta a{color:#272727;border-bottom:1px solid #c9c9ce}
+.bench-boards a{display:grid;gap:8px;padding:22px;border:1px solid #e7e7ea;border-radius:14px;background:#fff;transition:transform .18s,box-shadow .18s}
+.bench-boards a:hover{transform:translateY(-2px);box-shadow:0 12px 28px -14px rgba(20,20,30,.18)}
+.bench-boards b{font-size:18px}
+.bench-boards span{color:#66666b;font-size:13px;line-height:1.5}
