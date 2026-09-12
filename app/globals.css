@@ -547,3 +547,4 @@
 }
 .door.clay{background:#e07856;color:#2f1a10}
 .door.clay::before{background:repeating-linear-gradient(0deg,rgba(0,0,0,.09) 0 1px,transparent 1px 7px)}
+.door.clay span,.door.clay p{opacity:.92}
