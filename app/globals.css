@@ -456,3 +456,7 @@
 /* Benchmarks: open-weight tag + params tag */
 .bench-open{display:inline-block;margin-left:10px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:9px;letter-spacing:.1em;color:#6a8a12;border:1px solid #c4d68a;border-radius:99px;padding:2px 7px;vertical-align:2px}
 .bench-params{color:#8a873f;border-color:#ddd8c8}
+.portfolio-rail .gh-contrib{display:block;margin-top:14px;border:1px solid #e3e3e6;border-radius:10px;padding:10px 10px 8px;background:#fff}
+.portfolio-rail .gh-contrib img{width:100%;display:block;filter:saturate(.85)}
+.portfolio-rail .gh-contrib span{display:block;margin-top:7px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#8a8a8e}
+.bench-strip{margin-top:0}
