@@ -21,7 +21,7 @@ const sections:{label:string;title:string;lede:string;entries:(Entry|null)[]}[]=
  src('The Agent is the Interface'),
  src('UX Patterns for Agentic AI: 16 Essentials')]}];
 export default function Thinking(){const count=sections.reduce((n,s)=>n+s.entries.filter(Boolean).length,0);return <main className="resource-page atlas-page fresh-page tools-page">
-<nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link></div></nav>
+<nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/components">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link></div></nav>
 <header className="atlas-hero"><p className="eyebrow">POSITIONS · AI-NATIVE DESIGN</p><h1>What I believe,<br/><i>argued next to the work.</i></h1><p>Not an essay wall - every position here is already published on this site, next to the reading or artifact it argues for. This page gathers them in one scan. The quotes are the notes as published; the links go to where they live.</p></header>
 {sections.map(s=><section className="sources-track" key={s.label} data-rv>
 <div className="track-head"><b>{s.label.split(' · ')[0]}</b><div><h2>{s.title}</h2><p>{s.lede}</p></div></div>

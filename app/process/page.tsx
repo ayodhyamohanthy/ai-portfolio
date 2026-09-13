@@ -1,7 +1,7 @@
 import Link from 'next/link';import {steps} from '../processData';import Reveal from '../Reveal';import CopyBlock from './CopyBlock';
 export const metadata={title:'The Process · Ayodhya Mohanthy',description:'The manual for AI-native design. Ten steps from a one-line brief to a shipped design - exact tools, working templates, failure modes, and the test for every step.'};
 export default function ProcessGuide(){return <main className="pg2">
-<nav className="pg2-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/benchmarks">Benchmarks</Link><Link href="/thinking">Thinking</Link></div></nav>
+<nav className="pg2-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/components">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/benchmarks">Benchmarks</Link><Link href="/thinking">Thinking</Link></div></nav>
 <header className="pg2-hero">
 <p className="pg2-eyebrow">THE MANUAL · AI-NATIVE DESIGN · BRIEF → SHIPPED</p>
 <h1>Design with AI,<br/>end to end.</h1>
