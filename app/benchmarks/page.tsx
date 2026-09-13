@@ -1,9 +1,19 @@
-import Link from 'next/link';import {snapshots,results,boards,guiBench} from '../benchData';import Reveal from '../Reveal';
+import Link from 'next/link';import {snapshots,results,boards,guiBench,denseBoards,highlights} from '../benchData';import Reveal from '../Reveal';
 export const metadata={title:'Benchmarks · Ayodhya Mohanthy',description:'Benchmark data for AI models on design work, every number linked to its source.'};
 export default function Benchmarks(){return <main className="resource-page atlas-page fresh-page tools-page benchmarks-page">
 <nav className="atlas-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/components">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link><Link href="/thinking">Thinking</Link></div></nav>
 <header className="atlas-hero"><p className="eyebrow">BENCHMARKS · AI-NATIVE DESIGN · ALL OF THEM, ONE PAGE</p><h1>All the benchmarks.<br/><i>Clubbed in one place.</i></h1><p>Every benchmark this site tracks lives here: the live generative UI rankings, the lab table, the vendor-reported results, and the boards we watch. The homepage keeps a one-line teaser that points back to this page - nothing benchmark-shaped lives anywhere else. Every number is read off a live source page on the date stamped - follow the link and check it yourself.</p><p className="bench-toc"><a href="#rankings">Live rankings ↓</a><a href="#lab">Lab benchmark ↓</a><a href="#reported">Reported results ↓</a><a href="#boards">Boards we watch ↓</a></p></header>
-<div id="rankings"/>{snapshots.map(s=><section className="sources-track bench-snapshot" key={s.board+s.category} data-rv>
+<div id="rankings"/><section className="sources-track" data-rv>
+<div className="track-head"><b>LEADERS</b><div><h2>Highlights</h2><p>The four numbers a screener asks for first - each read off its live board on 13 Sep 2026.</p></div></div>
+<div className="bench-hi">{highlights.map(h=><a key={h.label} href={h.url} target="_blank" rel="noopener noreferrer" className="bench-hi-card"><span>{h.label}</span><b>{h.model}</b><p>{h.fact}</p><i>Open the board ↗</i></a>)}</div>
+</section>
+{denseBoards.map(d=><section className="sources-track bench-snapshot" key={d.category} data-rv>
+<div className="track-head"><b>LIVE</b><div><h2>{d.board}</h2><p>{d.category} · {d.what}</p></div></div>
+<p className="bench-notes">{d.notes.join('  ·  ')}</p>
+<table className="bench-table bench-dense"><thead><tr>{d.cols.map((c,ci)=><th key={c} className={ci>1?'num':''}>{c}</th>)}</tr></thead><tbody>{d.rows.map(r=><tr key={r[1]}>{r.map((cell,ci)=><td key={ci} className={ci===0?'bench-rank':ci>1?'num bench-score':''}>{cell}</td>)}</tr>)}</tbody></table>
+<p className="bench-meta">CHECKED {d.checked.toUpperCase()} · <a href={d.url} target="_blank" rel="noopener noreferrer">{d.url.replace('https://','')} ↗</a></p>
+</section>)}
+{snapshots.map(s=><section className="sources-track bench-snapshot" key={s.board+s.category} data-rv>
 <div className="track-head"><b>LIVE</b><div><h2>{s.board}</h2><p>{s.category} · {s.what}</p></div></div>
 <table className="bench-table"><tbody>{s.rows.map(r=><tr key={r.rank}><td className="bench-rank">{String(r.rank).padStart(2,'0')}</td><td>{r.model}{r.open&&<span className='bench-open'>OPEN</span>}</td><td className="bench-score">{r.score}</td></tr>)}</tbody></table>
 <p className="bench-meta">CHECKED {s.checked.toUpperCase()} · <a href={s.url} target="_blank" rel="noopener noreferrer">{s.url.replace('https://','')} ↗</a></p>

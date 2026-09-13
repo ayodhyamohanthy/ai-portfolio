@@ -60,3 +60,41 @@ title:'Generative UI Benchmark',what:'Reported by Thesys with the OUI-1 release:
 export const boards:WatchedBoard[]=[
 {name:'Design Arena',what:'The largest crowdsourced benchmark for AI-generated design - websites, UI components, games, data viz, 3D, slides.',url:'https://designarena.ai/leaderboard'},
 {name:'LMArena',what:'Crowd-voted arenas across text, code, image, video and agents, with a live snapshot of each arena.',url:'https://lmarena.ai/leaderboard'}];
+
+export type DenseSnapshot={board:string;category:string;what:string;checked:string;url:string;cols:string[];notes:string[];rows:string[][]};
+export const denseBoards:DenseSnapshot[]=[
+{board:'Design Arena',category:'All categories · crowd-voted',what:'Every design category in one crowd-voted table - 1,550,140 votes counted by the board. Elo with standard error, win rate and battles, read off the live board data on the stamped date.',checked:'13 Sep 2026',url:'https://designarena.ai/leaderboard',cols:['#','MODEL','ELO','±','WIN RATE','BATTLES'],notes:['Elo · higher is better','± · standard error','Win rate · share of battles won','Battles · head-to-head votes'],rows:[
+['01','Kimi K3','1388','4.7','64.7%','6,197'],
+['02','Muse Spark 1.3 Max','1375','4.4','60.4%','6,996'],
+['03','GPT-6 Astra','1369','5.0','62.1%','5,299'],
+['04','Muse Spark 1.3','1365','3.7','59.3%','10,475'],
+['05','GPT-5.6 Sol (xhigh)','1352','4.3','58.2%','7,117'],
+['06','DeepSeek V4.1 Flash','1346','4.4','56.6%','6,815'],
+['07','Claude Fable 5.1','1345','4.5','59.1%','6,429'],
+['08','Claude Opus 5','1338','3.3','58.3%','12,844'],
+['09','GPT-5.6 Sol','1334','2.6','57.5%','21,070'],
+['10','Cortado','1331','3.3','58.1%','12,505'],
+['11','Muse Spark 1.2','1327','2.9','55.1%','16,263'],
+['12','Claude Fable 5','1325','2.9','58.1%','16,702'],
+['13','Gemini 3.8 Flash','1324','3.3','54.1%','12,910'],
+['14','Gemini 3.7 Flash','1321','2.0','56.7%','43,110'],
+['15','GLM 5.2','1310','2.1','53.9%','33,132']]},
+{board:'OpenDesign Arena',category:'Quality × cost × speed · composite',what:'Thirteen models building real design artifacts, composited at quality 50%, cost 30%, speed 20%. Composite, average score, cost per artifact and average time, read off the live board on the stamped date.',checked:'13 Sep 2026',url:'https://open-design.ai/llm-arena-for-design/',cols:['#','MODEL','COMPOSITE','AVG SCORE','COST / ARTIFACT','AVG TIME'],notes:['Composite · quality 50 / cost 30 / speed 20','Avg score · out of 100','Cost · per artifact, USD','Avg time · per artifact'],rows:[
+['01','DeepSeek V4.1 Flash','78.8','81.2/100','$0.023','5.3 min'],
+['02','DeepSeek V4 Flash','68.6','70.6/100','$0.031','11.1 min'],
+['03','GPT-5.6 Sol','65.7','77.6/100','$0.544','3.2 min'],
+['04','Gemini 3.8 Flash','64.7','68.9/100','$0.210','3.8 min'],
+['05','DeepSeek V4 Pro','64.6','72.9/100','$0.061','17.7 min'],
+['06','Muse Spark 1.3','63.2','66.6/100','$0.267','3.3 min'],
+['07','GLM-5.3 Flash','61.4','69.8/100','$0.064','23.5 min'],
+['08','GPT-6 Astra','57.5','82.7/100','$1.61','11.1 min'],
+['09','Grok 4.6','56.5','72.4/100','$0.599','11.4 min'],
+['10','Hunyuan H4 Preview','54.6','74.6/100','$0.418','29.2 min'],
+['11','Qwen 3.8-Max','52.3','72.0/100','$0.595','26.4 min'],
+['12','Claude Fable 5.1','52.1','80.3/100','$3.66','12.8 min'],
+['13','Kimi K3','52.1','65.7/100','$0.614','14.0 min']]}];
+export const highlights:{label:string;model:string;fact:string;url:string}[]=[
+{label:'CROWD FAVORITE',model:'Kimi K3',fact:'1388 Elo on Design Arena\u2019s all-categories board - 64.7% win rate over 6,197 battles.',url:'https://designarena.ai/leaderboard'},
+{label:'BEST VALUE',model:'DeepSeek V4.1 Flash',fact:'81.2/100 average at $0.023 per artifact - 98% of GPT-6 Astra\u2019s score at 1% of its cost.',url:'https://open-design.ai/llm-arena-for-design/'},
+{label:'HIGHEST RAW QUALITY',model:'GPT-6 Astra',fact:'82.7/100 average - 56.2/70 design quality, 26.5/30 requirement fulfillment.',url:'https://open-design.ai/llm-arena-for-design/'},
+{label:'FASTEST DELIVERY',model:'GPT-5.6 Sol',fact:'3.2 minutes per artifact on average while scoring 77.6/100.',url:'https://open-design.ai/llm-arena-for-design/'}];
