@@ -614,14 +614,14 @@
 .tbf-tabs button{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.06em;padding:8px 14px;border-radius:999px;border:1px solid #d8d2c4;background:transparent;color:#57534a;cursor:pointer;transition:all .2s}
 .tbf-tabs button.on{background:#111;color:#f7f4ee;border-color:#111}
 .tbf-tabs button:hover:not(.on){border-color:#8a8577;color:#111}
-.tbf-body{display:grid;grid-template-columns:230px 1fr;min-height:420px}
+.tbf-body{display:grid;grid-template-columns:230px minmax(0,1fr);min-height:420px}
 .tbf-side{border-right:1px solid #ece6d8;padding:18px 14px;display:flex;flex-direction:column;gap:20px;background:#f9f5ec}
 .tbf-group h4{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#8a8577;margin:0 0 8px;font-weight:500}
 .tbf-group>div{display:flex;flex-direction:column;gap:4px}
 .tbf-group button{text-align:left;font-size:13px;padding:7px 12px;border-radius:8px;border:1px solid transparent;background:transparent;color:#3d3a33;cursor:pointer;transition:all .15s}
 .tbf-group button.on{background:#111;color:#f7f4ee}
 .tbf-group button:hover:not(.on){background:#efe9db}
-.tbf-main{padding:20px 22px 14px;display:flex;flex-direction:column}
+.tbf-main{padding:20px 22px 14px;display:flex;flex-direction:column;min-width:0}
 .tbf-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
 .tbf-head h3{font-size:clamp(19px,1.7vw,25px);margin:0;letter-spacing:-.01em}
 .tbf-expand{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.08em;color:#3b5bd6;text-decoration:none;border:1px solid #c7cfee;padding:6px 12px;border-radius:999px;white-space:nowrap}
