@@ -597,3 +597,13 @@
 .bench-dense tbody tr:nth-child(even){background:#f7f2e8}
 .bench-dense tbody tr:hover{background:#efe9db}
 .bench-dense{display:table;max-width:900px;background:#fbf8f1;border-color:#d8d2c4}
+.lb-table{background:#fff;border:1px solid #e3e8f2;border-radius:12px;box-shadow:0 2px 14px -8px rgba(30,50,120,.12)}
+.lb-table thead th{color:#5560a0;border-bottom:1px solid #e3e8f2}
+.lb-table td{border-bottom:1px solid #eef1f7}
+.lb-table tbody tr:nth-child(even){background:#fafbfe}
+.lb-table tbody tr:hover{background:#f2f5fd}
+.lb-table .lb-global{font-weight:700;color:#1b2340;font-family:'IBM Plex Mono',ui-monospace,monospace}
+.lb-table .lb-top{background:rgba(59,91,214,.13)}
+.lb-table .lb-top.lb-global{background:rgba(59,91,214,.18)}
+.lb-foot{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10.5px;letter-spacing:.02em;color:#8a90a8;margin:10px 0 0}
+.track-head>b{font-family:'IBM Plex Mono',ui-monospace,monospace;color:#3b5bd6;font-size:12px;letter-spacing:.1em}
