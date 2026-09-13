@@ -1,6 +1,7 @@
 // Design Arena "Top Leaderboards" frame - data mirrored live from the Design Arena board API
 // (designarena.ai/api/leaderboard) and model registry (designarena.ai/api/registry) on 13 Sep 2026.
 // Row: [displayName, elo, winRate, battles, openSource, router]. Names and flags are the registry's own.
+// Regenerate with: python3 scripts/refresh-topboards.py
 export type TBRow=[string,number,number,number,number,number];
 export type TBoard={id:string;label:string;url:string;note?:string;rows:TBRow[]};
 export type TGroup={title:string;boards:TBoard[]};
