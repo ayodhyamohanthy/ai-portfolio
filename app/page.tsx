@@ -1,2 +1,2 @@
-import PortfolioWall from './PortfolioWall';
-export default function Home(){return <PortfolioWall/>}
+import InboxHome from './InboxHome';
+export default function Home(){return <InboxHome/>}
