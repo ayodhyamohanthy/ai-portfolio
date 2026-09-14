@@ -1,14 +1,15 @@
 import Link from 'next/link';import {patterns,howSteps} from '../componentData';import Reveal from '../Reveal';import CopyBlock from '../process/CopyBlock';
+import SystemTrail from '../SystemTrail';
 export const metadata={title:'AI-native Components · Ayodhya Mohanthy',description:'The catalogue of AI-native design components - streaming messages, thinking traces, tool calls, approval gates, composed surfaces - and the six steps to create your own.'};
 export default function ComponentsGuide(){return <main className="pg2">
-<nav className="pg2-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/resources">Pattern library</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link><Link href="/process">Process</Link><Link href="/benchmarks">Benchmarks</Link></div></nav>
+<nav className="pg2-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><Link href="/system">System</Link><div><Link href="/resources">Pattern library</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/tools">Tools</Link><Link href="/process">Process</Link><Link href="/benchmarks">Benchmarks</Link></div></nav>
 <header className="pg2-hero">
 <p className="pg2-eyebrow">AI-NATIVE DESIGN COMPONENTS · THE CATALOGUE + THE BUILD GUIDE</p>
 <h1>Components that<br/>think with you.</h1>
 <p className="pg2-sub"><i>What they are. How to create them.</i></p>
 <p className="pg2-lede">Twelve components that make a product AI-native - streaming messages, thinking traces, tool calls, approval gates, composed surfaces - each with the states you must design and a live example you can open today. Then six steps to build your own, with templates. Copy-paste primitives live in <Link href="/resources">the pattern library</Link>; the end-to-end method lives in <Link href="/process">the process manual</Link>.</p>
 <ol className="pg2-journey">{patterns.map(p=><li key={p.n}><a href={`#pattern-${p.n}`}><span>{p.n}</span><b>{p.name}</b></a></li>)}<li className="cp-journey-how"><a href="#build"><span>THEN</span><b>Build your own ↓</b></a></li></ol>
-</header>
+</header><SystemTrail current="Build"/>
 {patterns.map((p,i)=><section className={`pg2-step ${i%2?'alt':''}`} key={p.n} id={`pattern-${p.n}`} data-rv>
 <div className="pg2-step-inner">
 <span className="pg2-ghost">{p.n}</span>

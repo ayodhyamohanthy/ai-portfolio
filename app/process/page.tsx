@@ -1,14 +1,15 @@
 import Link from 'next/link';import {steps} from '../processData';import Reveal from '../Reveal';import CopyBlock from './CopyBlock';
+import SystemTrail from '../SystemTrail';
 export const metadata={title:'The Process · Ayodhya Mohanthy',description:'The manual for AI-native design. Ten steps from a one-line brief to a shipped design - exact tools, working templates, failure modes, and the test for every step.'};
 export default function ProcessGuide(){return <main className="pg2">
-<nav className="pg2-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><div><Link href="/components">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/benchmarks">Benchmarks</Link><Link href="/thinking">Thinking</Link></div></nav>
+<nav className="pg2-nav"><Link href="/" className="wordmark">Ayodhya Mohanthy</Link><Link href="/system">System</Link><div><Link href="/components">Components</Link><Link href="/sources">Sources</Link><Link href="/atlas">Atlas</Link><Link href="/fresh">Fresh</Link><Link href="/benchmarks">Benchmarks</Link><Link href="/thinking">Thinking</Link></div></nav>
 <header className="pg2-hero">
 <p className="pg2-eyebrow">THE MANUAL · AI-NATIVE DESIGN · BRIEF → SHIPPED</p>
 <h1>Design with AI,<br/>end to end.</h1>
 <p className="pg2-sub"><i>Start with one line. Ship something real.</i></p>
 <p className="pg2-lede">Ten steps, written for someone who has never designed with AI before. The full landscape of tools, each with a when-to-pick-it line. Working templates, ready to copy. The failure modes of every step, and the test that tells you when to move on. The philosophy behind it lives in <Link href="/process/ai-native">the companion essay</Link>.</p>
 <ol className="pg2-journey">{steps.map(s=><li key={s.n}><a href={`#step-${s.n}`}><span>{s.n}</span><b>{s.name}</b></a></li>)}</ol>
-</header>
+</header><SystemTrail current="Apply"/>
 {steps.map((s,i)=><section className={`pg2-step ${i%2?'alt':''}`} key={s.n} id={`step-${s.n}`} data-rv>
 <div className="pg2-step-inner">
 <span className="pg2-ghost">{s.n}</span>
