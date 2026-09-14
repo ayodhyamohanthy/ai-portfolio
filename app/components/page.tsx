@@ -38,7 +38,7 @@ export default function ComponentsGuide(){return <main className="pg2">
 <section className="pg2-close" data-rv>
 <p className="pg2-eyebrow">AFTER STEP {howSteps.length} · SHIP ONE</p>
 <h2>Then ship one small.</h2>
-<p>Pick the component your product needs most, walk the six steps, and put it in front of a user this week. Everything here connects: <Link href="/resources">74 copy-paste primitives</Link> to start from, <Link href="/process">the full process</Link> for the product around the component, <Link href="/benchmarks">the rankings</Link> for choosing the model behind it, and <Link href="/fresh">the fresh shelf</Link> for the patterns still landing.</p>
+<p>Pick the component your product needs most, walk the six steps, and put it in front of a user this week. Everything here connects: <Link href="/resources">78 live patterns</Link> to start from, <Link href="/process">the full process</Link> for the product around the component, <Link href="/benchmarks">the rankings</Link> for choosing the model behind it, and <Link href="/fresh">the fresh shelf</Link> for the patterns still landing.</p>
 <Link href="/" className="pg2-back">Back to the wall ↗</Link>
 </section>
 <footer className="pg2-footer"><span>Ayodhya Mohanthy · AI-native components</span><span>{patterns.length} components · {howSteps.length} build steps · {howSteps.reduce((a,s)=>a+s.tools.length,0)} tools · {howSteps.reduce((a,s)=>a+s.templates.length,0)} templates · {howSteps.reduce((a,s)=>a+s.failures.length,0)} failure modes · links verified live 13 Sep 2026</span></footer>

@@ -23,7 +23,7 @@ export default function ProcessGuide(){return <main className="pg2">
 <section className="pg2-close" data-rv>
 <p className="pg2-eyebrow">AFTER STEP {steps.length} · THE LOOP</p>
 <h2>Then do it again.</h2>
-<p>Every loop starts from evidence and ends with one deliberate change. Everything else on this site feeds it: <Link href="/resources">74 live patterns</Link> to try in your browser, <Link href="/sources">the readings</Link> in order, <Link href="/benchmarks">the rankings</Link> for choosing tools, <Link href="/process/ai-native">the rules I do not delegate</Link>, and <Link href="/tools">the tools I actually watch</Link>.</p>
+<p>Every loop starts from evidence and ends with one deliberate change. Everything else on this site feeds it: <Link href="/resources">78 live patterns</Link> to try in your browser, <Link href="/sources">the readings</Link> in order, <Link href="/benchmarks">the rankings</Link> for choosing tools, <Link href="/process/ai-native">the rules I do not delegate</Link>, and <Link href="/tools">the tools I actually watch</Link>.</p>
 <Link href="/" className="pg2-back">Back to the wall ↗</Link>
 </section>
 <footer className="pg2-footer"><span>Ayodhya Mohanthy · the manual for AI-native design</span><span>{steps.length} steps · {steps.reduce((a,s)=>a+s.tools.length,0)} tools · {steps.reduce((a,s)=>a+s.templates.length,0)} templates · {steps.reduce((a,s)=>a+s.failures.length,0)} failure modes · links verified live 12 Sep 2026</span></footer>

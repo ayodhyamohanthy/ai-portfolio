@@ -1,3 +1,3 @@
 import './globals.css';
-export const metadata={title:'Ayodhya Mohanthy — AI-Native Product Design',description:'Product designer for AI-native products - complex B2B, SaaS and healthcare work, with the AI-native design playbook published in the open: the process manual, the components, the patterns, the benchmarks.'};
+export const metadata={title:'Ayodhya Mohanthy — AI-Native Product Design',description:'An open-source AI-native design system backed by shipped product work: live interaction patterns, process, templates, tools, benchmarks and current field notes.'};
 export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}

@@ -38,7 +38,7 @@ export default function Thinking(){const count=sections.reduce((n,s)=>n+s.entrie
 </section>)}
 <section className="sources-track" data-rv>
 <div className="track-head"><b>04</b><div><h2>Prototypes over screens</h2><p>A static screen of an AI product proves nothing - the behaviour is the product. So the evidence on this site runs.</p></div></div>
-<div className="sources-anchors bench-boards"><Link href="/resources"><b>74 live patterns ↗</b><span>Every pattern runs in the browser: streaming, approval, recovery, control.</span></Link><Link href="/work/ai-interface-exploration"><b>The Interface Lab ↗</b><span>21 patterns in one running surface, including a scripted generative-UI assembly.</span></Link><Link href="/capabilities"><b>The evidence map ↗</b><span>Twelve stages, each marked strong, partial or needs evidence - with the proof linked.</span></Link></div>
+<div className="sources-anchors bench-boards"><Link href="/resources"><b>78 live patterns ↗</b><span>Every pattern runs in the browser: streaming, approval, recovery, control.</span></Link><Link href="/work/ai-interface-exploration"><b>The Interface Lab ↗</b><span>21 patterns in one running surface, including a scripted generative-UI assembly.</span></Link><Link href="/capabilities"><b>The evidence map ↗</b><span>Twelve stages, each marked strong, partial or needs evidence - with the proof linked.</span></Link></div>
 </section>
 <section className="sources-track" data-rv>
 <div className="track-head"><b>05</b><div><h2>The stance as a system</h2><p>The positions hold together as a map and a ruleset, not a pile of takes.</p></div></div>
