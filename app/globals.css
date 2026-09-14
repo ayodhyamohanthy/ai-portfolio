@@ -700,3 +700,12 @@ html[data-theme="light"]{color-scheme:light;background:#f6f8fc}html[data-theme="
 .route-content :is(.atlas-light,.resources-light){background:var(--color-background-surface)!important;color:var(--color-text-primary)!important}
 .mail-tag.astryx-badge{min-height:auto;padding:3px 5px;border:0;border-radius:4px;font:700 8px var(--font-family-code);letter-spacing:.06em}
 html[data-theme="light"] [data-astryx-theme="neutral"]{--color-background-body:#f6f8fc;--color-background-surface:#fff;--color-background-card:#f2f6fc;--color-background-muted:#eaf1fb;--color-text-primary:#1f1f1f;--color-text-secondary:#5f6368;--color-border:#dadce0;--color-border-emphasized:#c4c7c5}
+
+/* Consistency/readability gate: route-local legacy palettes cannot lower
+   leadership-content contrast inside the shared mail reader. */
+.route-content :is(h1,h2,h3,h4,h5,h6){color:var(--color-text-primary)!important}
+.route-content :is(p,li,dd,figcaption){color:var(--color-text-secondary)!important}
+.route-content :is(strong,b,dt){color:var(--color-text-primary)}
+.route-content :is(.eyebrow,.pg2-eyebrow){color:#a8c7fa!important}
+.route-content :is(a){color:inherit}
+.route-content :is(input,select,textarea){background:var(--color-background-card)!important;border-color:var(--color-border)!important}
