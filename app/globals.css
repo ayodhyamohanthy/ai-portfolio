@@ -709,3 +709,12 @@ html[data-theme="light"] [data-astryx-theme="neutral"]{--color-background-body:#
 .route-content :is(.eyebrow,.pg2-eyebrow){color:#a8c7fa!important}
 .route-content :is(a){color:inherit}
 .route-content :is(input,select,textarea){background:var(--color-background-card)!important;border-color:var(--color-border)!important}
+
+/* Leadership edit: the inbox owns global navigation. Legacy page chrome and
+   billboard typography are removed so each route reads as one focused message. */
+.route-content>main>nav:first-child{display:none!important}
+.route-content :is(.docs-hero,.cap-hero,.credits-hero,.process-hero,.pg2-hero,.library-hero,.atlas-hero,.resource-hero,.native-case-hero){padding:48px 52px!important;min-height:auto!important}
+.route-content :is(.docs-hero,.cap-hero,.credits-hero,.process-hero,.pg2-hero,.library-hero,.atlas-hero,.resource-hero,.native-case-hero) h1{font-size:clamp(42px,5.5vw,72px)!important;line-height:.98!important;letter-spacing:-.045em!important;max-width:14ch}
+.route-content :is(.docs-hero,.cap-hero,.credits-hero,.process-hero,.pg2-hero,.library-hero,.atlas-hero,.resource-hero,.native-case-hero) :is(p,em){color:var(--color-text-secondary)!important;max-width:68ch;line-height:1.6}
+.route-content :is(em,i){color:var(--color-text-secondary)}
+@media(max-width:800px){.route-content :is(.docs-hero,.cap-hero,.credits-hero,.process-hero,.pg2-hero,.library-hero,.atlas-hero,.resource-hero,.native-case-hero){padding:38px 20px!important}.route-content :is(.docs-hero,.cap-hero,.credits-hero,.process-hero,.pg2-hero,.library-hero,.atlas-hero,.resource-hero,.native-case-hero) h1{font-size:clamp(38px,13vw,54px)!important}}
