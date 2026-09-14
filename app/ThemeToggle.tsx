@@ -1,11 +1,11 @@
 'use client';
 import {useEffect,useState} from 'react';
 
-const KEY='ayodhya-theme-v2';
+const KEY='ayodhya-theme-v3';
 type Theme='dark'|'light';
 
 export default function ThemeToggle(){
-  const [theme,setTheme]=useState<Theme>('dark');
+  const [theme,setTheme]=useState<Theme>('light');
   useEffect(()=>{setTheme(document.documentElement.dataset.theme==='light'?'light':'dark')},[]);
   function toggle(){
     const next:Theme=theme==='dark'?'light':'dark';
