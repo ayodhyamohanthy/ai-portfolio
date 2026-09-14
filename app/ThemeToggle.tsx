@@ -7,7 +7,7 @@ type Theme='dark'|'light';
 
 export default function ThemeToggle(){
   const [theme,setTheme]=useState<Theme>('light');
-  useEffect(()=>{setTheme(document.documentElement.dataset.theme==='light'?'light':'dark')},[]);
+  useEffect(()=>{const next:Theme=localStorage.getItem(KEY)==='dark'?'dark':'light';document.documentElement.dataset.theme=next;setTheme(next)},[]);
   function toggle(){
     const next:Theme=theme==='dark'?'light':'dark';
     document.documentElement.dataset.theme=next;
