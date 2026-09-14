@@ -737,3 +737,5 @@
 @media(max-width:800px){.route-search{z-index:60;background:#eaf1fb!important;isolation:isolate;overflow:hidden}.route-inbox>.inbox-top{background:#f6f8fc!important}}
 
 .folder-rule{padding:2px 20px 12px;color:#5f6368;font-size:11px;line-height:1.45}.inbox-tabs{overflow-x:auto}.inbox-tabs button{min-width:130px}@media(max-width:800px){.inbox-mobile-nav i{padding-inline:10px}.inbox-mobile-nav span{font-size:9px}}
+/* Toolbar actions keep visible M3 contrast across every opened route. */
+.route-toolbar button,.route-toolbar a{color:var(--md-sys-color-on-surface-variant)!important;background:transparent!important}.route-toolbar .ui-icon{fill:currentColor!important;opacity:1}
