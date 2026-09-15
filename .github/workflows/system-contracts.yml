@@ -9,4 +9,5 @@ jobs:
         with: {node-version: 20}
       - run: npm ci
       - run: node scripts/validate-system.mjs
+      - run: node scripts/validate-shelves.mjs
       - run: npm run build
