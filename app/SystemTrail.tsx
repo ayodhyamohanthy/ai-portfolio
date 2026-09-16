@@ -1,3 +1,0 @@
-import Link from 'next/link';
-const steps=[['01','Orient','/atlas'],['02','Learn','/sources'],['03','Try','/resources'],['04','Build','/components'],['05','Apply','/process'],['06','Specify','/library'],['07','Evaluate','/benchmarks'],['08','Stay current','/fresh']];
-export default function SystemTrail({current}:{current:string}){return <section className="system-trail" aria-label="AI-native design system learning path"><div><span>OPEN AI-NATIVE DESIGN SYSTEM</span><b>{steps.find(x=>x[1]===current)?.[0]} / {current}</b></div><nav>{steps.map(([n,label,href])=><Link href={href} key={n} aria-current={label===current?'step':undefined}><i>{n}</i><span>{label}</span></Link>)}</nav></section>}
