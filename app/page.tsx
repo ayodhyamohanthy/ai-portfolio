@@ -1,2 +1,2 @@
-import HomeReference from './HomeReference';
-export default function Home(){return <HomeReference/>}
+import PortfolioWall from './PortfolioWall';
+export default function Home(){return <PortfolioWall/>}
