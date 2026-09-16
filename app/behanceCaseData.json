@@ -1,0 +1,1407 @@
+[
+  {
+    "slug": "data-product-design",
+    "title": "Deep Data based Product Designing",
+    "source": "https://www.behance.net/gallery/204843885/Deep-Data-based-Product-Designing",
+    "lines": [
+      "ReDesigning a product with real proof of Data that shows new Design is working.",
+      "This was the start of something big.",
+      "1M+ visitors per month, 1K+ high ticket customers, 2K+ leads per month,targeted for Multiple countries. Impact Created post design: 129% Conversion increase, 35% increase in Demo Requests, 38% increase in Sales Chats, 113% increase in Calls, 27% in retained customers",
+      "1. Challenge",
+      "Client had gone from a single-product company to a multi-product international company, so new products and departments needed to be represented. Conversion and usability opportunities needed to be acted upon. The design aesthetic needed to be updated.",
+      "Grabbing the lowest hanging fruits : understanding through Analytics",
+      "I began by digging into clients historical data, surfacing user pain points and barriers to conversion.",
+      "INSIGHT: Users commonly went from the home page directly to the pricing page (pre-disqualifying themselves from the product), the FAQ, or a search. Despite being in-depth, the home page lacked critical information.",
+      "Massive amounts of data were available in Google Analytics, and Mixpanel. The main challenge was sorting through the data and finding meaningful patterns.",
+      "Heat mapping",
+      "I used heat maps and scroll maps available from their V1 -> To-date. This helped understand engagement on current and previous versions, and the effects that specific changes had.",
+      "INSIGHT: At a high level, users weren’t engaging with critical elements and less than 25% would scroll.",
+      "These heat maps and scroll maps were run with 25,000 users each, supplying 467,308 unique data points that were analyzed in this project.",
+      "Session recordings",
+      "Using anonymous session recordings, I was able to reproduce many of the behaviors found in the Analytics Review, Heat Mapping, and User Testing. This validated hypotheses and identified areas of opportunity for the design.",
+      "These live, anonymous, and undetected recordings represented a reliable hybrid qualitative and quantitative data set.",
+      "User testing",
+      "Qualitative data collection was extremely important in this project, and as a result, user testing was conducted at virtually every phase. Tests were arranged in small, focused sessions aimed at iteration and incremental improvement.",
+      "Stakeholder interviews",
+      "This project drastically affected multiple different areas of the organization, which at times had conflicting interests. I conducted interviews with representatives from Product, Marketing, Sales, Services, Support, and Executive Leadership to understand each part of the company’s unique requirements and concerns for the design.",
+      "I collected a lot of internal feedback, cross-referenced it with user feedback, and prioritized design changes.",
+      "Customer interviews",
+      "10% of the traffic to the home page of clients website was that of existing customers that were logging into their portals or grabbing important resources. They were very high priority users that weren’t generally taken into account by the KPI’s set for the site. In order to ensure that they were factored into the design, I conducted a set of interviews with customers and used it as the basis for customer-specific dynamic content.",
+      "Interviews were conversational and tailored to each customer.",
+      "Unsolicited feedback",
+      "Client receives a good amount of unsolicited feedback. This can manifest itself in many ways. From support and sales calls, to tweets, to direct emails, and everything in between. I have always prioritized unsolicited feedback for it’s genuine nature and passionate roots.",
+      "Users regularly share unsolicited feedback for web properties. This is critical to our research process.",
+      "Multivariate testing",
+      "The process of honing in on the new design was very iterative. In order to understand what resonated most with the audience, and subsequently qualify or disqualify different elements from the design, I ran tests with different combinations of isolated design changes and saw how users responded.",
+      "Wireframing",
+      "Once we had a solid direction for the design, I began to produce multiple different variations of wireframes. I then put the designs in front of users and internal stakeholders for testing and feedback. This helped me to narrow the design down to three major variations, which I used to establish a single design framework, and thus move into visual design.",
+      "We experimented with a wide array of designs, eventually landing on an atypical, grid-first structure.",
+      "UI",
+      "During the UI design phase, I used a mix of clean lines, strong typography, bold colors, unique imagery, and an atypical grid structure to elevate the design to a new level.",
+      "Scalable & Flexible design",
+      "This design needed to be scalable, flexible, and alive. This is one of the primary reasons why i went with such a grid-based, modular structure. It would scale well across devices, content could easily be changed or moved around, and key sections could be updated using a new editorial calendar that we would be introducing.",
+      "Several editorial sections inspired by stakeholder interviews were built into the design and coded so that marketers could edit them easily.",
+      "Interaction design",
+      "I used interactions like on/off hover to bring the page to life, draw users into the content, and help confirm user actions. A video plays on mouseover.",
+      "Thoughtful repurposing of space was very important in this design and something that users specifically noted in testing.",
+      "Dynamic content",
+      "As a way to deliver highly relevant content to each user and solve for specific user groups like existing customers, we developed dynamic content sections that would adapt based on the user. These were then tested within the context of personas and purchasing stages.",
+      "INSIGHT: Earlier in the project, interviews with existing customers identified personalized content as a major opportunity.",
+      "Accessibility",
+      "Over 19% of the U.S. population is disabled. Accessibility and device compatibility were crucial to all of clients users. The design needed to perform across multiple different devices by utilizing a fully responsive design and stable code. This code would then need to hold up well in devices built for accessibility purposes, like screen readers.",
+      "Using an array of accessibility-focused tools, I tested the design for multiple forms of color blindness and compatibility with screen readers.",
+      "Simulation of Red Green Colour Blindness",
+      "Internationalization and Localization",
+      "As a global company, Client required an equally global site. In addition to English, the new pages would also be translated into Spanish, Portuguese, German, French, and Japanese, with additional languages to come in the future. This was an important factor in the design, as foreign translations could potentially take up 100% more space than their English counterparts.",
+      "Collaboration with Devs & QA's post Design",
+      "To check whether design & Interactions are compatible across all devices or needs any break changes.",
+      "The design needed to display consistently across browsers and devices (including some that were utilizing outdated technology). Using BrowserStack, QA emulated the site on real devices. Knowing that our users were 73% in Chrome, 12% in Safari, 9% in Firefox, and 5% in Edge, we prioritized fixes according to audience size and criticality.",
+      "The design was tested across devices and resolutions in multiple versions of Chrome, Safari, Firefox, Edge, Opera, and Yandex.",
+      "Collaborating with PM's post Design",
+      "Each page affected in the iteration had a set of Key Performance Indicators that I monitored and tested against with PM's. I paid especially close attention to Conversion Rate, Submission Rate, Drop-Off Rate, Event Triggers that we built into the design, Goal Completion, Navigation Summary (Origin page and Destination page), and even specific Search Queries.",
+      "Google Analytics provided a wealth of historical data that could be compared in Behavior Flows and Navigation Summaries.",
+      "New Design Conversion performance Check",
+      "Every Call-To-Action button in the design would track views, clicks, and submissions for every button. This data was then rolled up into user profiles and larger reports that helped us gauge how the design was performing.",
+      "CTA’s could be tracked throughout a user’s lifecycle, helping us to understand where and when they were converting.",
+      "Heat mapping",
+      "Through multiple rounds of heat maps with 25,000 users each, I was able to observe how users were engaging with the design, where engagement had increased, and where it had dropped off. We saw major engagement increases in critical CTA’s, navigation elements (like the software tab), and application links (like the free trail conversion link).",
+      "Heat maps helped to show where the design was performing well and identify opportunities for iterative tests.",
+      "User testing and recording",
+      "With the design live, I recorded users on the site and ran additional rounds of user testing. This really helped to give us ideas for elements to test and ultimately incorporate into future iterations of the design. This information was very easily paired with quantitative data and used to prioritize the most important items for the next iteration.",
+      "Screen recordings were used to immediately assess the design. In this case, I was watching how an existing customer used the site.",
+      "Lessons to self till this points",
+      "This was a high impact project. A lot went right (thanks to data), but as with any project, things also went wrong. I like to reflect on the successes and failures of every project so that I can learn from them and apply those learnings in the future.",
+      "I could have been more efficient by setting a more explicit scope and continually refocusing our stakeholders on the project goals. As the project neared completion, the scope seemed to increase dramatically with new ideas and “nice to have’s” that weren’t always aligned with our original KPI’s. This put a lot of pressure on me to deliver additional work that may not have even solved for our goals.",
+      "Applying the full Lean UX process that I implemented, and seeing how big of an impact it had on the team and the end product that we built feels like a second life.",
+      "Next Sprint after taking V1 feedback",
+      "I measured conversion not by clicks or sign-ups, but by activated and retained users.",
+      "Every decision has been justified using research and KPI’s, rather than just opinion and intuition.",
+      "Every task was stack ranked against these goals, using the criteria of potential, importance, and ease.",
+      "Sprint Kickoff",
+      "I'd source opportunities from the core team, stakeholders within the business, and ongoing performance analysis. They were all accompanied by data and cross-referenced with goals established. These were used to build the business case, flesh out the iteration, and set it in motion.",
+      "To support this, we used a hybrid data model tracking users across Google Analytics 360, and Amplitude. We didn’t make guesses; we attacked the best opportunities.",
+      "Planning",
+      "JIRA epic and Kanban board were created.",
+      "Design",
+      "Documentation: wiki space is created to document ongoing learnings",
+      "Research:",
+      "Once the iteration was established, research would become the primary focus. This was both an ongoing and an iteration-dependent process.",
+      "With over multiple pages across the site, detailed conversion flow audits helped identify areas where the experience could be simplified.",
+      "Simple flows had a 2-3x higher conversion rate than their complex counterparts. A new, standardized “Get Started” flow helped users convert in 3 steps from anywhere.",
+      "User Journeys",
+      "By looking at individual user journeys, we uncovered issues where users were wrongfully converting, getting lost in the site, and abandoning products that they signed up for.",
+      "In one such case, a new conversion and sign-in interface was created. It detects known users even if they aren’t signed in and offers to continue with their account instead.",
+      "like Sign-in with Google pops up in Progressive webApps",
+      "Learning unobvious User Behaviours",
+      "Using a composite of data sourced from interviews, user tests, and surveys, we kept a pulse on how prospects preferred to learn about new software products.",
+      "-In one instance, users indicated that they wanted to watch a video or read through a website, and that chat was least favored. At the same time, our conversion data consistently showed that chat had a high close rate.",
+      "After considering both quantitative and qualitative data sets, and reconciling areas where they contradicted each other, we developed solutions that prioritized video-based and story-based learning, as well as a new chat experience. Users didn’t dislike chat in general; they disliked our chat. These videos increased conversion by 300%, and chat volume increased by 38%.",
+      "Conversion Motivators Discovery",
+      "User interviews and surveys would help uncover the messaging that spoke the most to prospects, and was later cross-referenced with copy vs. copy testing data.",
+      "Copy was centered around product-descriptive, “all-in-one”, and “growth” themes. In copy vs. copy tests, changes to messaging improved conversion by 20%.",
+      "Experimenting design changes every week in production",
+      "An average of 10 experiments were launched on the site every week. The learnings from these experiments continually impacted our incremental growth metrics.",
+      "After KPI’s were tracked and proven out for each experiment, their learnings are applied across the site. This simple scaling effort bled into design, research, and code.",
+      "User testing and session recordings",
+      "were regularly run to observe organic user behaviors, check the health of the experience, and qualitatively test against hypotheses.",
+      "Results were compiled into feedback docs and stack ranked quantitatively in Rainbow Spreadsheets. These were then mapped to action items for design and development.",
+      "Heatmapping",
+      "Heatmaps, Scrollmaps, and Color Blindness Simulations were used to evaluate the effectiveness and accessibility of the design, as well as how users interacted with it.",
+      "Pre and post launch heatmaps helped predict design performance. On the left is a heatmap of a pre-launch static PNG. On the right is the post-launch live design.",
+      "Presentations with Key Stakeholders",
+      "As fresh research was completed and used to jumpstart a new iteration, I placed into a kickoff slide deck that I would eventually present to key stakeholders and decision makers. From this, we'd agree on the direction of the iteration, the timeline and the team needed to carry it out. We didn't iterate for the sake of iterating, so this was part of the process helped us evaluate each iteration.",
+      "Leading with UX Writing",
+      "Research determines content, and content determines design. In that order. This is what drove our research-first and copy-first approach to design.",
+      "Research Copy & Data ----> Raw copy & Story Structure",
+      "Raw copy & Story Structure -----> Near final copy in Pre-made modules",
+      "In-depth messaging research was matched with specific verbiage and used to construct full copy docs, which went through several rounds of feedback and iteration. As the copy began to solidify, it would be placed into a rough structure to visualize how the story would be told. During this time, design exploration was also under way, working in conjunction with copy.",
+      "Exploratory Design",
+      "I produced this design and we had it live in 24 hours. It converted 20% better than the control, even as a quick experiment. This indicated that our hypotheses were aimed in the right direction. Got 20% increase in conversion rate. That justified an iteration.",
+      "Testing and validating elements",
+      "I maintained several Design System Boards with elements that I pulled from around the web, concepted in meetings, or drew during a moment of inspiration. We regularly implemented these elements as tests and enhancements. Importantly, each core element was quantitatively and qualitatively validated before implementation, no matter how subjective it may have seemed.",
+      "Wireframes & Mockups",
+      "As the design direction was established, I began creating the structure and hierarchy of the design",
+      "Pricing Page:",
+      "Product Page",
+      "Snapshot from our weekly meeting, covering key metrics and experiments.",
+      "Page - Summary of Changes - Signups- conversion percentageof positive/negative changes",
+      "Google Analytics 360 and Amplitude were used to collect data, which was then compiled in Google BigQuery and used to populate custom visualizations that were built in Google Data Studio. This allowed us to see data across the entire site and product, and focus exclusively on metrics and questions that were relevant to our work. Using a predictive analytics model that was laid on top of this data, we were able to measure conversion not by clicks or submissions, but by user retention and revenue. This was tracked across more than 90 unique conversion journeys throughout the site.",
+      "User Preferences over Team Preferences",
+      "Over personal preferences; we tested aesthetic directions with actual users and quantified the best aesthetics.",
+      "From my point of view, the fostering of this approach was one of the biggest wins for this project.",
+      "Impact",
+      "129% Conversion increase",
+      "35% increase in Demo Requests",
+      "38% increase in Sales Chats",
+      "113% increase in Calls",
+      "27% in retained customers"
+    ],
+    "images": [
+      {
+        "src": "/cases/data-product-design/01.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/02.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/03.png",
+        "alt": "Deep Data based Product Designing project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/04.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/05.png",
+        "alt": "Image may contain: screenshot, abstract and computer",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/06.png",
+        "alt": "Deep Data based Product Designing project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/07.png",
+        "alt": "Deep Data based Product Designing project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/08.png",
+        "alt": "Deep Data based Product Designing project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/09.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/10.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/11.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/12.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/13.png",
+        "alt": "Deep Data based Product Designing project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/14.png",
+        "alt": "Deep Data based Product Designing project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/15.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/16.png",
+        "alt": "Image may contain: flag",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/17.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/18.png",
+        "alt": "Image may contain: template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/19.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/20.png",
+        "alt": "Image may contain: abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/21.png",
+        "alt": "Image may contain: computer, screenshot and computer monitor",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/data-product-design/22.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      }
+    ],
+    "thin": false
+  },
+  {
+    "slug": "application-automation",
+    "title": "Re-designing the product with new acquired startup",
+    "source": "https://www.behance.net/gallery/240200425/Re-designing-the-productwith-new-acquired-startup",
+    "lines": [
+      "Leading the strategic integration and consolidation of the newly acquired product's core flows into our platform, establishing a cohesive user experience that leverages both product strengths",
+      "Design Impact:",
+      "The updates to Clients Application Automation led to measurable improvements:",
+      "40% faster automation setup",
+      "35% increase in successful automation runs",
+      "Higher engagement with Template Picker",
+      "Stronger governance and monitoring tools",
+      "Product Details:",
+      "Clients Platform: Application Automation",
+      "Functionality: Automates analytics and data-driven workflows",
+      "Integration: Integrates with hundreds of SaaS apps",
+      "Benefit: Simplifies business processes and improves efficiency",
+      "Clients Application Automation: Enabling users to automate analytics and improve data workflows. Application Automation is a no-code platform that helps users to automate analytics and data-driven workflows, integrating with hundreds of SaaS apps to simplify business processes and improve efficiency.",
+      "BACKGROUND",
+      "Automation should simplify work, not make it harder. Yet in Clients Cloud, setting up and managing workflows often felt overwhelming. The experience was too technical, driving some users to abandon automation altogether. Even experts struggled: the builder felt disconnected from the rest of the platform, templates were seen as rigid, and visibility into performance was limited. Troubleshooting became guesswork.",
+      "So how might we design automation that users can understand, control, and trust.",
+      "MY ROLE",
+      "Responsible for re-architecting the Application Automation experience during the integration of a new acquired startup into Clients Cloud. Simplified automation setup and monitoring, redesigned the template picker, and improved performance visibility. Collaborated with a distributed cross-functional team across the UK, Canada, Sweden, Spain, and Belgium to align the new layer with Clients design system and strategic goals, grounded in user feedback and telemetry.",
+      "UX Approach:",
+      "I tackled key user challenges and refined the automation experience through a structured UX approach, grounded in real user feedback, behavioral insights, and continuous iteration.",
+      "Research & Discovery:",
+      "-Qualitative research with customers to understand pain points and challenges in partnership with the UX Research team.",
+      "-Analyzed behavioral data and user frictions using Data Analytics and reviewed feedback from the Clients Community.",
+      "-Researched competing automation platforms to identify best practices in workflow setup and monitoring.",
+      "-Mapped potential use cases and scenarios in collaborative boards, translating technical challenges into actionable design insights",
+      "Definition & Ideation:",
+      "-Mapped out user journeys to highlight major friction points.",
+      "-Applied progressive disclosure principles to guide users gradually through complex steps.",
+      "-Redesigned the Template Picker interface to surface relevant workflows clearly.",
+      "-Designed a comprehensive automation and metrics dashboard to centralize control, monitoring, and troubleshooting.",
+      "Deployment and iteration:",
+      "-Refined the automation builder to align with Clients Design System, ensuring interface consistency.",
+      "-Introduced smart error handling, with clear alerts, suggested fixes, and interactive debugging tools for faster troubleshooting.",
+      "-Optimized automation monitoring, giving users real-time visibility and control over execution status and system performance.",
+      "-Refined through iterative testing, ensuring every update addressed real user needs.",
+      "The legacy experience:",
+      "Cluttered, overwhelming, and disconnected:",
+      "The old experience exposed everything at once, leaving users without guidance, clear flow, or confidence.",
+      "The plan:",
+      "Trigger → Logic →Action",
+      "I redesigned the Application Automation to turn a fragmented, overly technical tool into an integrated part of Clients Cloud, making it easier for users to build, monitor, and trust their workflows. Pinpointed four key areas where users struggled.",
+      "By rethinking the core experience, I simplified setup, improved template relevance, and introduced visibility into automation performance, helping both Analytics DevOps and App Creators act faster on actionable insights.",
+      "INTEGRATING A STARTUP PRODUCT INTO THE CLOUD ECOSYSTEM",
+      "Challenge: When Client acquired another startup, the automation builder felt like a separate product, it didn't fit within Clients Cloud's design system.",
+      "Issue: Users found the interface inconsistent with the platform, leading to a fragmented experience that made it harder to trust the system and navigate between features. These inconsistencies disrupted flow and created confusion, especially for experienced users accustomed to Client's visual and interaction patterns.",
+      "Solution: I redesigned the interface to align with Client's UI, making automation feel like a natural part of the platform, so users could navigate it just as easily as any other Client feature.",
+      "Template Picker Adoption:",
+      "Challenge: The Template Picker was meant to simplify workflow creation, but users weren't using it.",
+      "Issue: Beginners felt lost, while experienced users found it too limiting.",
+      "Solution: I revamped the Template Picker UI, reorganized categories for better navigation, and made templates more flexible, helping both new and advanced users get more value from them.",
+      "OPTIMIZING WORKFLOW SETUP",
+      "Challenge: Many users (especially those without technical backgrounds) found workflow setup overwhelming.",
+      "Issue: The process was too complicated, and the interface didn't offer enough guidance.",
+      "Solution: I added guided setup steps, a more structured layout, and easy access to pre-built templates, making it simpler for users to configure workflows without getting stuck.",
+      "AUTOMATION MONITORING AND CONTROL",
+      "Challenge: Users needed real-time visibility into automation performance but had no way of knowing whether workflows succeeded, failed, or stalled. Without clear feedback or entry points for troubleshooting, the system felt unreliable, especially for business-critical use cases.",
+      "Issue: There was no central dashboard for tracking automation status, troubleshooting errors, or managing integrations.",
+      "Solution: I designed a comprehensive automation dashboard that let users:",
+      "01 Monitor all automations in one place.",
+      "02 Control execution status.",
+      "03 View errors and logs.",
+      "04 Adjust settings and manage integrations.",
+      "Takeaways",
+      "01 Successfully transformed a complex, standalone automation product into an integrated Clients Cloud feature, without compromising on usability or system performance.",
+      "02 Leveraged close collaboration across design, product, and engineering to translate technical complexity into a clear, no-code user experience.",
+      "03 Learned to prioritize ruthlessly in high-pressure environments, focusing on what delivered the most value within tight timelines.",
+      "From setup to execution",
+      "01 How users move from the Cloud Hub to Automation, setting up and fine-tuning workflows.",
+      "02 The redesigned Template Picker to make categories visually clear and easy to navigate.",
+      "03 The automation execution phase, where users can connect apps and tweak workflows right from the sidebar.",
+      "04 The monitoring dashboard, giving users a clear view of automation status and full control over execution."
+    ],
+    "images": [
+      {
+        "src": "/cases/application-automation/01.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/02.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 906,
+        "height": 678
+      },
+      {
+        "src": "/cases/application-automation/03.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 906,
+        "height": 678
+      },
+      {
+        "src": "/cases/application-automation/04.jpg",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 759
+      },
+      {
+        "src": "/cases/application-automation/05.jpg",
+        "alt": "Image may contain: abstract, screenshot and template",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "src": "/cases/application-automation/06.jpg",
+        "alt": "Image may contain: screenshot",
+        "width": 1400,
+        "height": 755
+      },
+      {
+        "src": "/cases/application-automation/07.jpg",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 751
+      },
+      {
+        "src": "/cases/application-automation/08.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/09.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/10.png",
+        "alt": "Image may contain: abstract, screenshot and template",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/11.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/12.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/13.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/14.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/15.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/16.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/17.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/18.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/19.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/20.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/21.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/application-automation/22.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 784
+      }
+    ],
+    "thin": false
+  },
+  {
+    "slug": "clinical-trial-tool",
+    "title": "Collecting Real Qual & Quant Data & designing UX",
+    "source": "https://www.behance.net/gallery/204323117/Collecting-Real-Qual-Quant-Data-designing-UX",
+    "lines": [
+      "Cutting clinical task time 90%, scaling a health platform 10×",
+      "40% workflow streamlined",
+      "90% user satisfaction",
+      "Challenge:",
+      "Client has assigned Quality Data Managers (QDM) and Quality Data Analysts (QDA) to oversee efficient operations in all facilities, ensuring quality, affordable, and efficient patient care",
+      "What is the Tool?",
+      "The Clinical Trail Tool streamlines facility monitoring, allowing Quality Data Managers to focus on maintaining quality and efficiency across all Client facilities, saving time and resources.",
+      "This transformation Tool consolidates data entry, clinical action plans, and reporting, reducing staff stress and burnout while ensuring a quality patient experience.",
+      "My responsibilities have been:",
+      "Interviewing users and creating personas to ensure our design met real-world needs.",
+      "Conducting surveys to understand user insights and guide our design decisions.",
+      "Collaborating with stakeholders to create wireframes following agile practices.",
+      "Validating wireframes using design thinking principles, think-aloud, and A/B testing.",
+      "Challenges:",
+      "The new roles required extensive manual work with numerous Excel files.",
+      "Digital intervention was necessary to streamline the process.",
+      "This trail tool was at an infant stage and didn't provide much value",
+      "Interface needed to be scalable for the growing virtual care demand",
+      "v1.0 had basic data entry and parameter assessment but fell short due to limited functionality and technical glitches.",
+      "kicked off with a UX audit: of v1.0",
+      "v1.0 AUDIT INSIGHTS",
+      "The UI was took up a lot of scroll space, leading to navigation issues.",
+      "The functionality was too limited, with not much to do besides data entry.",
+      "The pillbox-shaped tabs occupied excessive screen space, especially considering the need to add more tab rows later.",
+      "The design required greater compactness and streamlining for user-friendliness and scalability.",
+      "Business Objectives:",
+      "Addressing challenges in new Quality Data roles.",
+      "Streamlining clinical data management processes.",
+      "Focusing on automation for increased efficiency.",
+      "Elevating patient care through improved tools.",
+      "Survey:",
+      "Clinicians work, their tool habits and challenges to get insights on user needs and what pitfalls to avoid, which guides future design decisions...",
+      "Users' open-ended feedback provided deeper insights into their thoughts, concerns, and suggestions.",
+      "Evaluated response rates, demographics, NPS, and satisfaction to understand user experiences systematically.",
+      "Mapped Persona",
+      "Shadowed key roles",
+      "Storyboarding of 2 key roles",
+      "Created storyboards for 2 key roles using interview insights.",
+      "Quality Data Manager & Qualiy Data Analyst",
+      "Quality Data Manager:",
+      "Jennifer applies problem-solving skills and tech expertise, navigating quality management and clinical data intricacies.",
+      "Quality Data Analyst:",
+      "Julie passionately supports Jennifer with strong analytical and problem-solving skills in healthcare data analysis and internal support.",
+      "Key Pain Points:",
+      "Manual Maintenance: Manage heavy manual efforts due to limited automation.",
+      "Segmented Data: Challenges in accessing data from various applications.",
+      "Audit Responsibilities: Oversee audits for the demanding SDMAS team.",
+      "Strategic Implementations: Prioritizing for maximum value and financial gain.",
+      "Used FigJam as a common ground to discuss and test prototypes, guiding the best approach forward.",
+      "for stakeholders, developers, and users to shape the tool.",
+      "This facilitated instant feedback, crucial for iterative improvements in Wireframe Design.",
+      "I have reviewed user flow sketches in Design meetings, collaborating with stakeholders.",
+      "The Design Wall empowered users with post-it voting for a democratic design process.",
+      "Instant Feedbacks",
+      "Gathering instant feedback from stakeholders and users for iterative improvements.",
+      "Validating User Fllows",
+      "Reviewed user flows in our weekly Design meetings, collaborating with stakeholders.",
+      "I tested multiple layouts for the reporting screen. The list-style layout (2) was finalized for its simplicity and resemblance to how QDAs manage data in Excel files.",
+      "Here are some design approaches that served as the foundation for the whole system redesign.",
+      "1. Removing excessive graphics",
+      "Clinical Trail Tool consolidates complex functionalities under one system, requiring a ground-up UX/UI redesign for scalability and future feature integration.",
+      "Before:",
+      "Graphic elements, like the pillbox tab menu, and space-occupying elements caused clutter, hindering comprehension.",
+      "After:",
+      "The new design introduces a cleaner look, improving compactness and enhancing readability with a color-coded tab system.",
+      "2. Designing a space to monitor and track",
+      "I crafted the whole system from scratch, with the Clinical Action Plans Page being a standout. We listened to users, giving them a hassle-free space to manage action plans all in one spot.",
+      "The page lets users create or choose action plans, easily tracking changes, adding notes, attaching docs, and more.",
+      "Before:",
+      "The old workflows were a pain. Dealing with multiple Excel files for data was a stress-fest, making it tough to stay focused.",
+      "After:",
+      "I checked out how QDAs handle data and pitched a fresh dashboard for report monitoring.",
+      "Using visual data makes it easier on the brain, processing images faster than text.",
+      "3. SHORTCUTS AND FAST TRACKS",
+      "This change was driven by our pursuit to achieve two business objectives:",
+      "- For experienced users: quick access to their most-used features.",
+      "- Beginners: simplifying and speeding up the learning process.",
+      "We dug into the Design Wall's insights, figuring out what users love most. Shortcuts for quick access to favorite features? Done. Plus, they can create their own shortcuts – easy peasy.",
+      "The home page sets users up with quick alerts and lets you create your own bookmarks for easy access to their favorite sections.",
+      "Clicking on the facility brings up a detailed summary section with interactive widgets, allowing users to perform functions instantly.",
+      "Final Designs:",
+      "Site Map",
+      "Choose a UHC facility (ACO) from the list on the Home Screen to perform various functions.",
+      "Home:",
+      "A central hub for users to navigate UHC facilities (ACOs) and perform tasks.",
+      "Before:The V1.0 homepage had listed ACOs with an option to just download reports.",
+      "After:",
+      "Summary:A quick overview of all sections for the selected ACO.",
+      "Assessments: Evaluate selected ACO's infrastructure, technology, performance, and more.",
+      "Before:The original interface had distracting elements that needed cleaning up.",
+      "After:",
+      "Opportunities",
+      "Explore best practices to enhance ACO performance.",
+      "Clinical Action Plans:",
+      "Manage and track.",
+      "Process:",
+      "How QDAs managed data before",
+      "Exploring best ways to display complex data.",
+      "Reporting",
+      "View ACO performance reports, eliminating the need for multiple Excel files",
+      "Challenges faced & dealt:",
+      "1.Prioritizing essential data for optimal app efficiency posed challenges.",
+      "2.Balancing design aesthetics and functionality was a delicate task.",
+      "3.Ensuring users' work wasn't disturbed by significant tool changes.",
+      "Final Impact",
+      "User Satisfaction",
+      "25%",
+      "Improved design & features.",
+      "Streamlining Workflow",
+      "40%",
+      "Reducing manual labour & introducing automation.",
+      "35%",
+      "Better Decision Making",
+      "Through Data Visualization",
+      "15%",
+      "Enhanced Collaboration",
+      "20%",
+      "Before:",
+      "After:",
+      "Clients Clinicians gave overwhelmingly positive feedback.",
+      "The app slashed work time by 90%,",
+      "as new users shifted from manual workflows to a single, streamlined system for all their activities.",
+      "Positive Survey Results post redesign:"
+    ],
+    "images": [
+      {
+        "src": "/cases/clinical-trial-tool/01.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/02.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/03.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1200,
+        "height": 606
+      },
+      {
+        "src": "/cases/clinical-trial-tool/04.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1200,
+        "height": 606
+      },
+      {
+        "src": "/cases/clinical-trial-tool/05.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/06.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/07.png",
+        "alt": "Image may contain: abstract, screenshot and letter",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/08.png",
+        "alt": "Image may contain: letter and menu",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/09.png",
+        "alt": "Image may contain: cartoon and person",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/10.png",
+        "alt": "Image may contain: cartoon and illustration",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/11.png",
+        "alt": "Image may contain: cartoon and illustration",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/12.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/13.png",
+        "alt": "Image may contain: cartoon",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/14.png",
+        "alt": "Image may contain: cartoon and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/15.png",
+        "alt": "Image may contain: abstract, screenshot and cartoon",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/16.png",
+        "alt": "Image may contain: abstract, screenshot and indoor",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/17.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/18.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/19.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/20.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/21.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/22.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1200,
+        "height": 606
+      },
+      {
+        "src": "/cases/clinical-trial-tool/23.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/24.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/25.png",
+        "alt": "Image may contain: screenshot, abstract and internet",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/clinical-trial-tool/26.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      }
+    ],
+    "thin": false
+  },
+  {
+    "slug": "healthcare-pilot",
+    "title": "Healthcare pilot",
+    "source": "https://www.behance.net/gallery/203821383/Healthcare-pilot",
+    "lines": [
+      "Enterprise level healthcare reachout pilot",
+      "After working at Deloitte US with OBAMACARE & NORTHWELL HEALTH. I was tasked with revamping the arogia 24x7 virtual consultation app design end-to-end",
+      "Hypothesis Validation",
+      "Arogia 24x7 cuts patient wait times, enhancing efficiency for care teams, doctors, and patients by:",
+      "MVP V 1.0",
+      "Why the Redesign was needed?",
+      "-because doctors were busy and needed a single system where they could effectively multitask.",
+      "In a nutshell, I was tasked with",
+      "Methodology",
+      "User Research & persona creation",
+      "I interviewed 5 healthcare professionals to identify previously unknown struggles The goal was to shape an persona and add value through design principles.",
+      "Mary Williams (In-house doctor):",
+      "Key tasks: Consultation, Writing prescriptions,Checking patient records,Notes &",
+      "Communicating with medical assistants",
+      "\"I want to know my immediate appointment and give my full attention to my patient. I don’t want to struggle to keep up with a soaring burden of administrative tasks.\"",
+      "Collected some competitor insights of high NPS features & designed multiple versions of mid-fidelity wireframes to check whats working and whats not",
+      "Mid-fidelity wireframes designs",
+      "A/B tested 2 mid-fidelity wireframes which got top 2 in voting",
+      "-to ensure the layout was easy to navigate for doctors in a hurry",
+      "I broke down complexity with visual cues as The human brain processes images faster than text!",
+      "Doctors Dashboard -",
+      "The dashboard is the central hub for",
+      "managing appointments, emergency alerts, patient summaries, and communication because doctors were busy and needed a single system where they could effectively multitask.",
+      "Patients Dashboard",
+      "Chat made it easier to co-ordinate with team members, convey complex medical terms to patients & solve IT issues",
+      "There’s more to multitask!",
+      "Patient Records & Emergency visits etc...",
+      "Finalised Simple interface that's easy for both doctors and patients",
+      "Chat, Participants,patient records& Compatibility board.",
+      "An intuitive and predictable design facilitated multitasking and eased development.",
+      "Some accessibility contributions",
+      "I made making it more inclusive and universal. As these apps are used by people of various multi cultures.",
+      "To minimize mistakes, I provided precise measurements to developers",
+      "The app for tablets and mobiles(iOS & Android)",
+      "Developed a comprehensive design system",
+      "Impact: Rapid Prototyping & constant user feedback made growth possible as it has shown visibility of progress at each iteration.",
+      "From 0 to 1000 daily bookings due to overwhelmingly positive customer response.",
+      "Smart appointments and seamless report integration led to 97% of urgent care seekers booking same-day appointments with an average wait time as low as 3 minutes and 13.47 minutes",
+      "virtual visits logged jumped 100x",
+      "saved multifolds over emergency costs",
+      "79% NPS increase in user satisfaction",
+      "bookings/day increased from single digit to xxxx 4 digit"
+    ],
+    "images": [
+      {
+        "src": "/cases/healthcare-pilot/01.png",
+        "alt": "Image may contain: monitor, indoor and human face",
+        "width": 1400,
+        "height": 784
+      },
+      {
+        "src": "/cases/healthcare-pilot/02.png",
+        "alt": "Image may contain: human face, monitor and indoor",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/03.png",
+        "alt": "Healthcare pilot project artifact",
+        "width": 1200,
+        "height": 606
+      },
+      {
+        "src": "/cases/healthcare-pilot/04.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/05.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/06.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/07.png",
+        "alt": "Image may contain: template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/08.png",
+        "alt": "Healthcare pilot project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/09.png",
+        "alt": "Image may contain: human face and person",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/10.png",
+        "alt": "Healthcare pilot project artifact",
+        "width": 1200,
+        "height": 606
+      },
+      {
+        "src": "/cases/healthcare-pilot/11.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "src": "/cases/healthcare-pilot/12.png",
+        "alt": "Image may contain: indoor and screenshot",
+        "width": 1400,
+        "height": 776
+      },
+      {
+        "src": "/cases/healthcare-pilot/13.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/14.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/15.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/16.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/17.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1200,
+        "height": 606
+      },
+      {
+        "src": "/cases/healthcare-pilot/18.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/19.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/20.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/21.png",
+        "alt": "Healthcare pilot project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/22.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/23.png",
+        "alt": "Healthcare pilot project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/24.png",
+        "alt": "Image may contain: wall, indoor and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/25.png",
+        "alt": "Image may contain: abstract",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "src": "/cases/healthcare-pilot/26.png",
+        "alt": "Image may contain: screenshot, abstract and template",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/27.png",
+        "alt": "Image may contain: abstract, screenshot and indoor",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/healthcare-pilot/28.png",
+        "alt": "Image may contain: screenshot, abstract and human face",
+        "width": 1400,
+        "height": 708
+      }
+    ],
+    "thin": false
+  },
+  {
+    "slug": "telemetry",
+    "title": "Telemetry project",
+    "source": "https://www.behance.net/gallery/206914111/telemetry-project",
+    "lines": [
+      "Global instruments monitoring Project",
+      "Challenge:",
+      "We were tasked with a comprehensive overhaul of an advanced telemetry and cloud-based remote device monitoring and control system for a global water technology provider.",
+      "Hypothesis Solution:",
+      "Develop a system tailored for management, enabling them to receive pertinent alerts, streamline the allocation of repair tasks, monitor telemetry data, and extract actionable insights",
+      "Current State:",
+      "Our clients conveyed that the current remote water management system faced challenges with low user satisfaction and inefficient task execution. Consequently, we initiated efforts to comprehend the underlying issues with the existing system.",
+      "User & Stakeholder Interviews:",
+      "We conducted in-depth interviews with 11 stakeholders and 6 users. Following this, we transcribed and coded the interviews, subsequently clustering the key points to derive insights and pain points.",
+      "Users are frustrated by redundant, disruptive alarms that are not easily actionable.",
+      "Confusing/too many steps to set up alarms",
+      "Multiple alarms in the middle of the night that could be consolidated into one",
+      "Desire to immediately login and access relevant info (specific pump or customer information) from alarm",
+      "The current UI is confusing and not intuitive.",
+      "\"Not simple enough\" - confusing system set up with too many steps",
+      "Difficulties remembering how to take specific actions",
+      "Desire of support documentation and a simpler set up for customers",
+      "Frustration with an interface that is not intuitive",
+      "There is a lot of data that is difficult to access and utilize/interpret.",
+      "Hard to read data in current table",
+      "Should be able to compare data and see trends without exporting data",
+      "A lot of data to download and interpret",
+      "Data and reports are not easily accessible by phone",
+      "Remote access allows users/admin to proactively address pump issues.",
+      "Remote access is a differentiating feature from other competitors",
+      "Monitoring telemetry and alarms allows for risk mitigation and data-driven decision-making",
+      "Defining & Visioning",
+      "Through several workshops with the client, we were able to define the customer, map the customer journey, rank and prioritize products, pains, and gains; and co-create the product vision statement.",
+      "The final product vision statement is as follows:",
+      "We believe that optimizing your pump fleet should be stress-free and our full-service solution proactively helps you perform better. Tomorrow’s challenges shape our 24/7 platform for monitoring and service. Together, we work smarter and reduce the impact of critical water challenges in water utilities.",
+      "Storyboard",
+      "Personas",
+      "Following the prioritization of user needs, we developed personas for the key stakeholders within the company product ecosystem.",
+      "Product Roadmap",
+      "We crafted a product roadmap to carefully align our solution with the organization's long-term business objectives.",
+      "Ideation towards pain points",
+      "How Might We's?",
+      "How might we improve the UI navigation for users to swiftly identify pump issues and take necessary actions within just a few clicks?",
+      "How might we improve existing users' understanding and adoption of new functionalities in the system?",
+      "How might we reduce information overload without compromising essential data?",
+      "After brainstorming and sketching out individual ideas, engaged in a collaborative discussion and ranked our concepts. From this evaluation, we selected the most viable ideas to develop a solution storyboard.",
+      "Information Architecture",
+      "Current Sitemap",
+      "We examined the existing system to develop a sitemap and identified significant errors within the process.",
+      "New Sitemap",
+      "We then created a sitemap for our new system, aiming to streamline and simplify the presentation of information",
+      "User Interface",
+      "Remote Control via UI",
+      "Alarm Configuration",
+      "Device Alerts",
+      "Pump Repairs"
+    ],
+    "images": [
+      {
+        "src": "/cases/telemetry/01.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 940
+      },
+      {
+        "src": "/cases/telemetry/02.png",
+        "alt": "Image may contain: cartoon, drawing and sketch",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/telemetry/03.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/telemetry/04.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/telemetry/05.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 708
+      },
+      {
+        "src": "/cases/telemetry/06.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 987
+      },
+      {
+        "src": "/cases/telemetry/07.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 672
+      },
+      {
+        "src": "/cases/telemetry/08.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 702
+      },
+      {
+        "src": "/cases/telemetry/09.png",
+        "alt": "Image may contain: screenshot",
+        "width": 1400,
+        "height": 1797
+      },
+      {
+        "src": "/cases/telemetry/10.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 1318
+      },
+      {
+        "src": "/cases/telemetry/11.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 934
+      },
+      {
+        "src": "/cases/telemetry/12.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 2072
+      },
+      {
+        "src": "/cases/telemetry/13.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 1269
+      },
+      {
+        "src": "/cases/telemetry/14.png",
+        "alt": "Image may contain: abstract",
+        "width": 1400,
+        "height": 938
+      },
+      {
+        "src": "/cases/telemetry/15.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 940
+      },
+      {
+        "src": "/cases/telemetry/16.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 941
+      },
+      {
+        "src": "/cases/telemetry/17.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 941
+      },
+      {
+        "src": "/cases/telemetry/18.png",
+        "alt": "Telemetry project project artifact",
+        "width": 1400,
+        "height": 941
+      },
+      {
+        "src": "/cases/telemetry/19.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 940
+      },
+      {
+        "src": "/cases/telemetry/20.png",
+        "alt": "Image may contain: map",
+        "width": 1400,
+        "height": 853
+      }
+    ],
+    "thin": false
+  },
+  {
+    "slug": "ad-platform",
+    "title": "Redesigning a new Ad Platform",
+    "source": "https://www.behance.net/gallery/218071655/Redesigning-a-new-Ad-Platform",
+    "lines": [
+      "B2B Application redesign",
+      "Overview",
+      "To redesign of its entire B2B application with the vision of becoming the best ads management platform",
+      "The goal of this particular project was to identify any usability issues with the beta release and determine the critical features to prioritise for the next iteration of the product.",
+      "Background",
+      "Client is a Australia-based internet marketing company that connects businesses to their customers through the customer buying experience.",
+      "The process",
+      "Understanding the problem",
+      "I conducted research interviews with our primary users (account managers) to uncover any pain points that they were experiencing with the beta release.",
+      "‍",
+      "My research encompassed:",
+      "Understanding the user goals and needs",
+      "Uncovering pain points with the existing user journey",
+      "Determining the success of the tasks measured",
+      "Gathering insights",
+      "After collecting the recordings from the user interviews, I conducted affinity mapping with my teammate to synthesise the pains identified. We grouped these problems under common themes and features in the platform.",
+      "I relied on a data-driven approach known as the severity framework to inform my process and list usability issues in order of priority. The framework helps to identify the severity score of a usability issue based on the following three variables:",
+      "Task criticality x impact x frequency = severity",
+      "Task criticality - how important is the task to the user? (1 = low, 5 = critical)",
+      "Impact - how much of an impact does this issue have on the user's task? (1 = suggestion, 5 = blocker)",
+      "Frequency (%) - how many times does this come up out of total participants?",
+      "Prioritisation of issues",
+      "I took the extra step of categorising these problems into broader Epics to provide the Product managers and engineers with visibility into the key areas of the platform that needed to be addressed from a usability standpoint. This not only helped to prioritise usability issues in order of need but also helped to shape the product roadmap for the quarter.",
+      "‍",
+      "Product, Design and Engineering teams came to the conclusion that the first Epic we would prioritise would be the Audience Wizard due to its severity score, UX and engineering effort required to rebuild it.",
+      "Narrowing down the scope of work",
+      "Based on the user interviews conducted with 7 users on the existing Audience wizard, we found the following key issues:",
+      "57% of users felt that the process of configuring the wizard was arduous",
+      "29% were frustrated that the Next button was disabled so they could not identify which were missing required fields",
+      "29% of users found that it was easy to miss field inputs due to a lack of visual hierarchy",
+      "Wireframing the solution",
+      "Based on the above problems identified, I worked towards addressing these pains by coming up with potential solutions:",
+      "Reducing the number of steps to minimise time to completion",
+      "Surfacing mandatory fields and enabling the Next button to show error validation",
+      "Establishing clearer visual form hierarchy by grouping related fields",
+      "The lack of a formal wizard component also meant that I had to come up with a standardised styling and UI pattern for future wizards",
+      "I quickly mocked up some basic wireframes to gather feedback from Product, Engineering and the users on the overall layout and structure of the wizard form. This involved establishing a standardised visual hierarchy and layout for the future wizard component.",
+      "Validating the designs",
+      "I conducted usability testing sessions with our primary users to validate whether the new designs would solve their problems. I wrote a script including a scenario asking the user to create a new Audience targeting females of all ages on mobile devices with manual bidding enabled.",
+      "During the session, I observed how they interacted with the prototype and set up the Audience. The usability session revealed that it was less arduous to set up a new Audience due to the grouping of related fields. It was easier for the user to identify which forms they had to fill, as advanced settings were now hidden under a collapsable toggle.",
+      "Designs",
+      "I worked very closely with the Front End team to spec out any missing interactions that were not covered in the high fidelity mockups. I conducted a UX review of each front-end ticket that was implemented to ensure it was aligned with the designs before it went live.",
+      "Results and takeaways",
+      "Since the implementation of the new rebuild of the Audience Wizard, we have seen a significant decrease in the number of complaints lodged through the service desk. Additionally, I have received positive feedback from users about the simplified configuration of their Audiences, saving them a large proportion of their time.",
+      "Some key takeaways from this project are:",
+      "Create a strategic plan to launch an MVP.",
+      "This helps deal with out-of-scope requests that could potentially derail the project and helps deliver a quality product in time.",
+      "User testing doesn't end after development.",
+      "Design is a constant iteration of improving the experience for the end user. Always find ways to collect and listen to your user's feedback.",
+      "Involve engineering upfront.",
+      "This helps to reduce any rework later on as an understanding of the technical limitations upfront will help to inform your design strategy.",
+      "Redesigning a new Ad Platform",
+      "0",
+      "13",
+      "0"
+    ],
+    "images": [
+      {
+        "src": "/cases/ad-platform/01.png",
+        "alt": "Image may contain: monitor, indoor and computer",
+        "width": 1400,
+        "height": 560
+      },
+      {
+        "src": "/cases/ad-platform/02.png",
+        "alt": "Image may contain: screenshot and map",
+        "width": 1200,
+        "height": 789
+      },
+      {
+        "src": "/cases/ad-platform/03.jpg",
+        "alt": "Image may contain: post-it note",
+        "width": 1400,
+        "height": 1120
+      },
+      {
+        "src": "/cases/ad-platform/04.png",
+        "alt": "Redesigning a new Ad Platform project artifact",
+        "width": 1400,
+        "height": 827
+      },
+      {
+        "src": "/cases/ad-platform/05.png",
+        "alt": "Image may contain: screenshot, abstract and parallel",
+        "width": 1196,
+        "height": 952
+      },
+      {
+        "src": "/cases/ad-platform/06.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 1194
+      },
+      {
+        "src": "/cases/ad-platform/07.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 1509
+      },
+      {
+        "src": "/cases/ad-platform/08.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 875
+      },
+      {
+        "src": "/cases/ad-platform/09.png",
+        "alt": "Image may contain: abstract and screenshot",
+        "width": 1400,
+        "height": 1167
+      },
+      {
+        "src": "/cases/ad-platform/10.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 875
+      },
+      {
+        "src": "/cases/ad-platform/11.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 875
+      },
+      {
+        "src": "/cases/ad-platform/12.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 1313
+      },
+      {
+        "src": "/cases/ad-platform/13.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1400,
+        "height": 875
+      },
+      {
+        "src": "/cases/ad-platform/14.webp",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 850,
+        "height": 531
+      }
+    ],
+    "thin": false
+  },
+  {
+    "slug": "tat-realtime",
+    "title": "TAT 24 hrs to realtime",
+    "source": "https://www.behance.net/gallery/96587385/TAT-24-hrs-to-realtime",
+    "lines": [
+      "Designing a Smart Solution where Radiologists can easily annotate/ tag medical abnormalities X Rays( which are massive in count Globally)",
+      "Current Systems use",
+      "1) mouse pointers, cursors, polygon,circle shapes in their tools like below which leads to inaccuracy.",
+      "Digital & Physical User Centric Design Changes Recommended:",
+      "1) Ipad",
+      "2) Simple Interface"
+    ],
+    "images": [
+      {
+        "src": "/cases/tat-realtime/01.png",
+        "alt": "TAT 24 hrs to realtime project artifact",
+        "width": 1400,
+        "height": 930
+      },
+      {
+        "src": "/cases/tat-realtime/02.png",
+        "alt": "TAT 24 hrs to realtime project artifact",
+        "width": 1400,
+        "height": 713
+      },
+      {
+        "src": "/cases/tat-realtime/03.png",
+        "alt": "Image may contain: screenshot",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "src": "/cases/tat-realtime/04.png",
+        "alt": "Image may contain: screenshot, black and white and medical imaging",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "src": "/cases/tat-realtime/05.png",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "src": "/cases/tat-realtime/06.png",
+        "alt": "Image may contain: screenshot and medical imaging",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "src": "/cases/tat-realtime/07.png",
+        "alt": "Image may contain: screenshot",
+        "width": 1200,
+        "height": 675
+      }
+    ],
+    "thin": true
+  },
+  {
+    "slug": "skipwait",
+    "title": "Skipwait: Instant Work Platform VibeDesign",
+    "source": "https://www.behance.net/gallery/248574613/Skipwait-Instant-Work-Platform-VibeDesign",
+    "lines": [
+      "Vibe Designing: Skipwait Product Design",
+      "https://app.diy/southern-mole-09v8jy",
+      "Skipwait : Instant Work Platform VibeDesign",
+      "0",
+      "8",
+      "0"
+    ],
+    "images": [
+      {
+        "src": "/cases/skipwait/01.jpg",
+        "alt": "Image may contain: screenshot, mobile phone and abstract",
+        "width": 1400,
+        "height": 1676
+      }
+    ],
+    "thin": true
+  }
+]

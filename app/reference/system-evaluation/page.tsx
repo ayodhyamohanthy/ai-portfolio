@@ -1,0 +1,3 @@
+import Link from 'next/link';import ReferenceChrome from '../ReferenceChrome';
+export const metadata={title:'System Evaluation · Ayodhya reference'};
+export default function Page(){return <ReferenceChrome><section className="shell-chapter"><p>04 · CHAPTER · IN PROGRESS</p><h1>System Evaluation</h1><h2>How do we know the whole product works?</h2><span>Evaluation must cover tasks, trajectories, human review, and production behavior. This chapter is in active development.</span><div><Link href="/reference">← All four chapters</Link><Link href="/reference/harnesses-workflows">Read published chapter ↗</Link></div></section></ReferenceChrome>}

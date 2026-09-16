@@ -1,0 +1,8 @@
+export const metadata={title:'Contact Ayodhya Mohanthy'};
+const channels=[
+ {label:'Email',detail:'For roles, product-design leadership and thoughtful collaboration.',action:'Write an email',href:'mailto:ayodhyarammohanthy@gmail.com',meta:'ayodhyarammohanthy@gmail.com'},
+ {label:'WhatsApp',detail:'For a direct conversation when a shorter message is the better start.',action:'Message on WhatsApp',href:'https://wa.me/917207234883',meta:'+91 72072 34883'},
+ {label:'LinkedIn',detail:'Review experience and connect in a professional context.',action:'Open LinkedIn',href:'https://www.linkedin.com/in/ayodhyamohanthy/',meta:'linkedin.com/in/ayodhyamohanthy'},
+ {label:'X',detail:'Follow current thinking and connect around AI-native product design.',action:'Open X',href:'https://x.com/ayodhyamohanthy',meta:'@ayodhyamohanthy'}
+];
+export default function Contact(){return <main className="contact-page"><header className="contact-intro"><p className="eyebrow">CONTACT · OPEN CHANNELS</p><h1>Drop me a message.</h1><p>Building an AI-native product, hiring design leadership, or comparing notes on how the field is changing? Start with the channel that fits.</p></header><section className="contact-grid" aria-label="Ways to contact Ayodhya">{channels.map((c,i)=><article key={c.label}><span>0{i+1}</span><h2>{c.label}</h2><p>{c.detail}</p><small>{c.meta}</small><a href={c.href} target={c.href.startsWith('http')?'_blank':undefined} rel={c.href.startsWith('http')?'noreferrer':undefined}>{c.action} →</a></article>)}</section><footer className="contact-note"><b>What helps</b><p>A short note on the role, product or decision you are working through is enough to begin.</p></footer></main>}

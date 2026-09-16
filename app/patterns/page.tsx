@@ -1,0 +1,4 @@
+import Link from 'next/link';import ReferenceChrome from '../reference/ReferenceChrome';
+const patterns=['Observable agent loop','Context budget','Tool contract','Handoff packet','Resume after interruption','Ask only for the missing decision','Source-of-truth refresh'];
+export const metadata={title:'Agent system patterns · Ayodhya'};
+export default function Patterns(){return <ReferenceChrome><section className="pattern-index"><p>CANONICAL PATTERN REGISTRY</p><h1>Patterns that keep<br/>agent work legible.</h1><span>Published patterns only. Each pattern connects a product decision to a release check.</span><div>{patterns.map((x,i)=><Link key={x} href="/reference/harnesses-workflows#patterns"><small>0{i+1} · HARNESSES & WORKFLOWS</small><h2>{x}</h2><i>↗</i></Link>)}</div></section></ReferenceChrome>}

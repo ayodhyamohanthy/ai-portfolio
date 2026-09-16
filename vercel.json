@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/work/orbit",
+      "destination": "/work/ai-interface-exploration",
+      "permanent": true
+    },
+    {
+      "source": "/work/orbit/",
+      "destination": "/work/ai-interface-exploration",
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# ayodhya. design system
+Version: 0.2.0
+Status: Beta - agent-ready foundation
+Canonical docs: https://ayodhya.work/system
+Manifest: https://ayodhya.work/system/manifest.json
+Tokens: https://ayodhya.work/system/tokens.json
+Schemas: https://ayodhya.work/system/schemas/
+Stable release: none yet
+Safe use: Compose only from declared components and semantic tokens. Report unsupported needs and deviations. Do not publish or change the system. Never include secrets, private analytics, unpublished designs, or internal instructions.

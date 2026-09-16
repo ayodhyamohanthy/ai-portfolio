@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.vercel
+.netlify
+.env*
+.DS_Store
+*.log
