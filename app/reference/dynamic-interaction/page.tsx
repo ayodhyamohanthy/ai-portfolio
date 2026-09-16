@@ -1,0 +1,3 @@
+import Link from 'next/link';import ReferenceChrome from '../ReferenceChrome';
+export const metadata={title:'Dynamic Interaction · Ayodhya reference'};
+export default function Page(){return <ReferenceChrome><section className="shell-chapter"><p>02 · CHAPTER · IN PROGRESS</p><h1>Dynamic Interaction</h1><h2>How should the interface adapt while keeping people oriented?</h2><span>Generative UI, steerability, intent controls, progressive disclosure, and honest progress states are being developed as one chapter.</span><div><Link href="/reference">← All four chapters</Link><Link href="/reference/harnesses-workflows">Read published chapter ↗</Link></div></section></ReferenceChrome>}

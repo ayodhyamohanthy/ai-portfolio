@@ -1,0 +1,3 @@
+import Link from 'next/link';import ReferenceChrome from '../ReferenceChrome';
+export const metadata={title:'Governance & Control · Ayodhya reference'};
+export default function Page(){return <ReferenceChrome><section className="shell-chapter"><p>03 · CHAPTER · IN PROGRESS</p><h1>Governance & Control</h1><h2>Where must the system ask, explain, stop, or recover?</h2><span>Authority levels, approval gates, recovery, observability, privacy, and permissions are being tested before publication.</span><div><Link href="/reference">← All four chapters</Link><Link href="/reference/harnesses-workflows">Read published chapter ↗</Link></div></section></ReferenceChrome>}
