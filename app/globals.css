@@ -774,3 +774,6 @@
 .route-content .portfolio-wall-page .ai-pulse i{border-color:#778054!important;background:#313923!important}
 .route-content .portfolio-wall-page .case-signal svg path{stroke:var(--lime)!important}
 .route-content .portfolio-wall-page .telemetry-bars i{background:var(--lime)!important}
+.portfolio-wall-page .case-signal>b,.portfolio-wall-page .case-signal>span,.portfolio-wall-page .case-signal>em{color:#d8d8d2!important}
+.portfolio-wall-page .case-signal>span{border-color:#5d5d58!important;background:#1f1f1d!important}
+.portfolio-wall-page .ai-pulse i{border-color:#778054!important;background:#313923!important}
