@@ -19,3 +19,9 @@ assert.equal((home.match(/id="cases"/g)||[]).length,1,'Exactly one cases anchor'
 assert.ok(home.includes('BENCHMARK SNAPSHOT'),'Benchmark entry remains explicitly dated');
 assert.ok(home.indexOf('SELECTED WORK / THREE DEEP DIVES')<home.indexOf('BENCHMARK SNAPSHOT'),'Work must precede benchmark snapshot');
 console.log('PASS home: exactly three featured studies, ahead of library, established headline and benchmark entry preserved');
+assert.equal((home.match(/id="experience"/g)||[]).length,1,'Exactly one experience anchor');
+assert.ok(home.indexOf('SELECTED WORK / THREE DEEP DIVES')<home.indexOf('id="experience"'),'Experience timeline must follow selected work');
+assert.ok(home.indexOf('id="experience"')<home.indexOf('BENCHMARK SNAPSHOT'),'Experience timeline must precede benchmark snapshot');
+for(const org of ['Breakthrough Labs','Shell','Noon','Yellow.ai','Simplyfi.tech','Heaps.ai','Deloitte','Andhra University','202641131732','freecoffee.tech','RailSwap']) assert.ok(home.includes(org),`Homepage experience section missing: ${org}`);
+for(const phrase of ['Agentic','human-in-the-loop','evals','guardrails','semantic search','conversational AI','design system','Figma','Claude Code','Supabase']) assert.ok(home.toLowerCase().includes(phrase.toLowerCase()),`Homepage missing recruiter keyword: ${phrase}`);
+console.log('PASS home: experience timeline carries every resume employer, education, patent, R&D prototypes and recruiter keywords');

@@ -1,0 +1,26 @@
+/* Experience: the approved resume timeline, in the same paper/ink system as the selected studies. */
+.experience{padding:44px 0 30px;color:#21261f;font-family:Arial,Helvetica,sans-serif;border-top:1px solid #d5d9cf;margin-top:26px;scroll-margin-top:20px}
+.experience *,.experience *{box-sizing:border-box}
+.experience>header{max-width:680px;margin-bottom:34px}
+.experience h2{font-size:clamp(32px,3.2vw,46px);line-height:1.12;letter-spacing:-1.8px;font-weight:500;margin:0 0 18px}
+.experience h2 i{font-style:normal;color:#64735d}
+.xp-lede{font-size:14px;line-height:1.8;color:#626b5e;margin:0}
+.xp-timeline{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.xp-timeline>li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:28px;padding:26px 0;border-top:1px solid #dde2d6}
+.xp-timeline>li:first-child{border-top:none;padding-top:6px}
+.xp-when span{font:10px/1.7 'IBM Plex Mono',monospace;letter-spacing:1.1px;color:#697263;text-transform:uppercase}
+.xp-what h3{font-size:21px;line-height:1.25;font-weight:600;letter-spacing:-.5px;margin:0 0 7px}
+.xp-org{font-size:12px;line-height:1.6;color:#3f4a3c;margin:0 0 14px;font-weight:600}
+.xp-org span{display:block;font-weight:400;color:#7a8276;font-size:11px;margin-top:2px}
+.xp-what ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.xp-what ul li{font-size:13px;line-height:1.75;color:#4d5749;padding-left:18px;position:relative}
+.xp-what ul li::before{content:'';position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:#a4cb66}
+.xp-band{padding:24px 0 6px;border-top:1px solid #dde2d6}
+.xp-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.xp-chips li{font-size:11px;line-height:1.5;color:#3f4a3c;border:1px solid #cfd6c7;border-radius:50px;padding:7px 13px;background:#fff}
+.xp-stackline{font-size:13px;line-height:1.9;color:#4d5749;margin:0 0 14px}
+.xp-extras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;border-top:1px solid #dde2d6;padding-top:24px;margin-top:12px}
+.xp-extras span{font:9px/1.7 'IBM Plex Mono',monospace;letter-spacing:1.2px;color:#697263}
+.xp-extras p{font-size:12px;line-height:1.7;color:#4d5749;margin:8px 0 0}
+@media(max-width:1000px){.xp-timeline>li{grid-template-columns:120px minmax(0,1fr);gap:20px}.xp-extras{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.experience{padding-top:34px}.experience h2{font-size:32px;letter-spacing:-1.2px}.xp-timeline>li{grid-template-columns:1fr;gap:8px;padding:22px 0}.xp-what h3{font-size:19px}.xp-what ul li{font-size:13px}.xp-extras{grid-template-columns:1fr;gap:18px}.xp-chips li{font-size:10px;padding:6px 11px}}
