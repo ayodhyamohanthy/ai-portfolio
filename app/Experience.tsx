@@ -27,7 +27,7 @@ export default function Experience() {
       <p className="xp-stackline">{aiStack.join(' · ')}</p>
     </div>
     <div className="xp-extras">
-      {extras.map(x => <div key={x.label}><span>{x.label}</span><p>{x.body}</p></div>)}
+      {extras.map(x => <div key={x.label}><span>{x.label}</span><p>{x.body}</p>{x.links?.map(l => <a key={l.href} className="xp-link" href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>)}</div>)}
     </div>
   </section>;
 }

@@ -3,17 +3,20 @@ import assert from 'node:assert/strict';
 const routes=['application-automation','data-product-design','ad-platform'];
 for (const slug of routes) {
  const html=fs.readFileSync(`.next/server/app/work/${slug}.html`,'utf8');
- for(const anchor of ['at-a-glance','context','evidence','decisions','delivery','outcomes','reflection']) assert.ok(html.includes(`id="${anchor}"`),`${slug}: missing ${anchor}`);
+ for(const anchor of ['at-a-glance','context','evidence','decisions','delivery','outcomes','reflection','full-gallery']) assert.ok(html.includes(`id="${anchor}"`),`${slug}: missing ${anchor}`);
  assert.ok(html.includes('Clear about what this case proves.'),`${slug}: evidence limits missing`);
  assert.ok(html.includes('Read the original published project'),`${slug}: source link missing`);
  const images=[...html.matchAll(/(?:src|href)="(\/cases\/[^"?]+)/g)].map(x=>x[1]);
  assert.ok(images.length>=5,`${slug}: original artifacts missing`);
  for(const image of images) assert.ok(fs.existsSync(`public${image}`),`Missing image: ${image}`);
- console.log(`PASS ${slug}: sections, provenance, ${new Set(images).size} existing original assets`);
+ assert.ok(html.includes('FULL ARTIFACT GALLERY'),`${slug}: full artifact gallery missing`);
+ const source=JSON.parse(fs.readFileSync('app/behanceCaseData.json','utf8')).find(x=>x.slug===slug);
+ for(const im of source.images) assert.ok(html.includes(im.src),`${slug}: gallery missing ${im.src}`);
+ console.log(`PASS ${slug}: sections, provenance, ${new Set(images).size} existing original assets, full ${source.images.length}-artifact gallery`);
 }
 const home=fs.readFileSync('.next/server/app/index.html','utf8');
 assert.equal((home.match(/class="selected-card /g)||[]).length,3,'Homepage must feature exactly three deep studies');
-assert.ok(home.indexOf('SELECTED WORK / THREE DEEP DIVES')<home.indexOf('Try the behaviour'),'Selected work must precede library content');
+assert.ok(home.indexOf('SELECTED WORK / THREE DEEP DIVES')<home.indexOf('THE AI-NATIVE DESIGN KIT'),'Selected work must precede the design kit');
 assert.ok(home.includes('AI-native design.')&&home.includes('Led in the open.'),'Preserve established headline');
 assert.equal((home.match(/id="cases"/g)||[]).length,1,'Exactly one cases anchor');
 assert.ok(home.includes('BENCHMARK SNAPSHOT'),'Benchmark entry remains explicitly dated');
@@ -25,3 +28,10 @@ assert.ok(home.indexOf('id="experience"')<home.indexOf('BENCHMARK SNAPSHOT'),'Ex
 for(const org of ['Breakthrough Labs','Shell','Noon','Yellow.ai','Simplyfi.tech','Heaps.ai','Deloitte','Andhra University','202641131732','freecoffee.tech','RailSwap']) assert.ok(home.includes(org),`Homepage experience section missing: ${org}`);
 for(const phrase of ['Agentic','human-in-the-loop','evals','guardrails','semantic search','conversational AI','design system','Figma','Claude Code','Supabase']) assert.ok(home.toLowerCase().includes(phrase.toLowerCase()),`Homepage missing recruiter keyword: ${phrase}`);
 console.log('PASS home: experience timeline carries every resume employer, education, patent, R&D prototypes and recruiter keywords');
+const skip=fs.readFileSync('.next/server/app/work/skipwait.html','utf8');
+assert.ok(skip.includes('First-party build evidence'.toLowerCase())||skip.includes('FIRST-PARTY BUILD EVIDENCE'),'skipwait: first-party evidence section missing');
+assert.ok(skip.includes('github.com/ayodhyamohanthy/skipwaitmanus'),'skipwait: public repo link missing');
+assert.ok(skip.includes('https://skipwait.me'),'skipwait: live product link missing');
+for(const img of ['/cases/skipwait/02-operator-console.png','/cases/skipwait/03-assistant-activity.png','/cases/skipwait/04-assistant-consent.png']) assert.ok(fs.existsSync(`public${img}`)&&skip.includes(img),`skipwait: artifact missing ${img}`);
+assert.ok(skip.includes('no outcome metrics')||skip.includes('no live metrics'.toLowerCase())||skip.includes('no live data'.toLowerCase())||skip.includes('example data'),'skipwait: honest evidence framing missing');
+console.log('PASS skipwait: first-party agentic evidence with repo/product links and honest framing');

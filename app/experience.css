@@ -24,3 +24,5 @@
 .xp-extras p{font-size:12px;line-height:1.7;color:#4d5749;margin:8px 0 0}
 @media(max-width:1000px){.xp-timeline>li{grid-template-columns:120px minmax(0,1fr);gap:20px}.xp-extras{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.experience{padding-top:34px}.experience h2{font-size:32px;letter-spacing:-1.2px}.xp-timeline>li{grid-template-columns:1fr;gap:8px;padding:22px 0}.xp-what h3{font-size:19px}.xp-what ul li{font-size:13px}.xp-extras{grid-template-columns:1fr;gap:18px}.xp-chips li{font-size:10px;padding:6px 11px}}
+.xp-link{display:inline-block;font-size:11px;color:#3f4a3c;border-bottom:1px solid #a4cb66;margin:8px 14px 0 0;text-decoration:none}
+.xp-link:hover{border-bottom-color:#3f4a3c}

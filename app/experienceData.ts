@@ -105,9 +105,9 @@ export const aiStack: string[] = [
   'Replit', 'Multi-model LLM APIs', 'Prompt & eval pipelines', 'Supabase', 'PostHog', 'Mixpanel'
 ];
 
-export const extras: { label: string; body: string }[] = [
+export const extras: { label: string; body: string; links?: { label: string; href: string }[] }[] = [
   { label: 'EDUCATION', body: 'M.Tech, Computer Science - Andhra University.' },
   { label: 'PATENT', body: 'Patent pending (App. No. 202641131732, filed 2026) - ergonomic fluid-dispensing spectacle nosepad; human-factors hardware R&D for digital eye-strain relief.' },
-  { label: 'APPLIED AI R&D', body: 'freecoffee.tech - privacy-first macOS menu-bar prototype exploring consent-based attention design. RailSwap - peer-to-peer railway seat-swapping and passenger coordination web app, designed and built end to end in code.' },
+  { label: 'APPLIED AI R&D', body: 'freecoffee.tech - privacy-first macOS menu-bar prototype exploring consent-based attention design. RailSwap - peer-to-peer railway seat-swapping and passenger coordination web app, designed and built end to end in code.', links: [{ label: 'freecoffee.tech ↗', href: 'https://freecoffee.tech' }, { label: 'freecoffee repo ↗', href: 'https://github.com/ayodhyamohanthy/freecoffee' }, { label: 'RailSwap build pack ↗', href: 'https://github.com/ayodhyamohanthy/swap' }] },
   { label: 'BASE & OVERLAP', body: 'India (IST) · Global remote, with US & EU overlap.' }
 ];
