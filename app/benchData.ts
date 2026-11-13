@@ -1,9 +1,9 @@
 export type BenchRow={rank:number;model:string;score:string;open?:boolean};
-export type BenchSnapshot={board:string;category:string;what:string;checked:string;url:string;rows:BenchRow[]};
+export type BenchSnapshot={board:string;category:string;strip?:string;what:string;checked:string;url:string;rows:BenchRow[]};
 export type BenchResult={model:string;benchmark:string;result:string;note:string;url:string;checked:string};
 export type WatchedBoard={name:string;what:string;url:string};
 export const snapshots:BenchSnapshot[]=[
-{board:'Design Arena',category:'Overall Open Weights · Text-to-HTML',what:'The same board filtered to open-weight models only - the open half of the field, on its own cut. Read off the live board on the stamped date.',checked:'13 Nov 2026',url:'https://designarena.ai/leaderboard',rows:[
+{board:'Design Arena',category:'Overall Open Weights · Text-to-HTML',strip:'open-weight text-to-HTML',what:'The same board filtered to open-weight models only - the open half of the field, on its own cut. Read off the live board on the stamped date.',checked:'13 Nov 2026',url:'https://designarena.ai/leaderboard',rows:[
 {rank:1,model:'Kimi K3',score:'1335'},
 {rank:2,model:'Inkling 2 Small',score:'1332'},
 {rank:3,model:'Kimi K3.1 Pro',score:'1321'},

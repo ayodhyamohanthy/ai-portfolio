@@ -834,3 +834,4 @@
 .contrib-weeks{display:flex;gap:3px}
 .contrib-week{display:grid;gap:3px}
 .contrib-day{width:13px;height:13px;border-radius:2.5px;display:block}
+.ip-status.recon{background:#e5d8c8;border-color:#e5d8c8;color:#14140f}

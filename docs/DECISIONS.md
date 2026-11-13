@@ -66,3 +66,10 @@ User request (November 13, 14:51): "Can we have the GitHub contribution from sep
 - Replaced the third-party ghchart.rshah.org full-year image with an inline widget rendering only September 1 to November 13, 2026. Data comes from GitHub's own GraphQL contributionsCollection for ayodhyamohanthy (5,139 contributions in the period, GitHub's count, checked 13 Nov 2026); the label states the exact range. No history altered, no future dates counted - the range ends today.
 - The widget is a dated snapshot like the benchmark mirror; refresh by regenerating app/contributionsData.ts from the same API call.
 - No spend. Build, content checks and desktop/390px visual inspection precede release.
+
+## 2026-11-13 (7): Provenance tightening on strip and applied process
+
+Main's closeout review, two corrections:
+
+- Homepage benchmark strip now names its cut: "Kimi K3 leads open-weight text-to-HTML at 1335 Elo" instead of an unqualified "ranked first in this snapshot" (the all-categories leader is GPT-6 Astra xhigh at 1395). Strip text reads from a `strip` field on the snapshot, not a hardcode.
+- /process/in-practice: three provenance labels instead of two. FROM THE BUILD is now reserved for artifacts that are the shipped product itself (07 Prototype, 09 Ship). RECONSTRUCTED FROM THE BUILD (sand chip) covers documents written after the fact from what the build enforces (01 Brief, 02 Eval, 03 Research, 04 Structure, 06 Visual design) - the hero legend says so explicitly, and the Eval/Object-map block labels no longer claim "written before the screens / named before drawn". PLANNED unchanged (05, 08, 10).

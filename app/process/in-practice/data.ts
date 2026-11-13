@@ -1,6 +1,6 @@
-export type AppliedStep={n:string;name:string;status:'FROM THE BUILD'|'PLANNED';artifactLabel:string;artifact:string;produced:string;evidence:{text:string;href?:string}[]};
+export type AppliedStep={n:string;name:string;status:'FROM THE BUILD'|'RECONSTRUCTED FROM THE BUILD'|'PLANNED';artifactLabel:string;artifact:string;produced:string;evidence:{text:string;href?:string}[]};
 export const appliedSteps:AppliedStep[]=[
-{n:'01',name:'Brief',status:'FROM THE BUILD',artifactLabel:'THE BRIEF · FILLED FOR SKIPWAIT',artifact:
+{n:'01',name:'Brief',status:'RECONSTRUCTED FROM THE BUILD',artifactLabel:'THE BRIEF · FILLED FOR SKIPWAIT',artifact:
 `For people job hunting through referrals - seekers who know someone inside a target company.
 They are trying to turn a warm contact into a real interview without chasing people across chat threads.
 Today it fails when a referral lives in memory and DMs: offers to refer get lost, nobody can see the state of a request, and an AI assistant acting for either side could overstep without anyone noticing.
@@ -8,7 +8,7 @@ Done looks like a request that moves from asked to referred with every step visi
 Not in scope: a public job board. Skipwait is a private referral marketplace - no scraping, no open listings.`,
 produced:'This brief is why Skipwait is a private referral marketplace with an agentic layer - not another job board. Every screen and every assistant behavior answers to the five lines above.',
 evidence:[{text:'Live product ↗',href:'https://skipwait.me'},{text:'Full case study',href:'/work/skipwait'}]},
-{n:'02',name:'Eval',status:'FROM THE BUILD',artifactLabel:'THE EVAL · WRITTEN BEFORE THE SCREENS',artifact:
+{n:'02',name:'Eval',status:'RECONSTRUCTED FROM THE BUILD',artifactLabel:'THE EVAL · RECONSTRUCTED FROM THE SHIPPED BUILD',artifact:
 `A screen, flow or assistant behavior ships only if it passes all five:
 1. CONSENT VISIBLE - a person can see what an assistant may do before it acts. 0/1
 2. APPROVAL DEFAULT - a consequential action waits for a human yes. 0/1
@@ -17,7 +17,7 @@ evidence:[{text:'Live product ↗',href:'https://skipwait.me'},{text:'Full case 
 5. OPERATOR OVERRIDE - an operator can verify, moderate and revoke. 0/1`,
 produced:'Consent screens with every state, propose-action approval cards, a visible assistant activity log, and an operator console for trust, verification and moderation. Each one is an eval criterion made visible.',
 evidence:[{text:'Consent, activity and console artifacts in the case study',href:'/work/skipwait'},{text:'Public repo ↗',href:'https://github.com/ayodhyamohanthy/skipwaitmanus'}]},
-{n:'03',name:'Research',status:'FROM THE BUILD',artifactLabel:'THE EVIDENCE FILE · STANDING INPUTS',artifact:
+{n:'03',name:'Research',status:'RECONSTRUCTED FROM THE BUILD',artifactLabel:'THE EVIDENCE FILE · THE STANDING INPUTS',artifact:
 `Proof collected before inventing:
 - The differentiator is agent trust: assistants acting for people under consent, limits and review (the product premise, straight from the brief).
 - Model choice is an evidence question, not taste. The crowd-voted design board is mirrored at /benchmarks - rechecked every loop before a model is picked.
@@ -25,7 +25,7 @@ evidence:[{text:'Consent, activity and console artifacts in the case study',href
 - Reading order for AI-native design: /sources.`,
 produced:'Pattern and model choices on Skipwait trace back to these shelves. When the board moves, the loop rechecks the choice - the eval decides, the board informs.',
 evidence:[{text:'Model benchmarks',href:'/benchmarks'},{text:'Live patterns',href:'/resources'},{text:'Sources',href:'/sources'}]},
-{n:'04',name:'Structure',status:'FROM THE BUILD',artifactLabel:'THE OBJECT MAP · NAMED BEFORE DRAWN',artifact:
+{n:'04',name:'Structure',status:'RECONSTRUCTED FROM THE BUILD',artifactLabel:'THE OBJECT MAP · READ BACK FROM THE BUILD',artifact:
 `Objects: SEEKER · REFERRER · REQUEST · REFERRAL · ASSISTANT · CONSENT · ACTION · APPROVAL · LIMIT · OPERATOR
 States designed before any screen:
 - Consent: granted / pending / revoked
@@ -43,7 +43,7 @@ D5 - Inbox: requests as threads, state as labels.
 Held against the eval: D3 fails CONSENT VISIBLE unless every proposal carries its reason. D5 passes all five with the least new UI.`,
 produced:'This is the directions template filled for a loop that has not run yet - shown so you can copy the shape, not presented as shipped work.',
 evidence:[{text:'Held against the eval from step 02 above'}]},
-{n:'06',name:'Visual design',status:'FROM THE BUILD',artifactLabel:'THE ONE DIRECTION · OPERATOR TRUST CONSOLE',artifact:
+{n:'06',name:'Visual design',status:'RECONSTRUCTED FROM THE BUILD',artifactLabel:'THE ONE DIRECTION · OPERATOR TRUST CONSOLE',artifact:
 `Picked: a console that reads like an instrument panel - trust, verification and moderation as first-class surfaces. Calm type, state chips over decoration.
 System tokens and components: the open design system at /system.
 Components the console needed: approval card, activity row, consent summary, state chip - from the 12 AI-native components at /components.`,
