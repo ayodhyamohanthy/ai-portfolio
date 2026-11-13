@@ -50,3 +50,11 @@ User correction (November 13, 14:03 IST): "The resume is being shown in the port
 - Rail nav and search drop the Experience entry. The Experience.tsx component is no longer rendered.
 - No public resume PDF is hosted; no resume claims are presented on the homepage.
 - No spend. Build, content checks and desktop/390px visual inspection precede release.
+
+## 2026-11-13 (5): Benchmarks refreshed from the live board; process applied to a complex product
+
+Two user requests (November 13, 14:44-14:45): "Have the design leaderboard benchmarks of models ... In portfolio", and "The ai native design process explain with a very complex ai product", with the controlling clarification: "Goal is when I want to design ai native design if I use that (copy paste I will great data backed designs)".
+
+- Benchmarks already lived at /benchmarks but were stale (12-18 Sep) while claiming "refreshed hourly". Refreshed all Design Arena data from the live board API on 13 Nov 2026: the Top Leaderboards frame (scripts/refresh-topboards.py, fixed to use the API's allcategories cut after the page scrape broke), the open-weights text-to-HTML snapshot, the full 196-model mirror, and the crowd-favorite highlight. Copy no longer claims hourly refresh or "kept live"; every block carries its checked date, per the Nov 11 decision (explicitly dated, not presented as a current ranking). OpenDesign Arena and Generative UI Benchmark entries stay as their dated vendor-reported snapshots with links; no numbers invented, no own tests implied.
+- New page /process/in-practice: the ten-step process with every template filled for Skipwait, the user's own live agentic product (consent-gated assistants, approval cards, activity log, operator console - all grounded in the public repo and case study). Blocks are labeled FROM THE BUILD (shipped product / public repo) or PLANNED (next loop, filled and ready); the missing moderated test is labeled an honest gap, not fabricated. No outcome metrics claimed; NO LIVE DATA framing preserved. Linked from the manual hero and close, homepage kit card 01, and search.
+- No spend. Build, content checks and desktop/390px visual inspection precede release.

@@ -825,3 +825,7 @@
 .skipwait-evidence figcaption{color:#c9c9c9!important;background:#161616}
 .skipwait-evidence figcaption b{color:#f3f1ec!important}
 .skipwait-evidence>div>p{color:#4a7318}
+.ip-status{display:inline-block;font:600 10px/1 'DM Mono',monospace;letter-spacing:.14em;padding:6px 11px;border-radius:999px;border:1px solid #b9b2a0;color:#6b6656;margin:0 0 14px}
+.ip-status.build{background:#c8ff5c;border-color:#c8ff5c;color:#14140f}
+.ip-ev{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0;font-size:13px}
+.ip-ev a{text-decoration:underline;text-underline-offset:3px}

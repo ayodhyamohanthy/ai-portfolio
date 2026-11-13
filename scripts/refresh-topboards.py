@@ -46,16 +46,10 @@ def page_board(key,html):
     return json.loads(html[a:end+1])
 
 def overall_rows():
-    html=get(PAGE).replace('\\"','"').replace('\\u0026','&')
-    merged=page_board('allcategories',html)+page_board('fullstack',html)
-    merged.sort(key=lambda r:-r['elo'])
-    out=[]
-    for r in merged:
-        m=registry.get(r['model'],{})
-        out.append(dict(name=m.get('displayName') or r['model'],elo=int(r['elo']),
-                        winRate=round(r['winRate'],1),battles=int(r['total']),
-                        open=bool(m.get('openSource')),router=bool(m.get('router'))))
-    return out
+    # The board page no longer exposes initialBoards; the API serves the
+    # all-categories cut directly. agents/allcategories is empty, so the
+    # overall frame is the models all-categories board.
+    return api_rows('models','allcategories')
 
 BOARDS={'overall':overall_rows()}
 for bid,arena,cat in [('website','models','website'),('uicomponent','models','uicomponent'),
