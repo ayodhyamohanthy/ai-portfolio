@@ -829,3 +829,8 @@
 .ip-status.build{background:#c8ff5c;border-color:#c8ff5c;color:#14140f}
 .ip-ev{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0;font-size:13px}
 .ip-ev a{text-decoration:underline;text-underline-offset:3px}
+.contrib-cal{display:inline-block}
+.contrib-months{display:grid;grid-auto-flow:column;grid-auto-columns:16px;font:10px 'DM Mono',monospace;color:#8a867c;margin-bottom:4px}
+.contrib-weeks{display:flex;gap:3px}
+.contrib-week{display:grid;gap:3px}
+.contrib-day{width:13px;height:13px;border-radius:2.5px;display:block}
