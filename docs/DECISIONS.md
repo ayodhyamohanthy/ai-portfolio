@@ -40,3 +40,13 @@ User correction (November 13, 04:31 IST): "Portfolio is messy keep the deep case
 - The Skipwait first-party evidence (operator console, assistant consent, agent activity) ships as part of the same correction: genuine public-build artifacts, no invented client work.
 - The Experience section stays (the November 13 04:16 request); no further keyword expansion.
 - No spend. Build, content checks and desktop/390px visual inspection precede release.
+
+## 2026-11-13 (4): Remove the resume from the portfolio; deep works plus process kit only
+
+User correction (November 13, 14:03 IST): "The resume is being shown in the portfolio only 3 deep works and rest of the ai native designn process works should be only there like harnesses skills, md files etc."
+
+- The Experience/resume timeline section is removed from the homepage. The homepage is now: three deep studies with every original artifact, then the AI-native design kit.
+- The kit gains a Harnesses & workflows card (user named harnesses and md files explicitly); cards now cover process manual, harnesses and workflows, template kit, components, live patterns, design system and SKILL.md skills.
+- Rail nav and search drop the Experience entry. The Experience.tsx component is no longer rendered.
+- No public resume PDF is hosted; no resume claims are presented on the homepage.
+- No spend. Build, content checks and desktop/390px visual inspection precede release.
